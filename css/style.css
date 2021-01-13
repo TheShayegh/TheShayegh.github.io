@@ -532,8 +532,8 @@ textarea {
 .main-navigation .navbar-default .navbar-nav > li > a {
 	color: #fff;
 	padding: 10px 10px;
-	font-size: 12px;
-	font-weight: 500;
+	font-size: 10px;
+	font-weight: 550;
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
 	background-color: transparent;
