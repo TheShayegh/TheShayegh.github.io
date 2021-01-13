@@ -457,9 +457,9 @@ blockquote {
 	padding: 8px 20px;
 	border: 1px solid #cacaca;
 	color: #666666;
-	font-size: 12px;
+	font-size: 20px;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 500;
 }
 /* Forms
 ---------------------------------- */
@@ -532,8 +532,8 @@ textarea {
 .main-navigation .navbar-default .navbar-nav > li > a {
 	color: #fff;
 	padding: 10px 10px;
-	font-size: 15px;
-	font-weight: 300;
+	font-size: 12px;
+	font-weight: 500;
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
 	background-color: transparent;
