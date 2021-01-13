@@ -1,0 +1,1239 @@
+
+		<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 id="skill" class="title text-center">My <span>Skills</span></h1>
+						<div class="space"></div>
+						<div class="row">
+							<div class="filters text-center">
+								<ul class="nav nav-pills">
+									<li><p>Industry Knowledge</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-cogs pr-10 text-colored" style="padding-right: 0px;"></i> Machine Learning
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#0077d0" }'>
+												<span class="pct">60%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> Object-Oriented Programming
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#0077d0" }'>
+												<span class="pct">85%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-laptop pr-10 text-colored" style="padding-right: 0px;"></i> Operating Systems
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#0077d0" }'>
+												<span class="pct">75%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-superscript pr-10 text-colored" style="padding-right: 0px;"></i> Algorithm
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#0077d0" }'>
+												<span class="pct">75%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-cog pr-10 text-colored" style="padding-right: 0px;"></i> Computer Architecture
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#0077d0" }'>
+												<span class="pct">70%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-file-code-o pr-10 text-colored" style="padding-right: 0px;"></i> Compilers & Code Generation
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#0077d0" }'>
+												<span class="pct">80%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<div class="filters text-center">
+								<ul class="nav nav-pills">
+									<li><p>Programming Languages</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> Python
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#00589a" }'>
+												<span class="pct">90%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> C++
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#00589a" }'>
+												<span class="pct">88%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> C
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#00589a" }'>
+												<span class="pct">84%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> Java
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#00589a" }'>
+												<span class="pct">85%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-html5 pr-10 text-colored" style="padding-right: 0px;"></i> HTML
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#00589a" }'>
+												<span class="pct">80%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-css3 pr-10 text-colored" style="padding-right: 0px;"></i> CSS
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#00589a" }'>
+												<span class="pct">60%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> Verilog
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#00589a" }'>
+												<span class="pct">80%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> VHDL
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#00589a" }'>
+												<span class="pct">50%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<div class="filters text-center">
+								<ul class="nav nav-pills">
+									<li><p>Frameworks & Libraries</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> React.js
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#003964" }'>
+												<span class="pct">80%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> Bootstrap
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#003964" }'>
+												<span class="pct">70%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> Numpy & Pandas
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#003964" }'>
+												<span class="pct">75%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code pr-10 text-colored" style="padding-right: 0px;"></i> Pytorch
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#003964" }'>
+												<span class="pct">70%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<div class="filters text-center">
+								<ul class="nav nav-pills">
+									<li><p>Other Technologies</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-database pr-10 text-colored" style="padding-right: 0px;"></i> MySQL
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#06243b" }'>
+												<span class="pct">70%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-code-fork pr-10 text-colored" style="padding-right: 0px;"></i> Git
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#06243b" }'>
+												<span class="pct">80%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-cog pr-10 text-colored" style="padding-right: 0px;"></i> Maven
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#06243b" }'>
+												<span class="pct">65%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-cogs pr-10 text-colored" style="padding-right: 0px;"></i> Docker
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#06243b" }'>
+												<span class="pct">60%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-cogs pr-10 text-colored" style="padding-right: 0px;"></i> Kubernetes
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#06243b" }'>
+												<span class="pct">50%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-pencil-square-o pr-10 text-colored" style="padding-right: 0px;"></i> LATEX
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#06243b" }'>
+												<span class="pct">80%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-cog pr-10 text-colored" style="padding-right: 0px;"></i> Mininet
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#06243b" }'>
+												<span class="pct">60%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul id="skills">	
+									<li>
+										<i class="fa fa-linux pr-10 text-colored" style="padding-right: 0px;"></i> Linux
+										<div class="bar-container">
+											<span class="bar" data-bar='{ "color": "#06243b" }'>
+												<span class="pct">85%</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ================ -->
+		<!-- section end -->
+		<div class="space"></div>
+
+		<!-- section start -->
+		<!-- ================ -->
+		<div class="section translucent-bg bg-image-1 grey">
+			<div class="container object-non-visible" data-animation-effect="fadeIn">
+				<h1 id="honors"  class="text-center title">Honors & Scores</h1>
+				<div class="space"></div>
+				<div class="row">
+					<div class="col-m-6 col-md-offset-3">
+						<div class="media">
+							<div class="media-left">
+								<i class="fa fa-check"></i>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Among 15 percent</h4>
+								<p>of high-ranked Computer Engineering B.Sc. students, University of Tehran.</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<i class="fa fa-check"></i>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Winner</h4>
+								<p>of the University of Tehran M.Sc. Fellowship Award (Exempted from the graduate entrance exam).</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<i class="fa fa-check"></i>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Member</h4>
+								<p>of Iran’s National Elites Foundation for three consecutive years.</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<i class="fa fa-check"></i>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Ranked 305<sup>th</sup></h4>
+								<p>among more than 150,000 participants in Nationwide Universities Entrance Exam (B.Sc.).</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<i class="fa fa-certificate"></i>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">IELTS</h4>
+								<p>Overal Score: 7.5 | R: 8.5 | L: 8 | S: 7 | W: 7</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section end -->
+
+
+		<!-- section start -->
+		<!-- ================ -->
+		<div class="section">
+			<div class="container">
+				<h1 class="text-center title" id="project">Academic <span>Projects</span></h1>
+				<div class="separator"></div>
+				<!-- <p class="lead text-center">Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.</p> -->
+				<br>			
+				<div class="row object-non-visible" id="here" data-animation-effect="fadeIn">
+					<div class="col-md-12">
+
+						<!-- isotope filters start -->
+						<div class="filters text-center">
+							<ul class="nav nav-pills">
+								<li class="active"><a href="#here" data-filter="*">All</a></li>
+								<li><a href="#here" data-filter=".compiler">Compilers</a></li>
+								<li><a href="#here" data-filter=".ai">Machine Learning</a></li>
+								<li><a href="#here" data-filter=".web">Web Application</a></li>
+								<li><a href="#here" data-filter=".hw">Hardware Programming</a></li>
+								<li><a href="#here" data-filter=".os">Operating Systems</a></li>
+								<!-- <li><a href="#here" data-filter=".cn">Computer Networks</a></li> -->
+							</ul>
+						</div>
+						<!-- isotope filters end -->
+
+						<!-- portfolio items start -->
+						<div class="isotope-container row grid-space-20">
+							<div class="col-sm-6 col-md-3 isotope-item compiler">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/java.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-10">
+											<i class="fa fa-search-plus"></i>
+											<span>Compilers & Code Generation</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-10">Toorla Compiler</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-10" tabindex="-1" role="dialog" aria-labelledby="project-10-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-10-label">Toorla, Tiny Object Orinted Readable Language</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><strong>Toorla</strong> is an object-oriented <strong>Java-like</strong> programming language which supports <strong>inheritance</strong>.
+															 Each Toorla program with .trl foramt contains one or more classes that have some fields and
+															methods. Toorla has been implemented in four phases using Java in IntelliJ IDEA.</p>
+															<p>
+															It has been developed as a student project for <strong>Compiler Design and Programming Languages</strong> course.</p>
+
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/Compiler-Phase1"><i class="fa fa-github"></i>
+															<strong>Phase I, Lexer and Parser</strong></a>:
+															Toorla's grammar was implemented using <strong>ANTLR</strong> and 
+															as well as a parser to create <strong>abstract syntax tree (AST)</strong> of input program.
+														</p>
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/Compiler-Phase2"><i class="fa fa-github"></i>
+															<strong>Phase II, Name Analyzer</strong></a>:
+															The name analyzer of the language was implemented to gather information about <strong>classes,
+															 fields, methods, local variables, 
+															and scopes</strong> of program and finding<strong> name analysis errors </strong>like undefined variables or redefinition.
+														</p>
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/Compiler-Phase3"><i class="fa fa-github"></i>
+															<strong>Phase III, Type Analyzer</strong></a>:
+															A type checker was implemented to<strong> check the types of variables</strong> in input program, 
+															finding<strong> relevant errors</strong> based on Toorla's documentation and <strong> setting initial value for various types</strong>.
+														</p>
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/Compiler-Phase4"><i class="fa fa-github"></i>
+															<strong>Phase IV, Code Generation</strong></a>:
+															The machine code was generated by converting Toorla's code to <strong> jasmin</strong> as a middle layer. 
+															Jasmin assembler converts its codes to<strong> class files</strong> which can be executed by<strong> JVM</strong> later.
+														</p>
+													</div>
+													<div class="col-md-4">
+														<img src="images/java.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item compiler">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/interpreter.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-16">
+											<i class="fa fa-search-plus"></i>
+											<span>Compilers & Code Generation</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-16">While Interpreter</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-16" tabindex="-1" role="dialog" aria-labelledby="project-16-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-16-label">An Interpreter for While Language</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/Compiler-Interpreter"><i class="fa fa-github"></i>
+															<strong>While interpreter</strong></a> was implemented for this language  with Java in IntelliJ IDEA.
+															The interpreter accepts the<strong> abstract syntax tree(AST)</strong> of the code as its input and executes it using<strong> visitor pattern</strong>.
+														</p>
+														<p>It has been developed as a student project for <strong>Compiler Design and Programming Languages</strong> course.</p>
+													</div>
+													<div class="col-md-4">
+														<img src="images/interpreter.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item ai">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/NNscratch.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-3">
+											<i class="fa fa-search-plus"></i>
+											<span>Machine Learning</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Neural Network from Scratch</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-3-label">Neural Network from Scratch</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ArtificialIntelligence-NeuralNetworkFromScratch.git"><i class="fa fa-github"></i>
+															<strong>The Neural Network</strong></a>
+															is implemented with Python in Jupyter notebook from <strong>scratch</strong> with<strong> ReLU</strong> as its activation function.</p>
+															<p> All gradient relations has been calculated by hand; and various normalization techniques were used 
+															to gain more accurate result. The model can load weight values from .csv file or save them on a .csv file for later usage.</p>
+														<p> As well as this, I implemented a neural network with similar structure with<strong> Pytorch</strong> to evaluate my model's accuracy.</p>
+													</div>
+													<div class="col-md-4">
+														<img src="images/NNscratch.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item ai">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/Pytorch.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-4">
+											<i class="fa fa-search-plus"></i>
+											<span>Machine Learning</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">Neural Network with Pytorch</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-4" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-4-label">Neural Network with Pytorch</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ArtificialIntelligence-ImageClassificationNeural"><i class="fa fa-github"></i>
+															<strong>The Neural Network</strong></a>
+															is implemented with<strong> Pytorch</strong> in Google Colab to analyze different variables and methods and their effects on neural networks' performance.
+															These are consisted of learning rate, batch size, activation function, momentum, number of epoch, regularization, etc.
+														</p>
+															<p> The implemented NN has to do <strong>image classification</strong>, learn features of a dataset consisted of pictures from 52 different types of accessories, and predict new pictures.
+																It has been developed as a student project for <strong>Artificial Intelligence</strong> course.</p>													</div>
+													<div class="col-md-4">
+														<img src="images/Pytorch.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item ai">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/sickit.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-5">
+											<i class="fa fa-search-plus"></i>
+											<span>Machine Learning</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-5">Application of SciKit-Learn</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-5" tabindex="-1" role="dialog" aria-labelledby="project-5-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-5-label">Machine Learning with SciKit-Learn Library</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ArtificialIntelligence-MachineLearning"><i class="fa fa-github"></i>
+															<strong>Various machine-learning techniques</strong></a>
+															is implemented with<strong> Scikit-learn library methods</strong> in Jupyter notebook to process a dataset of 
+															some markets' customers to predict whether they come back later to that market or not.
+															</p>
+															<p> Various <strong>pre-processing techniques</strong> was applied to the dataset as well as using different classifiers
+															such as decision tree, KNN, random forests, etc. 
+															It has been developed as a student project for <strong>Artificial Intelligence</strong> course.</p>
+															
+													</div>
+													<div class="col-md-4">
+														<img src="images/sickit.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item ai">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/nlp.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-6">
+											<i class="fa fa-search-plus"></i>
+											<span>Machine Learning</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-6">Bayesian Network</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-6" tabindex="-1" role="dialog" aria-labelledby="project-6-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-6-label">Text Processing using Bayesian Network</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ArtificialIntelligence-BayesianTextProcessing"><i class="fa fa-github"></i>
+															<strong>A Bayesian Network</strong></a>
+															was implemented from <strong> scratch</strong> to process dataset consisting of different text news to predict their category with Python in Jupyter notebook.
+															</p>
+															<p> Practical techniques like <strong>bag of words</strong> were used to obtain more accurate result.
+															It has been developed as a student project for <strong>Artificial Intelligence</strong> course.</p>
+															
+													</div>
+													<div class="col-md-4">
+														<img src="images/nlp.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item ai">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/genetic.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-7">
+											<i class="fa fa-search-plus"></i>
+											<span>Machine Learning</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-7">Genetic Algorithm</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-7" tabindex="-1" role="dialog" aria-labelledby="project-7-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-7-label">Replacement Decoding using Genetic Algorithm</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ArtificialIntelligence-GeneticReplacementDecoding"><i class="fa fa-github"></i>
+															<strong>A Genetic Algorithm</strong></a>
+															was implemented from <strong> scratch</strong> to decode an encoded text with replacement method and extract the original text.
+															</p>
+															<p> The algorithm uses a given dictionary
+																as its reference for acceptable words. <strong>Mutation and cross-over</strong> were implemented as fast and effective as possible, as well as the application 
+																of practical techniques like <strong>eliminating stop words</strong> to obtain more accurate result.
+															It has been developed as a student project for <strong>Artificial Intelligence</strong> course.</p>
+															
+													</div>
+													<div class="col-md-4">
+														<img src="images/genetic.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item ai">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/cm.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-8">
+											<i class="fa fa-search-plus"></i>
+											<span>Machine Learning</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-8">Price Estimation</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-8" tabindex="-1" role="dialog" aria-labelledby="project-8-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-8-label">Price Estimation with Regression</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ArtificialIntelligence-EstimationRegression"><i class="fa fa-github"></i>
+															<strong>A Regression Model</strong></a>
+															was implemented to processing a dataset containing <strong>spoken text data</strong> about second-hand mobile devices and their prices to estimate 
+															new entries' price using different Python libraries such as Numpy, Pandas, and SciKit-Learn in Jupyter notebook.</p>
+															<p>As well as <strong>bag of words</strong>, various techniques were used to preprocess text messages. Pre-processing was the 
+																critical part of the projects, since text data was consisted of both <strong>English</strong> and <strong>spoken Persian</strong> words with
+																spelling problems.
+															It has been developed as a student project for <strong>Artificial Intelligence</strong> course.</p>
+													</div>
+													<div class="col-md-4">
+														<img src="images/cm.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item ai">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/search.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-9">
+											<i class="fa fa-search-plus"></i>
+											<span>Machine Learning</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-9">Search Problems</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-9" tabindex="-1" role="dialog" aria-labelledby="project-9-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-9-label">Informed and Uninformed Search Algorithm</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ArtificialIntelligence-Search"><i class="fa fa-github"></i>
+															<strong>Various search algorithms</strong></a>
+															were implemented from <strong>scratch</strong> to find best route for an agent in a givan play ground with obstacles using Python in Jupyter notebook.</p>
+															<p>Uninformed search algorithms like <strong>BFS</strong> and <strong>DFS</strong> as well as informed one like <strong>A*</strong> 
+																were implemented. I also compared their performance based on problem.
+															It has been developed as a student project for <strong>Artificial Intelligence</strong> course.</p>
+													</div>
+													<div class="col-md-4">
+														<img src="images/search.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item web">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/loghme1.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-1">
+											<i class="fa fa-search-plus"></i>
+											<span>Web Application</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">Loghme</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-1-label">Loghme, Online Food Delivery Web Application</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><strong>Loghme</strong> is a Persian online food delivery web application similar to waiter.com and other food delivery cooperations. 
+															It has been developed during 8 phases as a student project for <strong>Internet Engineering</strong> course.</p>
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/InternetEngineering-LoghmeBackend"><i class="fa fa-github"></i>
+															<strong> Loghme's Back end</strong></a> 
+															: Implemented with Java in IntelliJ IDEA using various tools and technologies such as Maven, Apache Tomcat,
+														Spring MVC, MySQL as database, etc. and deployed using Kubernetes and Docker.</p>
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/InternetEngineering-LoghmeReactjsFrontend"><i class="fa fa-github"></i>
+															<strong> Loghme's Front end</strong></a>
+															: Implemented using HTML, CSS, JavaScript, React.js, Nginx (with Kubernetes and Docker for deployment), etc.</p>
+														
+													</div>
+													<div class="col-md-4">
+														<img src="images/loghme1.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item web">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/jeek.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-2">
+											<i class="fa fa-search-plus"></i>
+											<span>Web Application</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Jeek Jeek</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-2" tabindex="-1" role="dialog" aria-labelledby="project-2-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-2-label">Jeek Jeek, Twitter-like Local Web Application</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/AdvancedProgramming-JeekJeek"><i class="fa fa-github"></i>
+															<strong> Jeek Jeek</strong></a>
+															is a Twitter-like local web application by which you can tweet, have your own profile, like other's tweets and leave comments for them. 
+														</p>
+														<p> It has been developed during 2 phases with C as its back-end programming language as a student project for <strong>Advanced Programming</strong> course.</p>
+															CSS, HTML, and JS were used to design front-end pages as well.
+													</div>
+													<div class="col-md-4">
+														<img src="images/jeek.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item hw">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/classifier.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-13">
+											<i class="fa fa-search-plus"></i>
+											<span>Hardware Programming</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-13">Linear Classifier</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-13" tabindex="-1" role="dialog" aria-labelledby="project-13-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-13-label">Linear Classifier with Verilog</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+													   	<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ComputerArchitecture-Classification"><i class="fa fa-github"></i>
+														   <strong>A linear classifier</strong></a>
+														   was implemented by designing datapath and controller with<strong> Verilog</strong> as a hardware programming language in 
+														   <strong>Modelsim</strong>. The classifier was tested with a dataset and a similar one was implemented using<strong> MATLAB</strong>
+														   to evaluate their performance.
+														   </p>
+														   <p>
+														   It has been developed as a student project for <strong>Computer Architecture</strong> course.</p>
+
+													</div>
+													<div class="col-md-4">
+														<img src="images/classifier.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item hw">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/mips.png" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-14">
+											<i class="fa fa-search-plus"></i>
+											<span>Hardware Programming</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-14">MIPS Processor</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-14" tabindex="-1" role="dialog" aria-labelledby="project-14-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-14-label">Implementation of MIPS Processor with Various Architecture</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><strong>MIPS</strong> is a reduced instruction set computer instruction set architecture. A simplified version of MIPS
+														was implemented with various architecture with <strong>Verilog</strong> in <strong>Modelsim</strong>.</p>
+
+														It has been developed as a student project for <strong>Compiler Design and Programming Languages</strong> course.</p>
+
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ComputerArchitecture-SingleMIPS"><i class="fa fa-github"></i>
+															<strong>Single-Cycle MIPS</strong></a>:
+															A single-cycle MIPS architecture in a minimal system was implemented with an ALU supporting various operators.
+															</p>
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ComputerArchitecture-MultiMIPS"><i class="fa fa-github"></i>
+															<strong>Multi-Cycle MIPS</strong></a>:
+															A multi-cycle MIPS architecture was implemented which works based on stack providing more operators.
+														</p>
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ComputerArchitecture-Pipeline"><i class="fa fa-github"></i>
+															<strong>Pipeline MIPS Architecture</strong></a>:
+															A MIPS processor with pipeline architecture was implemented as well as determining and resolving possible hazards. 
+															</p>														
+														</div>
+													<div class="col-md-4">
+														<img src="images/mips.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item hw">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/arm.png" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-15">
+											<i class="fa fa-search-plus"></i>
+											<span>Hardware Programming</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-15">ARM Processor</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-15" tabindex="-1" role="dialog" aria-labelledby="project-15-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-15-label">Implementation of ARM Processor with Pipeline Architecture</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><a href="https://github.com/Shakiba-Bolbolian-Khah/ComputerArchitectureLab-ARM"><i class="fa fa-github"></i>
+														<strong>Pipeline ARM Architecture</strong></a>: An ARM instruction set with pipeline architecture
+														 was implemented in <strong>Computer Architecture Laboratoy</strong> with <strong>Verilog</strong> in <strong>Modelsim</strong>.
+														It supports both<strong> forwarding</strong> and<strong> hazard</strong> units.
+														</p>
+														</div>
+													<div class="col-md-4">
+														<img src="images/arm.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item os">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/xv6.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-11">
+											<i class="fa fa-search-plus"></i>
+											<span>Operating Systems</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-11">XV6 Operating System</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-11" tabindex="-1" role="dialog" aria-labelledby="project-11-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-11-label">Working woth XV6</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+														<p><strong>XV6</strong> is a teaching operating system which was edited and improved as a student project for <strong>Operating Systems</strong> course.
+														Having implemented various features, I have been familiar with technical aspects of operating systems.
+														</p>
+
+													   <p><a href="https://github.com/Shakiba-Bolbolian-Khah/OperatingSystems-xv6Intro"><i class="fa fa-github"></i>
+														   <strong>Introduction to Xv6 OS</strong></a>:
+														   I got familiar with Xv6, its execution, debugging, improving its<strong> console</strong> by adding some features, 
+														   and implementing new program to<strong> copy text data</strong> from a file to another one.</p>
+													   
+													   <p><a href="https://github.com/Shakiba-Bolbolian-Khah/OperatingSystems-Systemcalls"><i class="fa fa-github"></i>
+														   <strong>XV6 System Calls</strong></a>:
+														   Several new system calls were implemented and added to the OS which enable XV6 to<strong> run commands out of the directory </strong>
+														   in which their execution file exists,<strong> sleep a process for an arbitrary period</strong> using Xv6's ticks,   
+														   and obtain current<strong> process's pid</strong> and its children and grandchildren.</p>
+
+													   <p><a href="https://github.com/Shakiba-Bolbolian-Khah/OperatingSystems-Scheduling"><i class="fa fa-github"></i>
+														   <strong>Process Scheduling</strong></a>:
+														   A<strong> multilevel feedback queue scheduler (MFQ)</strong> was implemented which includes<strong> lottery,
+															    HRRN, and SRPF</strong> methods as its scheduling levels in Xv6.</p>
+
+													   <p><a href="https://github.com/Shakiba-Bolbolian-Khah/OperatingSystems-Synchronization"><i class="fa fa-github"></i>
+														   <strong>Process Synchronization Mechanisms</strong></a>:
+														   Two synchronization mechanisms were added to<strong> prevent out-of-order execution of 
+														   processes</strong>, and<strong> use mutex more than once</strong> in recursive programs.
+													   </p>
+													
+													
+													
+													
+													</div>
+													<div class="col-md-4">
+														<img src="images/xv6.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							<div class="col-sm-6 col-md-3 isotope-item os">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/time.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-12">
+											<i class="fa fa-search-plus"></i>
+											<span>Operating Systems</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-12">Monitors</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-12" tabindex="-1" role="dialog" aria-labelledby="project-12-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-12-label">Solving a Simulated Problem using Monitors</h4>
+											</div>
+											<div class="modal-body">
+												<h3 style="font-size: large;">Project Description</h3>
+												<div class="space"></div>
+												<div class="row">
+													<div class="col-md-8">
+													   	<p><a href="https://github.com/Shakiba-Bolbolian-Khah/OperatingSystems-Monitors"><i class="fa fa-github"></i>
+														   <strong>Monitors</strong></a> are exploited to achieve process synchronization in operating system. Having used its feature,
+														   I tried to solve a<strong> simulated traffic problem to minimize the air pollution caused by cars</strong>. This means that by receiving information
+														   about cars' pollution and a map of the city as well as using monitors, the program tries to find the best schedule for cars to move across
+														   the streets. The monitors are implemented from <strong>scratch</strong>.</p>
+														   <p>
+														   It has been developed as a student project for <strong>Operating Systems</strong> course.
+														</p>
+													</div>
+													<div class="col-md-4">
+														<img src="images/time.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							
+
+
+						</div>
+						<!-- portfolio items end -->
+					
+					</div>
+				</div>
+			</div>
+		</div>
