@@ -962,3 +962,27 @@ textarea {
 		  @media (max-width: 620px) {
 			.social-icons {
 			  margin: 35px 0; } }
+
+
+#t01 tr:nth-child(even) {
+background-color: rgba(206, 236, 195, 0.507);
+}
+#t01 tr:nth-child(odd) {
+background-color: rgba(170, 128, 128, 0.514);
+}
+#t01 th {
+color: white;
+background-color: black;
+}
+#t01 {
+	margin-left: 15%;
+}
+th {
+	text-align: center;
+}
+td {
+	text-align: center;
+}
+#t02 {
+	margin-left: 5%;
+}
