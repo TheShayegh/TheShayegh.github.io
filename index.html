@@ -346,16 +346,22 @@
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingFour">
 											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#workexperienceC" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+												<a class="collapsed" data-toggle="collapse" data-parent="#workexperienceC" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 													Persian Address Tracer
 												</a>
 											</h4>
 										</div>
-										<div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+										<div id="collapseFour2" class="panel-collapse collapse forcein" role="tabpanel" aria-labelledby="headingFour">
 											<div class="panel-body">
 												<ul class="list-unstyled">
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Tehran, Iran</li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Supervisor: <a href="https://scholar.google.com/citations?hl=en&user=Viogmi8AAAAJ" style="color: rgb(123, 122, 122);">Dr. Mohammad Amin Sadeghi</a></li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> PAT is an intelligent system for converting Persian text of address to geographical coordinates in Tehran.
+												</ul>
+											</div>
+										</div>
+										<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+											<div class="panel-body">
+												<ul class="list-unstyled">
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Supervisor: Dr. Mohammad Amin Sadeghi (<a href="mailto:asadeghi@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?hl=en&user=Viogmi8AAAAJ" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
 													<li><i class="fa fa-calendar-o pr-10 text-colored"></i> Jul. 2020 - Feb. 2021</li>
 													<li><i class="fa fa-angle-right pr-10 text-colored"></i> PAT is an intelligent system for converting Persian text of address to geographical coordinates in Tehran.
 														If you are not aware, it is worth mentioning that due to the special conditions in the Persian language
@@ -390,31 +396,39 @@
 												</a>
 											</h4>
 										</div>
+										<div id="collapseFive2" class="panel-collapse collapse forcein" role="tabpanel" aria-labelledby="headingFour">
+											<div class="panel-body">
+												<ul class="list-unstyled">
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> 4-Choob was a project aimed at automatic pricing housing in Tehran.
+												</ul>
+											</div>
+										</div>
 										<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 											<div class="panel-body">
 												<ul class="list-unstyled">
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> <a href="https://4choob.org" style="color: rgb(123, 122, 122);">4-Choob Organization</a></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Tehran, Iran</li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Supervisor: <a href="https://scholar.google.com/citations?hl=en&user=Viogmi8AAAAJ" style="color: rgb(123, 122, 122);">Dr. Mohammad Amin Sadeghi</a></li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Supervisor: Dr. Mohammad Amin Sadeghi (<a href="mailto:asadeghi@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?hl=en&user=Viogmi8AAAAJ" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
 													<li><i class="fa fa-calendar-o pr-10 text-colored"></i> Jul. 2019 - Jul. 2020</li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> 4-Choob was a project aimed at pricing housing in Tehran.
-														The result of this project is a housing sales organization whose link is given above.</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> 4-Choob was a project aimed at automatic pricing housing in Tehran.
+														The result of this project is a housing sales organization that is available
+														<a href="https://4choob.org" style="color: rgb(123, 122, 122);">here <img src="./images/redirect.png" width="13px" style="display: inline-block;"></a>.</li>
 													<li><i class="fa fa-angle-right pr-10 text-colored"></i> My Role:
-														<!-- Map proc -->
 														I entered the project as an intern.
 														We were the first members to work on this project
 														and we started the project from the beginning.
-														I was a member of the AI group.
 														I was given the task of extracting features from multiple sources.
-														I worked on this task for one year and the result was the extraction of more than 400 efficient price forecasting features.
+														I worked on this task for a whole year and the result was the extraction of more than 400 efficient price forecasting features.
 														One of the biggest concerns of this task was optimization issues that made me learn a lot of techniques and tools in this field.
 														In this project I worked with many geolocation tools including postgis (plugin for postgres), Q-gis (ArcGis equivalent for Ubuntu OS)
 														and shapely library in Python.
-														Some of the features obtained will be mentioned in the appendix:
+														Also, sometimes due to the need for more optimization, I had to implement some of the required functions
+														from the the scratch. So I got to know Pandas and Numpy a lot.
+														Among these tasks, I can mention the map processing task only with the help of Numpy,
+														which I implemented practical and useful functions in this regard.
+														For example, some of the features obtained will be mentioned in the appendix:
 													</p><p>1.Definition and calculation of a criterion for the amount of land defectiveness.</p>
-														<p>2.Obtain urban blocks, neighbors of each land and similar features.</p>
-														<p>3.Calculate the amount of sunlight that each apartment receives during the year.</p>
-														<p>4. ...</p>
+														<p>2.Definition and calculation of a criterion for the amount of land defectiveness.</p>
+														<p>3.Obtain urban blocks, neighbors of each land and similar features.</p>
+														<p>4.Calculate the amount of sunlight that each apartment receives during the year.</p>
 													</li>
 												</ul>
 											</div>
@@ -451,9 +465,8 @@
 											<div class="panel-body">
 												<ul class="list-unstyled">
 													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Discrete Mathematics</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: <a href="https://scholar.google.com/citations?user=An1f5FUAAAAJ&hl=en" style="color: rgb(123, 122, 122);">Dr. Siamak Mohammadi</a></li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Spring & Fall 2020</li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Spring 2021</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: Dr. Siamak Mohammadi (<a href="mailto:smohamadi@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?user=An1f5FUAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
+													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Spring 2020 + Fall 2020 + Spring 2021</li>
 													<div class="space"></div>
 												</ul>
 											</div>
@@ -472,33 +485,33 @@
 										<div id="collapseTA" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 											<div class="panel-body">
 												<ul class="list-unstyled">
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Natural Language Processing</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: <a href="https://scholar.google.se/citations?user=m5tCFEoAAAAJ&hl=en" style="color: rgb(123, 122, 122);">Dr. Heshaam Faili</a> and <a href="https://ece.ut.ac.ir/en/~105908695" style="color: rgb(123, 122, 122);">Dr. Yadollah Yaghoobzadeh</a></li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Fall 2019</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Natural Language Processing</strong> - <i class="fa fa-calendar-o pr-10 text-colored"></i>Spring 2021</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor:
+														Dr. Heshaam Faili (<a href="mailto:hfaili@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.se/citations?user=m5tCFEoAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
+														<!-- and Dr. Yadollah Yaghoobzadeh (<a href="mailto:y.yaghoobzadeh@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a>) -->
 													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Engineering Probability and Statistics</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: <a href="https://scholar.google.com/citations?user=1IdcoLMAAAAJ&hl=en" style="color: rgb(123, 122, 122);">Dr. Behnam Bahrak</a></li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Fall 2019</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Artificial Intelligence</strong> - <i class="fa fa-calendar-o pr-10 text-colored"></i>Spring 2020</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor:
+														Dr. Hakimeh Fadaei (<a href="mailto:h.fadaei@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?user=zdY-omQAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
 													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Artificial Intelligence</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: <a href="https://scholar.google.com/citations?user=zdY-omQAAAAJ&hl=en" style="color: rgb(123, 122, 122);">Dr. Hakimeh Fadaei</a></li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Spring 2020</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Engineering Probability</strong> <strong style="font-size: small;">and</strong> <strong>Statistics</strong> - <i class="fa fa-calendar-o pr-10 text-colored"></i>Fall 2019</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor:
+														Dr. Behnam Bahrak (<a href="mailto:bahrak@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?user=1IdcoLMAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
 													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Discrete Mathematics</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: <a href="https://scholar.google.com/citations?user=An1f5FUAAAAJ&hl=en" style="color: rgb(123, 122, 122);">Dr. Siamak Mohammadi</a></li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Spring & Fall 2019</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Discrete Mathematics</strong> - <i class="fa fa-calendar-o pr-10 text-colored"></i>Spring & Fall 2019</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor:
+														Dr. Siamak Mohammadi (<a href="mailto:smohamadi@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?user=An1f5FUAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
 													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Data Structures and Algorithms</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: <a href="https://scholar.google.se/citations?user=m5tCFEoAAAAJ&hl=en" style="color: rgb(123, 122, 122);">Dr. Heshaam Faili</a></li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Fall 2019</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Data Structures</strong> <strong style="font-size: small;">and</strong> <strong>Algorithms</strong> - <i class="fa fa-calendar-o pr-10 text-colored"></i>Fall 2019</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor:
+														Dr. Heshaam Faili (<a href="mailto:hfaili@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.se/citations?user=m5tCFEoAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
 													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Introduction to Computing Systems and Programming</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: <a href="https://scholar.google.com/citations?user=6-6ZdxMAAAAJ&hl=en" style="color: rgb(123, 122, 122);">Dr. Hadi Moradi</a></li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Fall 2019</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong style="font-size: small;">Introduction to</strong> <strong>Computing Systems</strong> <strong style="font-size: small;">and</strong> <strong>Programming</strong> - <i class="fa fa-calendar-o pr-10 text-colored"></i>Fall 2019</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: Dr. Hadi Moradi (<a href="mailto:moradih@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?user=6-6ZdxMAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
 													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Engineer Programming</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor: <a href="https://scholar.google.es/citations?user=TnZv6pkAAAAJ&hl=es" style="color: rgb(123, 122, 122);">Dr. Nooshin Karimian</a></li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Spring & Fall 2018</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Engineer Programming</strong> - <i class="fa fa-calendar-o pr-10 text-colored"></i>Spring & Fall 2018</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> Instructor:
+														Dr. Nooshin Karimian (<a href="mailto:nkarimian@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.es/citations?user=TnZv6pkAAAAJ&hl=es" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
 													<div class="space"></div>
 												</ul>
 											</div>
@@ -517,25 +530,21 @@
 										<div id="collapseTO" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 											<div class="panel-body">
 												<ul class="list-unstyled">
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Mentor of Python Tutorial</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> In: Amirkabir University</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Mentor</strong> <strong style="font-size: small;">of</strong> <strong>Python Tutorial</strong></li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> At the Amirkabir University</li>
 													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Spring 2020</li>
 													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Mentor of Data Science Winter School</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> In: Khatam University</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Mentor</strong> <strong style="font-size: small;">of</strong> <strong>Data Science Winter School</strong></li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> At the Khatam University</li>
 													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Feb 2020</li>
 													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Mentor of Data Science Winter School</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> In: University of Tehran</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Mentor</strong> <strong style="font-size: small;">of</strong> <strong>Data Science Winter School</strong></li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> At the University of Tehran</li>
 													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Dec 2019</li>
 													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Teaching Artificial Intelligence</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> In: ACM - Summer Of Code</li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Summer 2019</li>
-													<div class="space"></div>
-													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Tutoring diploma Chemistry</strong></li>
-													<li><i class="fa fa-angle-right pr-10 text-colored"></i> In: Manshur-e adiban (adiban-e Tehran) educational institution</li>
-													<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Fall 2017</li>
+													<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Teacher</strong> <strong style="font-size: small;">of</strong> <strong>Artificial Intelligence Summer Of Code</strong> - <i class="fa fa-calendar-o pr-10 text-colored"></i>Summer 2019</li>
+													<li><i class="fa fa-angle-right pr-10 text-colored"></i> At the University of Tehran</li>
+													<li></li>
 													<div class="space"></div>
 												</ul>
 											</div>
@@ -662,17 +671,19 @@
 												<div class="panel-heading" role="tab" id="headingThree">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#voluntaryworksC" href="#collapseBook" aria-expanded="true" aria-controls="collapseBook">
-															Books
+															<i class="fa fa-book pr-10 text-colored" style="color: aliceblue;"></i> Open Source Discrete Mathematics Book
 														</a>
 													</h4>
 												</div>
 												<div id="collapseBook" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
 													<div class="panel-body">
 														<ul class="list-unstyled">
-															<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Open Source Discrete Mathematics Book</strong></li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> In Process . . . </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Writers: A community of volunteers </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Gatherer: Behzad Shayegh </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> This is a free Persian Discrete Mathematics book that I started writing and after a while, volunteers contributed to its completion. I am still monitoring its completion and progress. </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> The source is available <a href="https://github.com/BehzadShayegh/DiscreteMathematicsBook" style="color: rgb(123, 122, 122);">here <img src="./images/redirect.png" width="13px" style="display: inline-block;"></a>
+																and the latest published version is available <a href="https://github.com/BehzadShayegh/DiscreteMathematicsBook/tree/master/PublishedVersions" style="color: rgb(123, 122, 122);">here <img src="./images/redirect.png" width="13px" style="display: inline-block;"></a>. </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Supervisor:
+																Dr. Siamak Mohammadi (<a href="mailto:smohamadi@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?user=An1f5FUAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
+															<li><i class="fa fa-calendar-o pr-10 text-colored"></i>From the summer of 2020 until now</li>
 															<div class="space"></div>
 														</ul>
 													</div>
@@ -681,47 +692,84 @@
 											<div class="panel panel-default">
 												<div class="panel-heading" role="tab" id="headingThree">
 													<h4 class="panel-title">
-														<a class="collapsed" data-toggle="collapse" data-parent="#voluntaryworksC" href="#collapseManuscripts" aria-expanded="false" aria-controls="collapseManuscripts">
-															Manuscripts
+														<a class="collapsed" data-toggle="collapse" data-parent="#voluntaryworksC" href="#collapseManuscripts1" aria-expanded="false" aria-controls="collapseManuscripts1">
+															<i class="fa fa-book pr-10 text-colored" style="color: aliceblue;"></i> Applied statistics tutorial in R
 														</a>
 													</h4>
 												</div>
-												<div id="collapseManuscripts" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+												<div id="collapseManuscripts1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 													<div class="panel-body">
 														<ul class="list-unstyled">
-															<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Applied statistics tutorial in R</strong></li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> In Process . . . </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Writer: Behzad Shayegh </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Under Supervision of: <a href="https://scholar.google.com/citations?user=1IdcoLMAAAAJ&hl=en" style="color: rgb(123, 122, 122);">Dr. Behnam Bahrak</a> </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> ... </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> The tutorial is available <a href="#" style="color: rgb(123, 122, 122);">here <img src="./images/redirect.png" width="13px" style="display: inline-block;"></a>. </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Supervisor:
+																Dr. Behnam Bahrak (<a href="mailto:bahrak@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?user=1IdcoLMAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
+															<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Now</li>
 															<div class="space"></div>
 														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree">
+													<h4 class="panel-title">
+														<a class="collapsed" data-toggle="collapse" data-parent="#voluntaryworksC" href="#collapseManuscripts2" aria-expanded="false" aria-controls="collapseManuscripts2">
+															<i class="fa fa-book pr-10 text-colored" style="color: aliceblue;"></i> Manuscript: Don't Make Mistakes in Discrete Mathematics
+														</a>
+													</h4>
+												</div>
+												<div id="collapseManuscripts2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+													<div class="panel-body">
 														<ul class="list-unstyled">
-															<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Don't Make Mistakes in Discrete Mathematics</strong></li>
 															<li><i class="fa fa-angle-right pr-10 text-colored"></i> This is a set of answered problems in discrete mathematics (Persian). Problems also have clever wrong answers containing warnings to acquaint the audience with hidden mistakes. </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Writers: Soudabe Mohammad-Hashemi, Kimiya Mohammad-Taheri </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Under Supervision of: Behzad Shayegh </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Usage: Discrete Mathematics Course, University of Tehran, presented by <a href="https://scholar.google.com/citations?user=An1f5FUAAAAJ&hl=en" style="color: rgb(123, 122, 122);">Dr. Siamak Mohammadi</a> </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Available <a href="https://github.com/soudabemhashemi/h2wp">here</a> </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> I was the supervisor of the manuscript. writers were Soudabe Mohammad-Hashemi and Kimiya Mohammad-Taheri. </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> The source is available <a href="#" style="color: rgb(123, 122, 122);">here <img src="./images/redirect.png" width="13px" style="display: inline-block;"></a>
+																and the latest published version is available <a href="#" style="color: rgb(123, 122, 122);">here <img src="./images/redirect.png" width="13px" style="display: inline-block;"></a>. </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Usage: Discrete Mathematics Course, University of Tehran, presented by
+																Dr. Siamak Mohammadi (<a href="mailto:smohamadi@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.com/citations?user=An1f5FUAAAAJ&hl=en" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
 															<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Fall 2020</li>
 															<div class="space"></div>
 														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree">
+													<h4 class="panel-title">
+														<a class="collapsed" data-toggle="collapse" data-parent="#voluntaryworksC" href="#collapseManuscripts3" aria-expanded="false" aria-controls="collapseManuscripts3">
+															<i class="fa fa-book pr-10 text-colored" style="color: aliceblue;"></i> Python Tutorial Exercises
+														</a>
+													</h4>
+												</div>
+												<div id="collapseManuscripts3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+													<div class="panel-body">
 														<ul class="list-unstyled">
-															<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Python Tutorial Exercises</strong></li>
 															<li><i class="fa fa-angle-right pr-10 text-colored"></i> This is a set of answered exercises in python programming language (English). The course starts from scratch and progresses to the level of object-oriented programming as well as the use of tools such as Pandas, Numpy and matplotlib. </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Writer: Behzad Shayegh </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Under Supervision of: Mohammad Moradi </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Usage: Python Tutorial in Khatam University</a> </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Available <a href="https://github.com/BehzadShayegh/PythonTutorialExercises">here</a> </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> The source is available <a href="https://github.com/BehzadShayegh/PythonTutorialExercises" style="color: rgb(123, 122, 122);">here <img src="./images/redirect.png" width="13px" style="display: inline-block;"></a></li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Supervisor: <a href="https://m-moridi.ir/" style="color: rgb(123, 122, 122);">Mohammad Moridi <img src="./images/redirect.png" width="13px" style="display: inline-block;"></a>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Usage: Python Tutorial in Amirkabir University</a> </li>
 															<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Feb 2020</li>
 															<div class="space"></div>
 														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree">
+													<h4 class="panel-title">
+														<a class="collapsed" data-toggle="collapse" data-parent="#voluntaryworksC" href="#collapseManuscripts4" aria-expanded="false" aria-controls="collapseManuscripts4">
+															<i class="fa fa-book pr-10 text-colored" style="color: aliceblue;"></i> Booklet: Extra Solutions And Codes (C++)
+														</a>
+													</h4>
+												</div>
+												<div id="collapseManuscripts4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+													<div class="panel-body">
 														<ul class="list-unstyled">
-															<li><i class="fa fa-book pr-10 text-colored"></i> <strong>Extra Solutions And Codes - 44+45</strong></li>
 															<li><i class="fa fa-angle-right pr-10 text-colored"></i> This is a basic C++ booklet that includes short textbooks with many examples with or without answers (Persian). </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Writers: Behzad Shayegh, Moein Verkiani </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Usage: Computer Programming Course,, University of Tehran, presented by <a href="https://scholar.google.es/citations?user=TnZv6pkAAAAJ&hl=es" style="color: rgb(123, 122, 122);">Dr. Nooshin Karimian</a> </li>
-															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Available <a href="https://github.com/BehzadShayegh/ExtraSolutionsAndCodes-44plus45">here</a> </li>
-															<li><i class="fa fa-calendar-o pr-10 text-colored"></i>2018</li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> The booklet is available <a href="https://github.com/BehzadShayegh/ExtraSolutionsAndCodes-44plus45" style="color: rgb(123, 122, 122);">here <img src="./images/redirect.png" width="13px" style="display: inline-block;"></a> </li>
+															<li><i class="fa fa-angle-right pr-10 text-colored"></i> Usage: Computer Programming Course, University of Tehran, presented by
+																Dr. Nooshin Karimian (<a href="mailto:nkarimian@ut.ac.ir" style="color: rgb(123, 122, 122);"><img src="./images/mail.png" width="28px" style="display: inline-block;"></a> <a href="https://scholar.google.es/citations?user=TnZv6pkAAAAJ&hl=es" style="color: rgb(123, 122, 122);"><img src="./images/gscholar.png" width="25px" style="display: inline-block;"></a>)
+															<li><i class="fa fa-calendar-o pr-10 text-colored"></i>Summer 2018</li>
 															<div class="space"></div>
 														</ul>
 													</div>
