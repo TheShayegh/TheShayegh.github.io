@@ -576,11 +576,12 @@ h1.arrow span {
 }
 /* ==========================================================================About========================================================================== */
 .about-image {
-	height:400px;
+	height: 350px;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
-	background-size:cover;
+	background-size:contain;
+	background-repeat: no-repeat;
 }
 .color-bg {
 	background: #2980b9;
@@ -606,6 +607,7 @@ h1.arrow span {
 }
 .about-text {
 	padding:20px 50px 25px 50px;
+	height: 350px;
 }
 .about-text h1 {
 	text-transform:uppercase;
