@@ -115,7 +115,29 @@ $(window).load(function() {
 		}
 	});
 	
-		$('#clientSlider').flexslider({
+	$('#slider1').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: true,
+		touch: true,
+		pauseOnHover: true,
+		start: function() {
+			$.waypoints('refresh');
+		}
+	});
+	
+	$('#slider2').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: true,
+		touch: true,
+		pauseOnHover: true,
+		start: function() {
+			$.waypoints('refresh');
+		}
+	});
+	
+	$('#slider3').flexslider({
 		animation: "slide",
 		directionNav: false,
 		controlNav: true,

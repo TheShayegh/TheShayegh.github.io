@@ -1070,13 +1070,13 @@ ul.slides li {
 	color:#fff;
 	font-size:14px;
 }
-#clientSlider .flex-control-nav {
+.slider .flex-control-nav {
 	text-align:left;
 }
-#clientSlider .flex-control-nav li:first-child {
+.slider .flex-control-nav li:first-child {
 	margin:0px 4px 0px 0px;
 }
-#clientSlider small {
+.slider small {
 	font-size: 12px;
 	font-weight: bold;
 }
