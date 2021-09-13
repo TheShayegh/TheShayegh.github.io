@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
+\usepackage[hmargin=1.25cm, vmargin=1.25cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -20,6 +20,8 @@
 \usepackage{blindtext}
 \usepackage{lipsum}
 \usepackage{amsmath}
+\usepackage[document]{ragged2e}
+\usepackage{dirtree}
 
 \colorlet{body}{black!80!white}
 \newcommand{\itemmarker}{{\small\textbullet}}
@@ -40,8 +42,6 @@
 
 
 % Header command
-% \newcommand{\headername}{\color{headings}
-% \fontspec[Path = fonts/calibri/]{Calibri}\fontsize{24pt}{32pt}\selectfont\raggedright}{} {0em}{}
 \newcommand{\headername}[1]{\color{subheadings}
 \fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{24pt}{12pt}\selectfont\vspace{10pt}\raggedright {#1} \normalfont}
 
@@ -75,12 +75,15 @@
 \newcommand{\datecolor}[1]{\color{smcolor}\raggedright\scshape\fontspec[Path = fonts/calibri/]{CALIBRII}\fontsize{11pt}{13pt}\selectfont {#1 } \normalfont}
 
 % Section seperators command
-\newcommand{\sectionsep}[0]{\vspace{4pt}}
+\newcommand{\sectionsep}[0]{\vspace{5pt}}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
 
 % cvtag
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=0.5ex,inner ysep =0.75ex,text height=1.1ex,text depth=.05ex]{#1};
+  \tikz[baseline]\node[anchor=base,draw=body!33,rounded corners,inner xsep=0.5ex,inner ysep =0.75ex,text height=1.1ex,text depth=.05ex,fill=black!3]{#1};
+}
+\newcommand{\dcvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=body!43,rounded corners,inner xsep=0.5ex,inner ysep =0.75ex,text height=1.1ex,text depth=.05ex,fill=black!13]{#1};
 }
