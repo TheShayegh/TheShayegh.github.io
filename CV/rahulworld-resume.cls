@@ -23,6 +23,10 @@
 \usepackage[document]{ragged2e}
 \usepackage{dirtree}
 
+\def\SP#1{\textsuperscript{#1}}
+\def\SB#1{\textsubscript{#1}}
+\def\SPSB#1#2{\rlap{\SP{#1}}\SB{#2}}
+
 \colorlet{body}{black!80!white}
 \newcommand{\itemmarker}{{\small\textbullet}}
 \newcommand{\ratingmarker}{\faCircle}
