@@ -38,7 +38,7 @@
   <meta name="author" content="Behzad shayegh" />
 </head>
 
-<body id="top">
+<body id="top" class="show-menu">
 
   <!-- ****************************** Preloader ************************** -->
   <div id="preloader"></div>
@@ -55,8 +55,9 @@
           <nav class="menu">
             <!-- Menu Links -->
             <div class="icon-list">
+              <a href="https://calendar.google.com/calendar/u/1?cid=c2hheWVnaGJAdWFsYmVydGEuY2E"><i class="fa fa-fw fa-calendar"></i><span>Calendar</span></a>
               <a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
-              <a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Services</span></a>
+              <a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Tools & Contents</span></a>
               <a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
               <a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
             </div>
@@ -85,7 +86,7 @@
               S<span style="color:purple">hayegh</span>
             </h1><!-- Title -->
             <!-- Text Rotator -->
-            <h3 class="animated fadeInUp delay-05s"><span class="rotate">Data Scientist,Researcher,Software Engineer</span></h3><!-- Text Rotator -->
+            <h3 class="animated fadeInUp delay-05s"><span class="rotate">Data Scientist,Researcher,Programmer</span></h3><!-- Text Rotator -->
           </div>
         </div>
       </div>
@@ -110,15 +111,14 @@
           <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
           <!-- about / welcome text -->
           <p>I am a master's student in computing science at the University of Alberta; A data science enthusiast interested in natural language processing, an expert in python programming, and highly skilled at probability, statistics, and discrete mathematics. In the following CV, I've said more about myself.</p>
-          <br/>
         </div>
       </div>
       <div class="services" style="display: flex; margin: 10px;">
-        <a href="CV/BehzadShayegh.pdf" style="margin-inline: auto; color:transparent;">
+        <a href="CV/BehzadShayegh.pdf" style="margin-inline: auto; color:transparent; margin-bottom: 10px;">
           <div class="col-md-4 wp2 item" href="#" style="
                     background-image:url(img/CV.png);
-                    width: 60px;
-                    height: 60px;
+                    width: 125px;
+                    height: 125px;
                     background-size: contain;
                   ">
           </div>
@@ -199,7 +199,7 @@
         <div class="about-image" style="background-image:url(img/pypi.png)"></div><!-- about image 1 -->
       </div>
       <!-- Items -->
-      <div class="col-md-6 nopadding about-text color-bg">
+      <div class="col-md-6 nopadding about-text color-bg slide-container">
         <h6>Python packages</h6>
         <div id="slider1" class="slider">
           <ul class="slides">
@@ -234,7 +234,7 @@
   <!-- About 5 -->
     <div class="row">
       <!-- Items -->
-      <div class="col-md-6 nopadding about-text color-bg">
+      <div class="col-md-6 nopadding about-text color-bg slide-container">
         <h6>LaTeX templates</h6>
         <div id="slider2" class="slider">
           <ul class="slides">
@@ -257,7 +257,7 @@
         <div class="about-image" style="background-image:url(img/written-content.jpg); background-size:cover;"></div><!-- about image 1 -->
       </div>
       <!-- Items -->
-      <div class="col-md-6 nopadding about-text color-bg">
+      <div class="col-md-6 nopadding about-text color-bg slide-container">
         <h6>Written Content</h6>
         <div id="slider3" class="slider">
           <ul class="slides">
@@ -311,17 +311,40 @@
         </div>
       </div>
       <div class="row contact-details">
-        <!-- Phone Number Box -->
-        <a href="tel:+17809998430">
+        <!-- E-Mail -->
+        <a href="mailto:shayeghb@ualberta.ca">
           <div class="col-md-4">
             <div class="dark-box box-hover">
-              <h2><i class="fa fa-phone"></i><span>Phone</span></h2>
-              <p>+1 (780) 999-8430</p>
+              <h2><i class="fa fa-envelope"></i><span>E-Mail</span></h2>
+              <p>ShayeghB@ualberta.ca</p>
             </div>
           </div>
         </a>
         <br class="just_android"/>
         <br class="just_android"/>
+        <!-- Telegram -->
+        <a href="https://telegram.im/@ShayeghB">
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-paper-plane"></i><span>Telegram</span></h2>
+              <p>@ShayeghB</p>
+            </div>
+          </div>
+        </a>
+        <br class="just_android"/>
+        <br class="just_android"/>
+        <!-- Calendar -->
+        <a href="https://calendar.google.com/calendar/u/1?cid=c2hheWVnaGJAdWFsYmVydGEuY2E">
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-calendar"></i><span>Calendar</span></h2>
+              <p>ShayeghB@ualberta.ca</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="row contact-details">
         <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/ShayeghB/">
           <div class="col-md-4">
@@ -342,26 +365,37 @@
             </div>
           </div>
         </a>
+        <br class="just_android"/>
+        <br class="just_android"/>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/ShayeghB/">
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-facebook"></i><span>Facebook</span></h2>
+              <p>ShayeghB</p>
+            </div>
+          </div>
+        </a>
       </div>
 
       <div class="row contact-details">
-        <div class="col-md-4">
-          <!-- E-Mail -->
-          <a href="mailto:behzad.shayegh.b@gmail.com">
-            <div class="dark-box box-hover">
-              <h2><i class="fa fa-envelope"></i><span>E-Mail</span></h2>
-              <p>behzad.shayeghb@gmail.com</p>
-            </div>
-          </a>
-        </div>
-        <br class="just_android"/>
-        <br class="just_android"/>
-        <!-- Telegram -->
-        <a href="https://telegram.im/@ShayeghB">
+        <!-- Skype -->
+        <a href="https://join.skype.com/invite/tPhrTr0BvV7z">
           <div class="col-md-4">
             <div class="dark-box box-hover">
-              <h2><i class="fa fa-paper-plane"></i><span>Telegram</span></h2>
-              <p>@ShayeghB</p>
+              <h2><i class="fa fa-skype"></i><span>Skype</span></h2>
+              <p>behzad.shayegh@outlook.com</p>
+            </div>
+          </div>
+        </a>
+        <br class="just_android"/>
+        <br class="just_android"/>
+        <!-- Phone Number Box -->
+        <a href="tel:+17809998430">
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-phone"></i><span>Phone</span></h2>
+              <p>+1 (780) 999-8430</p>
             </div>
           </div>
         </a>

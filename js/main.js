@@ -25,7 +25,7 @@ Menu
 		//content = document.querySelector( '.content-wrap' ),
 		openbtn = document.getElementById( 'open-button' ),
 		closebtn = document.getElementById( 'close-button' ),
-		isOpen = false;
+		isOpen = true;
 
 	function init() {
 		initEvents();
