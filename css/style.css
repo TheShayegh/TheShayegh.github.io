@@ -30,7 +30,6 @@ a {
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
 	transition:all 0.5s;
-	border-bottom: 1px dashed;
 	outline:none!important;
 }
 a:hover,a:focus,a:active {
@@ -47,7 +46,6 @@ p {
 h2 {
 	font-size:15px;
 	color:#353535!important;
-	text-transform:uppercase;
 	font-weight:bold;
 }
 h2::after {
@@ -60,7 +58,6 @@ h2::after {
 h6 {
 	font-size:15px;
 	color:#8c8c8c;
-	text-transform:uppercase;
 	font-weight:bold;
 }
 h6::after {
@@ -404,7 +401,6 @@ table {
 }
 .icon-list a span {
 	display:block;
-	text-transform:uppercase;
 	letter-spacing:1px;
 	font-size:0.5em;
 	font-weight:700;
@@ -483,7 +479,6 @@ table {
 	color: #2980b9;
 	letter-spacing: 18px;
 	line-height: 50px;
-	text-transform: uppercase;
 }
 .hero p {
 	letter-spacing:1px;
@@ -564,7 +559,6 @@ table {
 }
 h1.arrow {
 	font-size: 24px;
-	text-transform:uppercase;
 	color:#353535;
 	letter-spacing: 4px;
 	background:url('../img/h1-bg.png') no-repeat center bottom;
@@ -618,7 +612,6 @@ h1.arrow span {
 	margin-bottom: 0;
 }
 .about-text h1 {
-	text-transform:uppercase;
 	font-size:24px;
 	color: #8C8C8C;
 }
@@ -709,7 +702,6 @@ i.respons {
 	padding:75px 0;
 }
 .swag h1 {
-	text-transform:uppercase;
 	letter-spacing:5px;
 }
 .swag h1 span {
@@ -849,7 +841,6 @@ img.grayscale:hover {
 .subscribe h1 span {
 	display:block;
 	font-size:15px;
-	text-transform:uppercase;
 	font-weight:bold;
 	margin-top:20px;
 	letter-spacing:1px;
@@ -870,7 +861,6 @@ img.grayscale:hover {
 	border: solid 1px #FFE800;
 	padding:20px;
 	color: #2980b9;
-	text-transform:uppercase;
 	letter-spacing:1px;
 	transition:all 0.5s ease;
 	-moz-transition:all 0.5s ease;
@@ -892,7 +882,6 @@ img.grayscale:hover {
 	padding:25px 40px;
 	color: #FFE801;
 	border: solid 1px #FFE801;
-	text-transform:uppercase;
 	font-weight:bold;
 	letter-spacing:1px;
 }
@@ -906,7 +895,6 @@ img.grayscale:hover {
 	padding:20px 30px;
 	color:#8C8C8C;
 	border:solid 1px #8C8C8C;
-	text-transform:uppercase;
 	font-weight:bold;
 	letter-spacing:1px;
 }
@@ -978,7 +966,6 @@ ul.social-buttons li:last-child {
 .contact-details h2 span {
 	display:block;
 	color:#545454;
-	text-transform:uppercase;
 	letter-spacing:1px;
 	font-size:14px;
 	margin-top:15px;
@@ -1265,4 +1252,26 @@ ul.slides li {
 	.subscribe {
 	    padding-bottom: 40px;
 	}
+}
+
+@media screen and (max-width:1100px) {
+	.mygrid {
+		display: grid;
+		grid-gap: 2rem;
+		margin: 5rem;
+		grid-template-columns: 1fr;
+	}
+}
+@media screen and (min-width:1100px){
+	.mygrid {
+		display: grid;
+		grid-gap: 2rem;
+		margin: 5rem;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.mycard {
+	height: 100%;
+	padding: 2rem;
 }
