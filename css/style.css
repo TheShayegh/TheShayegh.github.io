@@ -1261,6 +1261,12 @@ ul.slides li {
 		margin: 2rem;
 		grid-template-columns: 1fr;
 	}
+	.musicgrid {
+		display: grid;
+		grid-gap: 1rem;
+		margin: 2rem;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 @media screen and (min-width:1100px){
 	.mygrid {
@@ -1269,9 +1275,23 @@ ul.slides li {
 		margin: 5rem;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+	.musicgrid {
+		display: grid;
+		grid-gap: 2rem;
+		margin: 2rem 5rem;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
 }
 
 .mycard {
 	height: 100%;
 	padding: 2rem;
+}
+
+.musicgrid > a > .mycard {
+	padding: .5rem 2rem 0rem 2rem;
+}
+.musicgrid > a > .mycard > h2::after {
+	font-size: small;
+	border: none;
 }
