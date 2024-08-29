@@ -1259,7 +1259,7 @@ ul.slides li {
 		display: grid;
 		grid-gap: 2rem;
 		margin: 2rem;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 	.musicgrid {
 		display: grid;
@@ -1273,7 +1273,7 @@ ul.slides li {
 		display: grid;
 		grid-gap: 2rem;
 		margin: 5rem;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 	.musicgrid {
 		display: grid;
