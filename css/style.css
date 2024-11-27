@@ -33,7 +33,7 @@ a {
 	outline:none!important;
 }
 a:hover,a:focus,a:active {
-	color:#0D0D0D;
+	color:#af7f8efb;
 	text-decoration:none;
 	outline:none!important;
 }
@@ -100,6 +100,7 @@ html,button,input,select,textarea {
 body {
 	margin:0;
 	font-family: 'Open Sans',sans-serif;
+	background-color: #4f4f4d;
 }
 /* ==========================================================================Links========================================================================== */
 a:focus {
@@ -290,15 +291,15 @@ table {
 }
 .dark-box {
 	background: #F3F5F8;
-	-webkit-box-shadow: 0px 3px 0px 0px #2980b9;
-	-moz-box-shadow: 0px 3px 0px 0px #2980b9;
-	box-shadow: 0px 3px 0px 0px #2980b9;
+	-webkit-box-shadow: 0px 3px 0px 0px #bf3997;
+	-moz-box-shadow: 0px 3px 0px 0px #bf3997;
+	box-shadow: 0px 3px 0px 0px #bf3997;
 	padding:20px 0;
 }
 .dark-box:hover,.dark-box:focus {
-	-webkit-box-shadow: 0px 3px 0px 0px #FFE801;
-	-moz-box-shadow: 0px 3px 0px 0px #FFE801;
-	box-shadow: 0px 3px 0px 0px #FFE801;
+	-webkit-box-shadow: 0px 3px 0px 0px #e0cfc5;
+	-moz-box-shadow: 0px 3px 0px 0px #e0cfc5;
+	box-shadow: 0px 3px 0px 0px #e0cfc5;
 }
 .box-hover {
 	transition:all 500ms ease-in-out;
@@ -1284,8 +1285,13 @@ ul.slides li {
 }
 
 .mycard {
+    background-color: #2f3231;
 	height: 100%;
 	padding: 2rem;
+}
+
+span, i, p, a {
+	color: white;
 }
 
 .musicgrid > a > .mycard {
