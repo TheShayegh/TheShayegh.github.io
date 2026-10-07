@@ -13,5 +13,6 @@ at `https://TheShayegh.github.io/<name>/`.
 | Folder | Page |
 |---|---|
 | [`home/`](home/) | Personal website |
+| [`music/`](music/) | Music catalogue: a 3D cover carousel with per-track links to YouTube, Spotify, Apple Music and Amazon Music |
 
 Pages use relative links only, since they are served from a sub-path.

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZAD Musics</title>
+    <link rel="icon" href="../home/img/favicon.ico" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        /* for touch screen */
+        touch-action: none;
+        flex-direction: column;
+      }
+
+      body {
+        overflow: hidden;
+        display: flex;
+        background: #111;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+      }
+
+      #drag-container,
+      #spin-container {
+        position: relative;
+        display: flex;
+        margin: auto;
+        transform-style: preserve-3d;
+        transform: rotateX(-10deg);
+      }
+
+      #drag-container img {
+        transform-style: preserve-3d;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        box-shadow: 0 0 8px #fff;
+        -webkit-box-reflect: below 10px
+          linear-gradient(transparent, transparent, #0005);
+        -webkit-user-drag: none;
+        user-select: none;
+      }
+
+      #drag-container img:hover,
+      #drag-container img.active {
+        box-shadow: 0 0 15px #fffd;
+        -webkit-box-reflect: below 10px
+          linear-gradient(transparent, transparent, #0007);
+      }
+
+      #drag-container p {
+        font-family: serif;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateX(90deg);
+        color: #fff;
+      }
+
+      .groundicon {
+        background: url("../home/img/favicon.png");
+        background-size: 25px 25px;
+        height: 25px;
+        width: 25px;
+        display: block;
+        margin: auto;
+      }
+
+      #ground {
+        width: 900px;
+        height: 900px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateX(90deg);
+        background: radial-gradient(
+          farthest-side at center center,
+          #9993,
+          transparent
+        );
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+      @keyframes spinRevert {
+        from {
+          transform: rotateY(360deg);
+        }
+        to {
+          transform: rotateY(0deg);
+        }
+      }
+
+      /* hint under the carousel */
+      #hint {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 5%;
+        text-align: center;
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+        color: #fff6;
+        pointer-events: none;
+        transition: opacity 0.4s;
+      }
+      body.menu-open #hint {
+        opacity: 0;
+      }
+
+      /* ---------- listen-on dropdown ---------- */
+      #backdrop {
+        position: fixed;
+        inset: 0;
+        background: #0007;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+        z-index: 9;
+      }
+
+      #menu {
+        --accent: #e8e8ee;
+        position: fixed;
+        z-index: 10;
+        width: 270px;
+        padding: 8px;
+        border-radius: 16px;
+        background: #1c1c22e6;
+        -webkit-backdrop-filter: blur(18px) saturate(1.4);
+        backdrop-filter: blur(18px) saturate(1.4);
+        border: 1px solid #ffffff1f;
+        box-shadow: 0 18px 50px #000a, 0 0 0 1px #0006;
+        color: #f2f2f6;
+        opacity: 0;
+        transform: translateY(-6px) scale(0.97);
+        transform-origin: top center;
+        pointer-events: none;
+        visibility: hidden;
+        transition: opacity 0.16s, transform 0.16s, visibility 0.16s;
+      }
+      #menu.open,
+      #backdrop.open {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+      }
+      #menu.open {
+        transform: none;
+      }
+
+      #menu header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 6px 8px 10px;
+        margin-bottom: 4px;
+        border-bottom: 1px solid #ffffff14;
+      }
+      #menu header img {
+        width: 46px;
+        height: 46px;
+        border-radius: 8px;
+        object-fit: cover;
+        box-shadow: 0 2px 10px #0008;
+      }
+      #menu header strong {
+        display: block;
+        font-size: 0.98rem;
+        font-weight: 600;
+        line-height: 1.25;
+      }
+      #menu header span {
+        display: block;
+        margin-top: 2px;
+        font-size: 0.78rem;
+        color: #ffffff8c;
+      }
+
+      #menu a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 11px 10px;
+        border-radius: 10px;
+        color: inherit;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: background 0.12s;
+      }
+      #menu a:hover,
+      #menu a:focus-visible {
+        background: #ffffff17;
+        outline: none;
+      }
+      #menu a:active {
+        background: #ffffff24;
+      }
+      #menu a svg {
+        flex: none;
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+      #menu a .arrow {
+        margin-left: auto;
+        width: 16px;
+        height: 16px;
+        opacity: 0.4;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      #menu a:hover .arrow {
+        opacity: 0.9;
+      }
+      #menu a[data-p="youtube"] svg:first-child {
+        color: #ff4e45;
+      }
+      #menu a[data-p="spotify"] svg:first-child {
+        color: #1ed760;
+      }
+      #menu a[data-p="apple"] svg:first-child {
+        color: #fa586a;
+      }
+      #menu a[data-p="amazon"] svg:first-child {
+        color: #25d1da;
+      }
+
+      /* phones: bottom sheet */
+      @media (max-width: 600px) {
+        #menu {
+          left: 12px !important;
+          right: 12px;
+          top: auto !important;
+          bottom: 12px;
+          width: auto;
+          padding: 10px;
+          border-radius: 20px;
+          transform: translateY(24px);
+          transform-origin: bottom center;
+        }
+        #menu.open {
+          transform: none;
+        }
+        #menu a {
+          padding: 14px 12px;
+          font-size: 1.02rem;
+        }
+        #menu header img {
+          width: 54px;
+          height: 54px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-youtube" viewBox="0 0 24 24">
+        <path d="M9.75 15.67V9.33l5.75 3.17-5.75 3.17zm12.79-8.33c-.25-.92-1-1.65-1.94-1.9C18.88 5 12 5 12 5s-6.88 0-8.6.45a2.7 2.7 0 0 0-1.94 1.9C1 9 1 12.5 1 12.5s0 3.49.46 5.16c.25.92 1 1.65 1.94 1.9C5.12 20 12 20 12 20s6.88 0 8.6-.45a2.7 2.7 0 0 0 1.94-1.9C23 16 23 12.5 23 12.5s0-3.49-.46-5.16z" />
+      </symbol>
+      <symbol id="i-spotify" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0zm13.5 4.4c.6.5 1.5-.6.6-1.2a12.5 12.5 0 0 0-9.2-1c-.7.1-.6 1.3.1 1.3 3-.5 5.6-.9 8.5.9zm1-2.5c-3.5-1.9-6-1.9-9.7-1.1-1 0-1-1.3-.2-1.6a14 14 0 0 1 10.7 1.3c.7.5.3 1.8-.8 1.4zm1.1-3c1 .7 2-1 1-1.6A16.7 16.7 0 0 0 6 8c-1 .4-.5 2 .3 1.9 4.1-1 8-1 11.3 1z" />
+      </symbol>
+      <symbol id="i-apple" viewBox="0 0 24 24">
+        <path d="M11.93 5.172c2.57.08 4.725-2.715 4.364-5.172-2.4.165-4.824 2.686-4.363 5.172zm8.15 13.209c.65-.987.89-1.489 1.396-2.608-3.667-1.386-4.258-6.571-.627-8.558-1.11-1.383-2.664-2.182-4.13-2.182-1.943 0-2.762.925-4.109.925-1.389 0-2.445-.921-4.122-.921-1.65 0-3.406 1.003-4.515 2.713-1.568 2.41-1.3 6.94 1.238 10.806.907 1.376 2.119 2.93 3.7 2.944.656.006 1.093-.188 1.566-.398 1.424-.633 2.875-.655 4.297-.005.46.21.887.406 1.536.4 1.585-.01 2.865-1.733 3.77-3.116z" />
+      </symbol>
+      <symbol id="i-amazon" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M11.08 15.54c-1.06 0-1.68-.81-1.68-2 0-2.37 2.11-2.8 4.12-2.8 0 1.74-.05 4.8-2.44 4.8zm5.23 2.56a.57.57 0 0 1-.66.06c-.92-.76-1.08-1.12-1.59-1.85-2.54 3.22-8.7 2.84-8.7-2.3 0-4.61 4.65-5.5 8.15-5.48 0 0 .13-1.7-.33-2.37-.97-1.46-3.46-.6-3.78.94-.05.25-.23.5-.48.51l-2.69-.3c-.22-.04-.48-.22-.41-.57.62-3.26 3.56-4.24 6.2-4.24 1.34 0 3.06.4 4.16 1.38 1.85 1.62 1.06 6.86 1.22 9.08 0 1.3.54 1.87 1.05 2.57.18.25.21.55-.01.73L16.3 18.1zm3.12 1.74A16.09 16.09 0 0 1 2.3 18.5c-.25-.18-.42.14-.22.37 4.42 5.16 12.44 6.44 17.65 1.6.36-.33.05-.83-.31-.63zm.58 1.94c-.08.2.1.28.28.13 1.17-.98 1.47-3.04 1.23-3.34-.24-.29-2.29-.54-3.54.34-.2.13-.16.32.06.3.7-.1 2.27-.28 2.55.08.28.36-.31 1.83-.58 2.49z" />
+      </symbol>
+    </svg>
+
+    <div id="drag-container">
+      <div id="spin-container">
+        <!-- cover images are generated from TRACKS (see script) -->
+        <p>Behzad Shayegh<span class="groundicon"></span></p>
+      </div>
+      <div id="ground"></div>
+    </div>
+
+    <div id="hint">Tap a cover to listen</div>
+
+    <div id="backdrop"></div>
+    <div id="menu" role="menu" aria-hidden="true">
+      <header>
+        <img id="menu-cover" alt="" />
+        <div>
+          <strong id="menu-title"></strong>
+          <span>Behzad Shayegh</span>
+        </div>
+      </header>
+      <div id="menu-links"></div>
+    </div>
+
+    <script>
+      // Carousel based on 3DCarousel by Hoang Tran:
+      // https://github.com/HoangTran0410/3DCarousel/blob/master/index.html
+
+      // ---------------------------------------------------------------
+      // Tracks, in carousel order. Each link goes to that track/release.
+      // To change a link, edit it here.
+      // ---------------------------------------------------------------
+      var AMAZON_SEARCH = "https://music.amazon.com/search/";
+      var TRACKS = [
+        {
+          title: "Warm Hug in the Haze",
+          cover: "https://m.media-amazon.com/images/I/41VP+psMw6L._SX354_SY354_BL0_QL100__UX716_FMwebp_QL85_.jpg",
+          youtube: "https://www.youtube.com/watch?v=6boi8RN_hBs",
+          spotify: "https://open.spotify.com/track/5kvtNFz3odqKUaoPpDVooM",
+          apple: "https://music.apple.com/ca/album/warm-hug-in-the-haze-single/1736810389",
+        },
+        {
+          title: "Quill in Dreams",
+          cover: "https://m.media-amazon.com/images/I/51KE3s+L77L._SX354_SY354_BL0_QL100__UX716_FMwebp_QL85_.jpg",
+          youtube: "https://www.youtube.com/watch?v=l4QD-_PkcAA",
+          spotify: "https://open.spotify.com/track/5WuhuEH8YBD4aCocQVDgWq",
+          apple: "https://music.apple.com/ca/album/quill-in-dreams-single/1738897739",
+        },
+        {
+          title: "The Winding Life of Mine",
+          cover: "https://m.media-amazon.com/images/I/51hADwoiqUL._SX354_SY354_BL0_QL100__UX716_FMwebp_QL85_.jpg",
+          youtube: "https://www.youtube.com/watch?v=lJxaDjXgxEA",
+          spotify: "https://open.spotify.com/track/0eoJzCkIjHNFUpqIGyhs1F",
+          apple: "https://music.apple.com/ca/album/the-winding-life-of-mine-single/1739741551",
+        },
+        {
+          title: "Bye Bye Vienna",
+          cover: "https://m.media-amazon.com/images/I/51JFhkd+qQL._SX354_SY354_BL0_QL100__UX716_FMwebp_QL85_.jpg",
+          youtube: "https://www.youtube.com/watch?v=BY22PaPd1Vc",
+          spotify: "https://open.spotify.com/track/5G55btbuUIw3B65AO0qfjC",
+          apple: "https://music.apple.com/ca/album/bye-bye-vienna-single/1750649080",
+        },
+        {
+          title: "Sand Painting",
+          cover: "https://m.media-amazon.com/images/I/61GiIVVRJvL._SX354_SY354_BL0_QL100__UX716_FMwebp_QL85_.jpg",
+          youtube: "https://www.youtube.com/watch?v=iyS0UR1aybE",
+          spotify: "https://open.spotify.com/track/5QcVGOqcTVTZprT4cahPGF",
+          apple: "https://music.apple.com/ca/album/sand-painting-single/1758066770",
+        },
+        {
+          title: "The Castle",
+          cover: "https://m.media-amazon.com/images/I/51NYWQpUOPL._UX358_FMwebp_QL85_.jpg",
+          youtube: "https://www.youtube.com/watch?v=5UCLr1KQ3V4",
+          spotify: "https://open.spotify.com/track/0yyWqKIIqkazUdvi0BDT4M",
+          apple: "https://music.apple.com/ca/album/the-castle-single/1782719531",
+        },
+        {
+          title: "Hide and Seek",
+          cover: "https://m.media-amazon.com/images/I/51LaLLZscLL._UX716_FMwebp_QL85_.jpg",
+          youtube: "https://www.youtube.com/watch?v=AoIeW_hLjyg",
+          spotify: "https://open.spotify.com/track/6kWnHCheJ0iZN9xAN4hxc7",
+          apple: "https://music.apple.com/ca/album/hide-and-seek-single/1814089428",
+        },
+        {
+          title: "Mirage",
+          cover: "https://m.media-amazon.com/images/I/41hzsvYt-tL._UX358_FMwebp_QL85_.jpg",
+          youtube: "https://www.youtube.com/watch?v=107WHniP20Q",
+          spotify: "https://open.spotify.com/track/07nac6ffuyiNXRqrUC6zlG",
+          apple: "https://music.apple.com/ca/album/mirage-single/1844149438",
+        },
+        {
+          title: "Yalda",
+          cover: "https://m.media-amazon.com/images/I/51DAyJpgoAL._UX358_FMwebp_QL85_.jpg",
+          youtube: "https://www.youtube.com/watch?v=yCy9zCm7sCo",
+          spotify: "https://open.spotify.com/track/5IBe3tSR9ETYd6UDoqlIJy",
+          apple: "https://music.apple.com/ca/album/yalda-single/1858016767",
+        },
+      ];
+      // Amazon Music: until exact album links are added above (amazon: "..."),
+      // fall back to an Amazon Music search for the track.
+      TRACKS.forEach(function (t) {
+        if (!t.amazon)
+          t.amazon = AMAZON_SEARCH + encodeURIComponent(t.title + " Behzad Shayegh");
+      });
+
+      var PLATFORMS = [
+        { key: "youtube", name: "YouTube", icon: "i-youtube" },
+        { key: "spotify", name: "Spotify", icon: "i-spotify" },
+        { key: "apple", name: "Apple Music", icon: "i-apple" },
+        { key: "amazon", name: "Amazon Music", icon: "i-amazon" },
+      ];
+
+      // You can change global variables here:
+      var narrow = Math.min(window.innerWidth, window.innerHeight) < 600;
+      var radius = narrow ? Math.min(150, window.innerWidth * 0.36) : 180; // how big of the radius
+      var autoRotate = true; // auto rotate or not
+      var rotateSpeed = -60; // unit: seconds/360 degrees
+      var imgWidth = narrow ? 100 : 120; // width of images (unit: px)
+      var imgHeight = imgWidth; // height of images (unit: px)
+
+      var odrag = document.getElementById("drag-container");
+      var ospin = document.getElementById("spin-container");
+
+      // Build the covers
+      var ground0 = ospin.querySelector("p");
+      TRACKS.forEach(function (t, i) {
+        var img = document.createElement("img");
+        img.src = t.cover;
+        img.alt = t.title + " (cover)";
+        img.draggable = false;
+        img.dataset.index = i;
+        ospin.insertBefore(img, ground0);
+      });
+      var aEle = Array.prototype.slice.call(ospin.getElementsByTagName("img"));
+
+      // Size of images
+      ospin.style.width = imgWidth + "px";
+      ospin.style.height = imgHeight + "px";
+
+      // Size of ground - depend on radius
+      var ground = document.getElementById("ground");
+      ground.style.width = radius * 1.5 + "px";
+      ground.style.height = radius * 1.5 + "px";
+
+      // ===================== carousel =======================
+      setTimeout(init, 100);
+
+      function init(delayTime) {
+        for (var i = 0; i < aEle.length; i++) {
+          aEle[i].style.transform =
+            "rotateY(" +
+            i * (360 / aEle.length) +
+            "deg) translateZ(" +
+            radius +
+            "px)";
+          aEle[i].style.transition = "transform 1s";
+          aEle[i].style.transitionDelay =
+            delayTime || (aEle.length - i) / 4 + "s";
+        }
+      }
+
+      function applyTranform(obj) {
+        // Constrain the angle of camera (between 0 and 180)
+        if (tY > 90) tY = 90;
+        if (tY < 0) tY = 0;
+
+        // Apply the angle
+        obj.style.transform = "rotateX(" + -tY + "deg) rotateY(" + tX + "deg)";
+      }
+
+      var spinPaused = false; // true while the dropdown is open
+      function playSpin(yes) {
+        ospin.style.animationPlayState =
+          yes && !spinPaused ? "running" : "paused";
+      }
+
+      var desX = 0,
+        desY = 0,
+        tX = 0,
+        tY = 10;
+
+      // auto spin
+      if (autoRotate) {
+        var animationName = rotateSpeed > 0 ? "spin" : "spinRevert";
+        ospin.style.animation = `${animationName} ${Math.abs(
+          rotateSpeed
+        )}s infinite linear`;
+      }
+
+      // ===================== dropdown =======================
+      var menu = document.getElementById("menu");
+      var backdrop = document.getElementById("backdrop");
+      var menuLinks = document.getElementById("menu-links");
+      var activeImg = null;
+
+      PLATFORMS.forEach(function (p) {
+        var a = document.createElement("a");
+        a.dataset.p = p.key;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.setAttribute("role", "menuitem");
+        a.innerHTML =
+          '<svg aria-hidden="true"><use href="#' + p.icon + '"/></svg>' +
+          "<span>" + p.name + "</span>" +
+          '<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+        menuLinks.appendChild(a);
+      });
+
+      function openMenu(img, x, y) {
+        var t = TRACKS[img.dataset.index];
+        document.getElementById("menu-cover").src = t.cover;
+        document.getElementById("menu-title").textContent = t.title;
+        PLATFORMS.forEach(function (p) {
+          var a = menuLinks.querySelector('[data-p="' + p.key + '"]');
+          a.href = t[p.key];
+          a.setAttribute("aria-label", t.title + " on " + p.name);
+        });
+
+        if (activeImg) activeImg.classList.remove("active");
+        activeImg = img;
+        img.classList.add("active");
+
+        // desktop: dropdown near the click; phones: bottom sheet (CSS)
+        if (window.innerWidth > 600) {
+          var w = menu.offsetWidth || 270;
+          var h = menu.offsetHeight || 260;
+          var left = Math.max(12, Math.min(x - w / 2, window.innerWidth - w - 12));
+          var top = y + 14;
+          if (top + h > window.innerHeight - 12) top = Math.max(12, y - h - 14);
+          menu.style.left = left + "px";
+          menu.style.top = top + "px";
+        }
+
+        spinPaused = true;
+        playSpin(false);
+        document.body.classList.add("menu-open");
+        menu.classList.add("open");
+        backdrop.classList.toggle("open", window.innerWidth <= 600);
+        menu.setAttribute("aria-hidden", "false");
+      }
+
+      function closeMenu() {
+        if (!menu.classList.contains("open")) return;
+        menu.classList.remove("open");
+        backdrop.classList.remove("open");
+        menu.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("menu-open");
+        if (activeImg) activeImg.classList.remove("active");
+        activeImg = null;
+        spinPaused = false;
+        playSpin(true);
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeMenu();
+      });
+
+      // ===================== pointer events =======================
+      // A press that moves less than a few px is a tap/click on a cover;
+      // anything more is a drag that rotates the carousel.
+      document.onpointerdown = function (e) {
+        if (menu.contains(e.target)) return; // let the links work
+        clearInterval(odrag.timer);
+        var sX = e.clientX,
+          sY = e.clientY;
+        var startX = sX,
+          startY = sY;
+        var moved = false;
+        var tapped = e.target.closest ? e.target.closest("#spin-container img") : null;
+        if (!tapped) closeMenu();
+
+        this.onpointermove = function (e) {
+          var nX = e.clientX,
+            nY = e.clientY;
+          if (Math.abs(nX - startX) + Math.abs(nY - startY) > 8) {
+            if (!moved) closeMenu();
+            moved = true;
+          }
+          desX = nX - sX;
+          desY = nY - sY;
+          tX += desX * 0.1;
+          tY += desY * 0.1;
+          applyTranform(odrag);
+          sX = nX;
+          sY = nY;
+        };
+
+        this.onpointerup = function (e) {
+          this.onpointermove = this.onpointerup = null;
+          if (!moved && tapped) {
+            desX = desY = 0;
+            if (tapped === activeImg) closeMenu();
+            else openMenu(tapped, e.clientX, e.clientY);
+            return;
+          }
+          odrag.timer = setInterval(function () {
+            desX *= 0.95;
+            desY *= 0.95;
+            tX += desX * 0.1;
+            tY += desY * 0.1;
+            applyTranform(odrag);
+            playSpin(false);
+            if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+              clearInterval(odrag.timer);
+              playSpin(true);
+            }
+          }, 17);
+        };
+
+        return false;
+      };
+
+      document.onmousewheel = function (e) {
+        e = e || window.event;
+        var d = e.wheelDelta / 20 || -e.detail;
+        radius += d;
+        init(1);
+      };
+    </script>
+  </body>
+</html>
