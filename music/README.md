@@ -18,7 +18,6 @@ Add one object to it. The order of the list is the order around the carousel.
   youtube: "https://www.youtube.com/watch?v=VIDEO_ID",
   spotify: "https://open.spotify.com/track/TRACK_ID",
   apple: "https://music.apple.com/ca/album/track-name-single/ALBUM_ID",
-  // amazon: "https://music.amazon.com/albums/ASIN",   // optional, see below
 },
 ```
 
@@ -30,7 +29,7 @@ Where to find each value:
 | `youtube` | The track's video on the "Behzad Shayegh - Topic" channel (or your own visualizer video). |
 | `spotify` | Spotify, "Share" → "Copy link to song". |
 | `apple` | Apple Music, "Share" → "Copy link" (the `?uo=4` suffix can be dropped). |
-| `amazon` | Optional. When omitted, the Amazon Music row opens an Amazon Music search for the track title plus the artist name. Set it only to link to an exact release. |
+| (Amazon Music) | Nothing to add. The Amazon Music row always opens an Amazon Music search for the track title plus the artist name, so it is generated automatically. |
 
 Keep the cover count reasonable: the carousel spaces covers evenly, so a dozen or more get crowded.
 To change the radius or cover size, edit `radius` and `imgWidth` in the same script.

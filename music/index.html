@@ -119,12 +119,43 @@
         left: 0;
         right: 0;
         bottom: 5%;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 22px;
+        padding: 0 16px;
         font-size: 0.85rem;
         letter-spacing: 0.08em;
         color: #fff6;
         pointer-events: none;
         transition: opacity 0.4s;
+      }
+      #hint span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      #hint svg {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      #hint .dot {
+        fill: currentColor;
+        stroke: none;
+      }
+      /* the mouse wheel only exists with a mouse */
+      #hint .wheel {
+        display: none;
+      }
+      @media (hover: hover) and (pointer: fine) {
+        #hint .wheel {
+          display: inline-flex;
+        }
       }
       body.menu-open #hint {
         opacity: 0;
@@ -303,7 +334,31 @@
       <div id="ground"></div>
     </div>
 
-    <div id="hint">Tap a cover to listen</div>
+    <div id="hint">
+      <span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle class="dot" cx="12" cy="12" r="2" />
+          <circle cx="12" cy="12" r="5.5" opacity="0.75" />
+          <circle cx="12" cy="12" r="9.5" opacity="0.4" />
+        </svg>
+        Tap a cover to listen
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 12h4M17 12h4M5.5 9.5 3 12l2.5 2.5M18.5 9.5 21 12l-2.5 2.5" />
+          <circle class="dot" cx="12" cy="12" r="2.6" />
+        </svg>
+        Sweep to rotate
+      </span>
+      <span class="wheel">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="7" y="2.5" width="10" height="19" rx="5" />
+          <path d="M12 6.5v4" />
+          <path d="M2.5 9.5 4 8l1.5 1.5M2.5 14.5 4 16l1.5-1.5" />
+        </svg>
+        Scroll to zoom
+      </span>
+    </div>
 
     <div id="backdrop"></div>
     <div id="menu" role="menu" aria-hidden="true">
@@ -391,11 +446,10 @@
           apple: "https://music.apple.com/ca/album/yalda-single/1858016767",
         },
       ];
-      // Amazon Music: until exact album links are added above (amazon: "..."),
-      // fall back to an Amazon Music search for the track.
+      // Amazon Music always opens a search for the track (generated here, so
+      // tracks need no amazon field).
       TRACKS.forEach(function (t) {
-        if (!t.amazon)
-          t.amazon = AMAZON_SEARCH + encodeURIComponent(t.title + " Behzad Shayegh");
+        t.amazon = AMAZON_SEARCH + encodeURIComponent(t.title + " Behzad Shayegh");
       });
 
       var PLATFORMS = [
