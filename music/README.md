@@ -18,6 +18,7 @@ Add one object to it. The order of the list is the order around the carousel.
   youtube: "https://www.youtube.com/watch?v=VIDEO_ID",
   spotify: "https://open.spotify.com/track/TRACK_ID",
   apple: "https://music.apple.com/ca/album/track-name-single/ALBUM_ID",
+  // visualizer: "https://www.youtube.com/watch?v=VIDEO_ID",   // optional
 },
 ```
 
@@ -29,6 +30,7 @@ Where to find each value:
 | `youtube` | The track's video on the "Behzad Shayegh - Topic" channel (or your own visualizer video). |
 | `spotify` | Spotify, "Share" → "Copy link to song". |
 | `apple` | Apple Music, "Share" → "Copy link" (the `?uo=4` suffix can be dropped). |
+| `visualizer` | Optional. Only for tracks that have a visualizer video on my own channel. Adds a second "YouTube Visualizer" row (same YouTube icon) under the YouTube row. Leave the line out for tracks without one. |
 | (Amazon Music) | Nothing to add. The Amazon Music row always opens an Amazon Music search for the track title plus the artist name, so it is generated automatically. |
 
 Keep the cover count reasonable: the carousel spaces covers evenly, so a dozen or more get crowded.
@@ -37,6 +39,8 @@ To change the radius or cover size, edit `radius` and `imgWidth` in the same scr
 ## Notes
 
 - A tap/click that moves less than a few pixels opens the dropdown; a longer drag rotates the carousel.
+- The coin on the ground (my logo) is clickable and opens a dropdown with the home page and Instagram. The arrow at the top left goes back to the home page.
+- The camera starts tilted (`tY` in the script) so that the coin is visible between the covers.
 - Links open in a new tab. On screens up to 600px wide the dropdown is a bottom sheet.
 - Adding a platform: add an entry to `PLATFORMS`, a matching `<symbol id="i-...">` icon in the SVG at the
   top of `<body>`, an optional accent color rule (`#menu a[data-p="..."]`), and a field of that name on

@@ -32,6 +32,7 @@
 
       #drag-container,
       #spin-container {
+        pointer-events: none; /* only the covers and the coin take clicks */
         position: relative;
         display: flex;
         margin: auto;
@@ -48,6 +49,7 @@
         height: 100%;
         object-fit: cover;
         cursor: pointer;
+        pointer-events: auto;
         box-shadow: 0 0 8px #fff;
         -webkit-box-reflect: below 10px
           linear-gradient(transparent, transparent, #0005);
@@ -62,27 +64,45 @@
           linear-gradient(transparent, transparent, #0007);
       }
 
-      #drag-container p {
-        font-family: serif;
+      /* coin lying on the ground, with the logo on top; opens the "me" menu */
+      #coin {
         position: absolute;
-        text-align: center;
-        width: 100%;
         top: 100%;
         left: 50%;
+        width: 190px;
+        height: 190px;
         transform: translate(-50%, -50%) rotateX(90deg);
-        color: #fff;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        pointer-events: auto;
       }
-
-      .groundicon {
-        background: url("../home/img/favicon.png");
-        background-size: 25px 25px;
-        height: 25px;
-        width: 25px;
-        display: block;
-        margin: auto;
+      #coin div {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+      }
+      #coin .side {
+        background: #8d8d97;
+      }
+      #coin .top {
+        background: url("../home/img/favicon.png") center / 58% no-repeat,
+          radial-gradient(circle at 35% 30%, #fff, #e3e3e8 55%, #b4b4bd);
+        box-shadow: inset 0 0 0 6px #c9c9d1, inset 0 0 0 8px #ffffffb0,
+          inset 0 0 14px #0004;
+      }
+      #coin:hover .top,
+      #coin.active .top {
+        background: url("../home/img/favicon.png") center / 58% no-repeat,
+          radial-gradient(circle at 35% 30%, #fff, #f0f0f4 55%, #c4c4cd);
+      }
+      #coin .glow {
+        inset: -14px;
+        background: radial-gradient(circle, #fff4, transparent 70%);
+        pointer-events: none;
       }
 
       #ground {
+        pointer-events: none; /* the coin sits on it and must get the clicks */
         width: 900px;
         height: 900px;
         position: absolute;
@@ -161,6 +181,41 @@
         opacity: 0;
       }
 
+      /* back to the home page */
+      #back {
+        position: fixed;
+        top: max(16px, env(safe-area-inset-top));
+        left: max(16px, env(safe-area-inset-left));
+        z-index: 8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        color: #f2f2f6;
+        background: #1c1c22b3;
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+        border: 1px solid #ffffff1f;
+        transition: background 0.12s, transform 0.12s;
+      }
+      #back:hover,
+      #back:focus-visible {
+        background: #ffffff24;
+        outline: none;
+        transform: translateX(-2px);
+      }
+      #back svg {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
       /* ---------- listen-on dropdown ---------- */
       #backdrop {
         position: fixed;
@@ -216,6 +271,12 @@
         border-radius: 8px;
         object-fit: cover;
         box-shadow: 0 2px 10px #0008;
+      }
+      #menu header img.logo {
+        object-fit: contain;
+        padding: 7px;
+        background: #e9e9ee;
+        border-radius: 50%;
       }
       #menu header strong {
         display: block;
@@ -281,6 +342,9 @@
       #menu a[data-p="amazon"] svg:first-child {
         color: #25d1da;
       }
+      #menu a[data-p="instagram"] svg:first-child {
+        color: #f0507f;
+      }
 
       /* phones: bottom sheet */
       @media (max-width: 600px) {
@@ -321,6 +385,12 @@
       <symbol id="i-apple" viewBox="0 0 24 24">
         <path d="M11.93 5.172c2.57.08 4.725-2.715 4.364-5.172-2.4.165-4.824 2.686-4.363 5.172zm8.15 13.209c.65-.987.89-1.489 1.396-2.608-3.667-1.386-4.258-6.571-.627-8.558-1.11-1.383-2.664-2.182-4.13-2.182-1.943 0-2.762.925-4.109.925-1.389 0-2.445-.921-4.122-.921-1.65 0-3.406 1.003-4.515 2.713-1.568 2.41-1.3 6.94 1.238 10.806.907 1.376 2.119 2.93 3.7 2.944.656.006 1.093-.188 1.566-.398 1.424-.633 2.875-.655 4.297-.005.46.21.887.406 1.536.4 1.585-.01 2.865-1.733 3.77-3.116z" />
       </symbol>
+      <symbol id="i-home" viewBox="0 0 24 24">
+        <path d="M12 3 2.5 11.2h2.7V21h5.3v-6h3v6h5.3v-9.8h2.7z" />
+      </symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24">
+        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2C5.679 4 4 5.679 4 7.75v8.5C4 18.321 5.679 20 7.75 20h8.5c2.071 0 3.75-1.679 3.75-3.75v-8.5C20 5.679 18.321 4 16.25 4h-8.5zM12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm4.75-.75a1 1 0 1 1-1-1 1 1 0 0 1 1 1z" />
+      </symbol>
       <symbol id="i-amazon" viewBox="0 0 24 24">
         <path fill-rule="evenodd" d="M11.08 15.54c-1.06 0-1.68-.81-1.68-2 0-2.37 2.11-2.8 4.12-2.8 0 1.74-.05 4.8-2.44 4.8zm5.23 2.56a.57.57 0 0 1-.66.06c-.92-.76-1.08-1.12-1.59-1.85-2.54 3.22-8.7 2.84-8.7-2.3 0-4.61 4.65-5.5 8.15-5.48 0 0 .13-1.7-.33-2.37-.97-1.46-3.46-.6-3.78.94-.05.25-.23.5-.48.51l-2.69-.3c-.22-.04-.48-.22-.41-.57.62-3.26 3.56-4.24 6.2-4.24 1.34 0 3.06.4 4.16 1.38 1.85 1.62 1.06 6.86 1.22 9.08 0 1.3.54 1.87 1.05 2.57.18.25.21.55-.01.73L16.3 18.1zm3.12 1.74A16.09 16.09 0 0 1 2.3 18.5c-.25-.18-.42.14-.22.37 4.42 5.16 12.44 6.44 17.65 1.6.36-.33.05-.83-.31-.63zm.58 1.94c-.08.2.1.28.28.13 1.17-.98 1.47-3.04 1.23-3.34-.24-.29-2.29-.54-3.54.34-.2.13-.16.32.06.3.7-.1 2.27-.28 2.55.08.28.36-.31 1.83-.58 2.49z" />
       </symbol>
@@ -329,10 +399,14 @@
     <div id="drag-container">
       <div id="spin-container">
         <!-- cover images are generated from TRACKS (see script) -->
-        <p>Behzad Shayegh<span class="groundicon"></span></p>
       </div>
       <div id="ground"></div>
+      <div id="coin" role="button" aria-label="Behzad Shayegh: home page and Instagram" tabindex="0"></div>
     </div>
+
+    <a id="back" href="../home/" aria-label="Back to home">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+    </a>
 
     <div id="hint">
       <span>
@@ -366,7 +440,7 @@
         <img id="menu-cover" alt="" />
         <div>
           <strong id="menu-title"></strong>
-          <span>Behzad Shayegh</span>
+          <span id="menu-sub">Behzad Shayegh</span>
         </div>
       </header>
       <div id="menu-links"></div>
@@ -386,6 +460,7 @@
           title: "Warm Hug in the Haze",
           cover: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e5/f8/08/e5f808ed-bf8d-4f06-98f6-47a139040e36/859785697697_cover.jpg/600x600bb.jpg",
           youtube: "https://www.youtube.com/watch?v=6boi8RN_hBs",
+          visualizer: "https://www.youtube.com/watch?v=tebDtD6N9MQ",
           spotify: "https://open.spotify.com/track/5kvtNFz3odqKUaoPpDVooM",
           apple: "https://music.apple.com/ca/album/warm-hug-in-the-haze-single/1736810389",
         },
@@ -393,6 +468,7 @@
           title: "Quill in Dreams",
           cover: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/dd/d0/fcddd07a-99bd-98ae-6c4a-cd65b385e32c/859786134917_cover.jpg/600x600bb.jpg",
           youtube: "https://www.youtube.com/watch?v=l4QD-_PkcAA",
+          visualizer: "https://www.youtube.com/watch?v=J4eXvEHXRUI",
           spotify: "https://open.spotify.com/track/5WuhuEH8YBD4aCocQVDgWq",
           apple: "https://music.apple.com/ca/album/quill-in-dreams-single/1738897739",
         },
@@ -421,6 +497,7 @@
           title: "The Castle",
           cover: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/01/97/3b/01973be5-cc7e-a574-50b1-35704c586ade/859797759581_cover.jpg/600x600bb.jpg",
           youtube: "https://www.youtube.com/watch?v=5UCLr1KQ3V4",
+          visualizer: "https://www.youtube.com/watch?v=iR3dUG6WAdo",
           spotify: "https://open.spotify.com/track/0yyWqKIIqkazUdvi0BDT4M",
           apple: "https://music.apple.com/ca/album/the-castle-single/1782719531",
         },
@@ -482,6 +559,23 @@
       });
       var aEle = Array.prototype.slice.call(ospin.getElementsByTagName("img"));
 
+      // The coin: a stack of discs gives it thickness (top face last, with the logo)
+      var coin = document.getElementById("coin");
+      var COIN_THICKNESS = 9;
+      var glow = document.createElement("div");
+      glow.className = "glow";
+      glow.style.transform = "translateZ(-" + (COIN_THICKNESS + 1) + "px)";
+      coin.appendChild(glow);
+      for (var z = COIN_THICKNESS; z > 0; z--) {
+        var side = document.createElement("div");
+        side.className = "side";
+        side.style.transform = "translateZ(-" + z + "px)";
+        coin.appendChild(side);
+      }
+      var coinTop = document.createElement("div");
+      coinTop.className = "top";
+      coin.appendChild(coinTop);
+
       // Size of images
       ospin.style.width = imgWidth + "px";
       ospin.style.height = imgHeight + "px";
@@ -526,7 +620,9 @@
       var desX = 0,
         desY = 0,
         tX = 0,
-        tY = 10;
+        tY = 38; // default camera tilt: high enough to see the coin on the ground
+
+      applyTranform(odrag);
 
       // auto spin
       if (autoRotate) {
@@ -542,32 +638,72 @@
       var menuLinks = document.getElementById("menu-links");
       var activeImg = null;
 
-      PLATFORMS.forEach(function (p) {
-        var a = document.createElement("a");
-        a.dataset.p = p.key;
-        a.target = "_blank";
-        a.rel = "noopener";
-        a.setAttribute("role", "menuitem");
-        a.innerHTML =
-          '<svg aria-hidden="true"><use href="#' + p.icon + '"/></svg>' +
-          "<span>" + p.name + "</span>" +
-          '<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
-        menuLinks.appendChild(a);
-      });
+      var ARROW_OUT = "M7 17 17 7M8 7h9v9";
+      var ARROW_IN = "M5 12h14M13 6l6 6-6 6";
 
-      function openMenu(img, x, y) {
-        var t = TRACKS[img.dataset.index];
-        document.getElementById("menu-cover").src = t.cover;
-        document.getElementById("menu-title").textContent = t.title;
-        PLATFORMS.forEach(function (p) {
-          var a = menuLinks.querySelector('[data-p="' + p.key + '"]');
-          a.href = t[p.key];
-          a.setAttribute("aria-label", t.title + " on " + p.name);
+      // items: [{key, name, icon, href, label, internal}]
+      function setItems(items) {
+        menuLinks.innerHTML = "";
+        items.forEach(function (it) {
+          var a = document.createElement("a");
+          a.dataset.p = it.key;
+          a.href = it.href;
+          if (!it.internal) {
+            a.target = "_blank";
+            a.rel = "noopener";
+          }
+          a.setAttribute("role", "menuitem");
+          a.setAttribute("aria-label", it.label);
+          a.innerHTML =
+            '<svg aria-hidden="true"><use href="#' + it.icon + '"/></svg>' +
+            "<span>" + it.name + "</span>" +
+            '<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="' +
+            (it.internal ? ARROW_IN : ARROW_OUT) + '"/></svg>';
+          menuLinks.appendChild(a);
         });
+      }
+
+      function trackItems(t) {
+        var items = [];
+        PLATFORMS.forEach(function (p) {
+          items.push({ key: p.key, name: p.name, icon: p.icon, href: t[p.key],
+            label: t.title + " on " + p.name });
+          // tracks with a visualizer video get a second YouTube entry
+          if (p.key === "youtube" && t.visualizer)
+            items.push({ key: "youtube", name: "YouTube Visualizer", icon: p.icon,
+              href: t.visualizer, label: t.title + " visualizer on YouTube" });
+        });
+        return items;
+      }
+
+      var ME_ITEMS = [
+        { key: "home", name: "Home page", icon: "i-home", href: "../home/",
+          label: "Home page", internal: true },
+        { key: "instagram", name: "Instagram", icon: "i-instagram",
+          href: "https://www.instagram.com/the.shayegh/", label: "Instagram" },
+      ];
+
+      // el: the tapped cover (<img>) or the coin; x, y: where it was tapped
+      function openMenu(el, x, y) {
+        var logo = document.getElementById("menu-cover");
+        if (el.id === "coin") {
+          logo.src = "../home/img/favicon.png";
+          logo.className = "logo";
+          document.getElementById("menu-title").textContent = "Behzad Shayegh";
+          document.getElementById("menu-sub").textContent = "More from me";
+          setItems(ME_ITEMS);
+        } else {
+          var t = TRACKS[el.dataset.index];
+          logo.src = t.cover;
+          logo.className = "";
+          document.getElementById("menu-title").textContent = t.title;
+          document.getElementById("menu-sub").textContent = "Behzad Shayegh";
+          setItems(trackItems(t));
+        }
 
         if (activeImg) activeImg.classList.remove("active");
-        activeImg = img;
-        img.classList.add("active");
+        activeImg = el;
+        el.classList.add("active");
 
         // desktop: dropdown near the click; phones: bottom sheet (CSS)
         if (window.innerWidth > 600) {
@@ -608,14 +744,14 @@
       // A press that moves less than a few px is a tap/click on a cover;
       // anything more is a drag that rotates the carousel.
       document.onpointerdown = function (e) {
-        if (menu.contains(e.target)) return; // let the links work
+        if (menu.contains(e.target) || e.target.closest("#back")) return; // let the links work
         clearInterval(odrag.timer);
         var sX = e.clientX,
           sY = e.clientY;
         var startX = sX,
           startY = sY;
         var moved = false;
-        var tapped = e.target.closest ? e.target.closest("#spin-container img") : null;
+        var tapped = e.target.closest ? e.target.closest("#spin-container img, #coin") : null;
         if (!tapped) closeMenu();
 
         this.onpointermove = function (e) {
