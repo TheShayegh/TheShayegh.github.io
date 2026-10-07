@@ -39,7 +39,7 @@ To change the radius or cover size, edit `radius` and `imgWidth` in the same scr
 ## Notes
 
 - A tap/click that moves less than a few pixels opens the dropdown; a longer drag rotates the carousel.
-- The coin on the ground (my logo) is clickable and opens a dropdown with the home page and Instagram. The arrow at the top left goes back to the home page.
+- The coin on the ground (my logo) is clickable and opens a dropdown with the home page, Instagram and my artist pages on YouTube, Spotify, Apple Music and Amazon Music (the `ME_ITEMS` list in the script). The arrow at the top left goes back to the home page.
 - The camera starts tilted (`tY` in the script) so that the coin is visible between the covers.
 - Links open in a new tab. On screens up to 600px wide the dropdown is a bottom sheet.
 - Adding a platform: add an entry to `PLATFORMS`, a matching `<symbol id="i-...">` icon in the SVG at the
