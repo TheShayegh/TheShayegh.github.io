@@ -168,15 +168,6 @@
         fill: currentColor;
         stroke: none;
       }
-      /* the mouse wheel only exists with a mouse */
-      #hint .wheel {
-        display: none;
-      }
-      @media (hover: hover) and (pointer: fine) {
-        #hint .wheel {
-          display: inline-flex;
-        }
-      }
       body.menu-open #hint {
         opacity: 0;
       }
@@ -423,14 +414,6 @@
           <circle class="dot" cx="12" cy="12" r="2.6" />
         </svg>
         Sweep to rotate
-      </span>
-      <span class="wheel">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="7" y="2.5" width="10" height="19" rx="5" />
-          <path d="M12 6.5v4" />
-          <path d="M2.5 9.5 4 8l1.5 1.5M2.5 14.5 4 16l1.5-1.5" />
-        </svg>
-        Scroll to zoom
       </span>
     </div>
 
@@ -805,13 +788,6 @@
         };
 
         return false;
-      };
-
-      document.onmousewheel = function (e) {
-        e = e || window.event;
-        var d = e.wheelDelta / 20 || -e.detail;
-        radius += d;
-        init(1);
       };
     </script>
   </body>
