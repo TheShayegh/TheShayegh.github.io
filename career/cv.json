@@ -1,0 +1,451 @@
+{
+ "name": "Behzad Shayegh",
+ "header": [
+  {
+   "text": "TheShayegh.github.io",
+   "url": "https://TheShayegh.github.io/",
+   "icons": [
+    "faGlobe",
+    "faGithub",
+    "faLinkedin",
+    "aiGoogleScholar"
+   ]
+  },
+  {
+   "text": "the.shayegh@gmail.com",
+   "url": "mailto:the.shayegh@gmail.com",
+   "icons": [
+    "faEnvelope"
+   ]
+  }
+ ],
+ "intro": [],
+ "sections": [
+  {
+   "title": "Summary",
+   "id": "summary",
+   "blocks": [
+    {
+     "type": "paragraph",
+     "html": "Machine learning researcher and engineer with 7 years of R&amp;D experience across academia and industry. Specialized in foundation models, agentic workflows, and large-scale AI evaluation methodologies. Proven track record of taking ML systems from foundational algorithmic design to production deployment. Experienced in cross-boundary collaboration to integrate complex LLM architectures into user-facing products. Published first-authored research at top-tier venues (NeurIPS, ICLR, ACL, AAAI)."
+    }
+   ],
+   "subsections": []
+  },
+  {
+   "title": "Research Experience",
+   "id": "research-experience",
+   "blocks": [
+    {
+     "type": "entry",
+     "kind": "experience",
+     "org": "RBC Borealis",
+     "lines": [
+      "Agentic AI Research Group"
+     ],
+     "roles": [
+      {
+       "date": "Since Jan.&nbsp;2026",
+       "title": "Research Engineer",
+       "bullets": [
+        "Co-developing “Executive Agent,” utilized daily by the RBC CEO, Head of Asset Management, and the executive board.",
+        "Developing “Timely Signal Intelligence” to detect the most strategic signals from worldwide daily news.",
+        "Designing and developing “Collaborative Writing Agent” and its automated evaluation pipeline, which composes long-form text by actively eliciting user preferences and domain knowledge.",
+        "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Recognized with two internal awards for cross-team enablement and knowledge sharing, including representing RBC at external quantum hackathons and driving GenAI education initiatives."
+       ]
+      },
+      {
+       "date": "Sep.&nbsp;2025 – Jan.&nbsp;2026",
+       "title": "Research Intern",
+       "bullets": [
+        "Formalized and evaluated context-certainty obedience of LLMs, and identified systematic limitations.",
+        "Improved context-certainty obedience by 25% across eight diverse models (Gemma, Qwen, Llama; 1–72B) by an interaction strategy comprising prior reminders, certainty recalibration, and context simplification."
+       ]
+      },
+      {
+       "date": "Sep.&nbsp;2023 – Aug.&nbsp;2024",
+       "title": "Affiliate Researcher",
+       "bullets": [
+        "Addressed over-smoothing in multi-teacher knowledge distillation by proposing ensemble distillation."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "entry",
+     "kind": "experience",
+     "org": "Google",
+     "lines": [
+      "Machine Translation Research Group"
+     ],
+     "roles": [
+      {
+       "date": "Apr.&nbsp;2025 – Jun.&nbsp;2025",
+       "title": "Research Intern",
+       "bullets": [
+        "Uncovered and reduced adequacy-over-fluency bias in translation evaluation and meta-evaluation.",
+        "Developed AdequacyX and FluencyX as specialized MetricX variants for adequacy and fluency evaluation, achieving &nbsp;80% soft pairwise accuracy on their respective objectives."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "entry",
+     "kind": "experience",
+     "org": "University of Alberta",
+     "lines": [
+      "NLP Research Group"
+     ],
+     "roles": [
+      {
+       "date": "2022 – 2025",
+       "title": "Research Assistant",
+       "bullets": [
+        "Achieved 3% improvement in 3 unsupervised parsing tasks across 3 languages by developing post-hoc aggregation methods and dynamic programming algorithms for ensemble building.",
+        "Replicated 15 unsupervised parsers with different architectures: transformers, tensor decompositions, etc.",
+        "Mentored an undergraduate student from project launch to AAAI co-authorship."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "entry",
+     "kind": "experience",
+     "org": "Divar <span class=\"nf\"><span class=\"small\">(classified ads platform with 140M annual ads)</span></span>",
+     "lines": [
+      "Used-Car Marketplace Team"
+     ],
+     "roles": [
+      {
+       "date": "Feb.&nbsp;2022 – Jul.&nbsp;2022",
+       "title": "Research Engineer",
+       "bullets": [
+        "Curated a high-quality 1M-sample training dataset for car-price estimation using Spark: Detected outliers and interpolated missing entries.",
+        "Designed an evaluation metric for car-price interval prediction that incorporates interval length as a proxy for uncertainty, and normalizes it by the real-world standard deviation of comparable data.",
+        "Reduced car-price estimation uncertainty by 40%: Replaced the legacy over-complicated XGBoost model with an ensemble of quantile regressions using Scikit-learn.",
+        "Improved car-price estimation MAPE by 4%: Identified and leveraged previously unrecognized and unaccounted categorical features using Gaussian Mixture Models and goodness-of-fit tests."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "entry",
+     "kind": "experience",
+     "org": "Ashianeh-Sepehr-Kherad",
+     "lines": [
+      "Real Estate Machine Learning Group"
+     ],
+     "roles": [
+      {
+       "date": "Jun.&nbsp;2019 – Jun.&nbsp;2021",
+       "title": "Research Intern <span class=\"nf\">(part time)</span>",
+       "bullets": [
+        "Built a 700K-sample dataset for address geolocation: Weighted data to match the population distribution.",
+        "81% accuracy in geolocating addresses from informal text under data scarcity by developing a hierarchical kernel-based Bayesian model.",
+        "82x speed-up and +4% accuracy for address geolocation: Developed an unsupervised statistical preprocessing model, reducing token variety from 85K to 11K.",
+        "Engineered 400+ features for real-estate price estimation: Developed a feature-extraction pipeline using OpenStreetMap, PostgreSQL, QGIS, Python, and C++; Curated a 1M-sample training dataset accordingly."
+       ]
+      }
+     ]
+    }
+   ],
+   "subsections": []
+  },
+  {
+   "title": "Publications",
+   "id": "publications",
+   "blocks": [
+    {
+     "type": "publication",
+     "authors": "<strong>Behzad Shayegh</strong>, Mohamed Osama Ahmed, Fred Tung, Leo Feng",
+     "year": "2026",
+     "title": "Can LLMs take retrieved information with a grain of salt?",
+     "url": null,
+     "prefix": "In",
+     "venue": "Advances in Neural Information Processing Systems",
+     "acronym": "NeurIPS",
+     "notes": [],
+     "abstract": null,
+     "abstract_host": null
+    },
+    {
+     "type": "publication",
+     "authors": "<strong>Behzad Shayegh</strong>, Niloofar Kazemi",
+     "year": "2026",
+     "title": "Mind which bird you favour: Parameterizing adequacy–fluency balance in meta-evaluation of machine translation",
+     "url": null,
+     "prefix": "In",
+     "venue": "Proceedings of the Conference on Machine Translation",
+     "acronym": "WMT",
+     "notes": [
+      "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5zM16 8 2 22M17.5 15H9\"/></svg> Independent research"
+     ],
+     "abstract": null,
+     "abstract_host": null
+    },
+    {
+     "type": "publication",
+     "authors": "<strong>Behzad Shayegh</strong>, Jan-Thorsten Peter, David Vilar, Tobias Domhan, Juraj Juraska, Markus Freitag, Lili Mou",
+     "year": "2025",
+     "title": "Feeding two birds or favoring one? Adequacy–fluency tradeoffs in evaluation and meta-evaluation of machine translation",
+     "url": "https://aclanthology.org/2025.wmt-1.16/",
+     "prefix": "In",
+     "venue": "Proceedings of the Conference on Machine Translation",
+     "acronym": "WMT",
+     "notes": [],
+     "abstract": "We investigate the tradeoff between adequacy and fluency in machine translation. We show the severity of this tradeoff at the evaluation level and analyze where popular metrics fall within it. Essentially, current metrics generally lean toward adequacy, meaning that their scores correlate more strongly with the adequacy of translations than with fluency. More importantly, we find that this tradeoff also persists at the meta-evaluation level, and that the standard WMT meta-evaluation favors adequacy-oriented metrics over fluency-oriented ones. We show that this bias is partially attributed to the composition of the systems included in the meta-evaluation datasets. To control this bias, we propose a method that synthesizes translation systems in meta-evaluation. Our findings highlight the importance of understanding this tradeoff in meta-evaluation and its impact on metric rankings.",
+     "abstract_host": "aclanthology.org"
+    },
+    {
+     "type": "publication",
+     "authors": "Yuqiao Wen, <strong>Behzad Shayegh</strong>, Chenyang Huang, Yanshuai Cao, Lili Mou",
+     "year": "2025",
+     "title": "EBBS: An ensemble with bi-level beam search for zero-shot machine translation",
+     "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34737",
+     "prefix": "In",
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "acronym": "AAAI",
+     "notes": [
+      "Also presented at <em>NGSM@ICML’24</em> and <em>SPIGM@ICML’24</em> workshops."
+     ],
+     "abstract": "The ability of zero-shot translation emerges when we train a multilingual model with certain translation directions; the model can then directly translate in unseen directions. Alternatively, zero-shot translation can be accomplished by pivoting through a third language (e.g., English). In our work, we observe that both direct and pivot translations are noisy and achieve less satisfactory performance. We propose EBBS, an ensemble method with a novel bi-level beam search algorithm, where each ensemble component explores its own prediction step by step at the lower level but all components are synchronized by a \"soft voting\" mechanism at the upper level. Results on two popular multilingual translation datasets show that EBBS consistently outperforms direct and pivot translations, as well as existing ensemble techniques. Further, we can distill the ensemble's knowledge back to the multilingual model to improve inference efficiency; profoundly, our EBBS-distilled model can even outperform EBBS as it learns from the ensemble knowledge.",
+     "abstract_host": "ojs.aaai.org"
+    },
+    {
+     "type": "publication",
+     "authors": "<strong>Behzad Shayegh</strong>, Hobie H.-B. Li, Xiaodan Zhu, Jackie C.K. Cheung, Lili Mou",
+     "year": "2025",
+     "title": "Error diversity matters: An error-resistant ensemble method for unsupervised dependency parsing",
+     "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34697",
+     "prefix": "In",
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "acronym": "AAAI",
+     "notes": [],
+     "abstract": "We address unsupervised dependency parsing by building an ensemble of diverse existing models through post hoc aggregation of their output dependency parse structures. We observe that these ensembles often suffer from low robustness against weak ensemble components due to error accumulation. To tackle this problem, we propose an efficient ensemble-selection approach that considers error diversity and avoids error accumulation. Results demonstrate that our approach outperforms each individual model as well as previous ensemble techniques. Additionally, our experiments show that the proposed ensemble-selection method significantly enhances the performance and robustness of our ensemble, surpassing previously proposed strategies, which have not accounted for error diversity.",
+     "abstract_host": "ojs.aaai.org"
+    },
+    {
+     "type": "publication",
+     "authors": "<strong>Behzad Shayegh</strong>, Yuqiao Wen, Lili Mou",
+     "year": "2024",
+     "title": "Tree-averaging algorithms for ensemble-based unsupervised discontinuous constituency parsing",
+     "url": "https://aclanthology.org/2024.acl-long.808/",
+     "prefix": "In",
+     "venue": "Proceedings of the Annual Meeting of the Association for Computational Linguistics",
+     "acronym": "ACL",
+     "notes": [
+      "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3ZM19 10v2a7 7 0 0 1-14 0v-2M12 19v3\"/></svg> Oral (top 2.5% of submissions)",
+      "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Won ACL area chair’s award, recognizing the best paper in its track."
+     ],
+     "abstract": "We address unsupervised discontinuous constituency parsing, where we observe a high variance in the performance of the only previous model in the literature. We propose to build an ensemble of different runs of the existing discontinuous parser by averaging the predicted trees, to stabilize and boost performance. To begin with, we provide comprehensive computational complexity analysis (in terms of P and NP-complete) for tree averaging under different setups of binarity and continuity. We then develop an efficient exact algorithm to tackle the task, which runs in a reasonable time for all samples in our experiments. Results on three datasets show our method outperforms all baselines in all metrics; we also provide in-depth analyses of our approach.",
+     "abstract_host": "aclanthology.org"
+    },
+    {
+     "type": "publication",
+     "authors": "<strong>Behzad Shayegh</strong>, Yanshuai Cao, Xiaodan Zhu, Jackie C.K. Cheung, Lili Mou",
+     "year": "2024",
+     "title": "Ensemble distillation for unsupervised constituency parsing",
+     "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/8c1e94343487f499b78cb4c884c1ffb7-Abstract-Conference.html",
+     "prefix": "In",
+     "venue": "International Conference on Learning Representations",
+     "acronym": "ICLR",
+     "notes": [],
+     "abstract": "We investigate the unsupervised constituency parsing task, which organizes words and phrases of a sentence into a hierarchical structure without using linguistically annotated data. We observe that existing unsupervised parsers capture different aspects of parsing structures, which can be leveraged to enhance unsupervised parsing performance.To this end, we propose a notion of \"tree averaging,\" based on which we further propose a novel ensemble method for unsupervised parsing.To improve inference efficiency, we further distill the ensemble knowledge into a student model; such an ensemble-then-distill process is an effective approach to mitigate the over-smoothing problem existing in common multi-teacher distilling methods.Experiments show that our method surpasses all previous approaches, consistently demonstrating its effectiveness and robustness across various runs, with different ensemble components, and under domain-shift conditions.",
+     "abstract_host": "proceedings.iclr.cc"
+    }
+   ],
+   "subsections": []
+  },
+  {
+   "title": "Education",
+   "id": "education",
+   "blocks": [
+    {
+     "type": "entry",
+     "kind": "education",
+     "org": "University of Alberta",
+     "lines": [
+      "Major in computer science (<span class=\"gpa\">GPA <b>4.0</b>/<span>4.0</span></span>)",
+      "Thesis (2025). <a href=\"https://ualberta.scholaris.ca/items/ef4e1716-5ea5-4656-9559-9408bb4eb502\" target=\"_blank\" rel=\"noopener\">Ensemble methods for unsupervised syntactic parsing</a>. <br><svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Runner-up for the departmental best MSc thesis award."
+     ],
+     "roles": [
+      {
+       "date": "2022 – 2025",
+       "title": "M.Sc.",
+       "bullets": []
+      }
+     ]
+    },
+    {
+     "type": "entry",
+     "kind": "education",
+     "org": "University of Tehran",
+     "lines": [
+      "Major in computer engineering (<span class=\"gpa\">GPA <b>18.2</b>/<span>20</span></span>) and minor in computer science (<span class=\"gpa\">GPA <b>17.2</b>/<span>20</span></span>)",
+      "Thesis (2021). <a href=\"https://TheShayegh.github.io/PAT/\" target=\"_blank\" rel=\"noopener\">Geolocating addresses from informal Persian texts using hierarchical kernel-based Bayesian models</a>."
+     ],
+     "roles": [
+      {
+       "date": "2017 – 2022",
+       "title": "B.Sc.",
+       "bullets": []
+      }
+     ]
+    }
+   ],
+   "subsections": []
+  },
+  {
+   "title": "Service and Outreach",
+   "id": "service-and-outreach",
+   "blocks": [],
+   "subsections": [
+    {
+     "title": "Peer Review",
+     "id": "peer-review",
+     "blocks": [
+      {
+       "type": "bullets",
+       "items": [
+        "<strong>Reviewer</strong> for the 40th Annual Conference on Neural Information Processing Systems (NeurIPS), 2026.",
+        "<strong>Emergency reviewer</strong> for ACL Rolling Review (ARR), February cycle, 2025.",
+        "<strong>Reviewer</strong> for the 13th International Conference on Learning Representations (ICLR), 2025."
+       ]
+      }
+     ],
+     "subsections": []
+    },
+    {
+     "title": "Open Source",
+     "id": "open-source",
+     "blocks": [
+      {
+       "type": "bullets",
+       "items": [
+        "<a href=\"https://github.com/cnrl/Spiral\" target=\"_blank\" rel=\"noopener\">Spiral: A PyTorch-based tool to simulate spiking neural networks</a>",
+        "<a href=\"https://github.com/OpenBookshelf/PersianTextbookTemplate\" target=\"_blank\" rel=\"noopener\">Persian math textbook LaTeX template</a>"
+       ]
+      }
+     ],
+     "subsections": []
+    }
+   ]
+  },
+  {
+   "title": "Teaching Experience",
+   "id": "teaching-experience",
+   "blocks": [],
+   "subsections": [
+    {
+     "title": "Lectures",
+     "id": "lectures",
+     "blocks": [
+      {
+       "type": "teaching",
+       "role": "Guest lecturer",
+       "org": "University of Alberta",
+       "intro": "",
+       "items": [
+        "for “max a posteriori estimation”&nbsp;<span class=\"tdate\">February&nbsp;2025</span>, “maximum likelihood estimation”&nbsp;<span class=\"tdate\">September&nbsp;2024</span>, and “gradient descent”&nbsp;<span class=\"tdate\">September&nbsp;2024</span> in machine learning"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "Module architect <span class=\"nf\">and</span> guest lecturer",
+       "org": "University of Tehran",
+       "intro": "",
+       "items": [
+        "<strong>Module architect</strong> for “how to write proofs” in discrete mathematics&nbsp;<span class=\"tdate\">February&nbsp;2020</span>",
+        "<strong>Guest lecturer</strong> for “invariance principle” in discrete mathematics&nbsp;<span class=\"tdate\">September.&nbsp;2019</span>"
+       ]
+      }
+     ],
+     "subsections": []
+    },
+    {
+     "title": "Supervision and Mentorship",
+     "id": "supervision-and-mentorship",
+     "blocks": [
+      {
+       "type": "teaching",
+       "role": "Research mentor",
+       "org": "NLP Group, University of Alberta",
+       "intro": "",
+       "items": [
+        "Mentored senior bachelor Hobie H.-B. Li in his first research project within the group, resulting in collaborative work published at AAAI&nbsp;<span class=\"tdate\">Fall&nbsp;2023</span>"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "Research mentor",
+       "org": "Computing Research Association (CRA)",
+       "intro": "",
+       "items": [
+        "for undergraduate research to Ph.D. (UR2PhD) program&nbsp;<span class=\"tdate\">Fall&nbsp;2023</span>"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "Mentor",
+       "org": "ACM Student Chapter, University of Tehran",
+       "intro": "",
+       "items": [
+        "for summer of code: intro to artificial intelligence&nbsp;<span class=\"tdate\">Summer&nbsp;2019</span>"
+       ]
+      }
+     ],
+     "subsections": []
+    },
+    {
+     "title": "Teaching Assistantship and Support",
+     "id": "teaching-assistantship-and-support",
+     "blocks": [
+      {
+       "type": "teaching",
+       "role": "TA <span class=\"nf\">and</span> volunteer TA",
+       "org": "University of Alberta",
+       "intro": "",
+       "items": [
+        "<strong>TA</strong> for machine learning <span class=\"tdate\">Winter 2024</span> &amp; intro to the foundations of computation II <span class=\"tdate\">Fall 2023 and Winter 2022</span>",
+        "<strong>Volunteer TA</strong> for machine learning <span class=\"tdate\">Winter 2025</span> &amp; high school internship program <span class=\"tdate\">Summer 2023</span>"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "Content developer",
+       "org": "Alberta Machine Intelligence Institute (AMII)",
+       "intro": "",
+       "items": [
+        "for “explainability and transparency in machine learning” in applied ethics in artificial intelligence&nbsp;<span class=\"tdate\">Summer&nbsp;2023</span>"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "TAs’ supervisor, head TA, volunteer TA, <span class=\"nf\">and</span> content developer",
+       "org": "University of Tehran",
+       "intro": "",
+       "items": [
+        "<strong>TAs’ supervisor</strong> for discrete mathematics <span class=\"tdate\">Winter 2021</span>",
+        "<strong>Head TA</strong> for probability and statistics <span class=\"tdate\">Fall 2021</span> &amp; discrete mathematics <span class=\"tdate\">Winter and Fall 2020</span>",
+        "<strong>Volunteer TA</strong> for natural language processing&nbsp;<span class=\"tdate\">Winter&nbsp;and&nbsp;Fall&nbsp;2021</span>, artificial intelligence&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>, discrete mathematics&nbsp;<span class=\"tdate\">Winter and Fall 2019</span>, probability and statistics&nbsp;<span class=\"tdate\">Fall&nbsp;2019</span>, data structures and algorithms&nbsp;<span class=\"tdate\">Fall&nbsp;2019</span>, intro to computing systems and programming&nbsp;<span class=\"tdate\">Fall&nbsp;2019</span>, and computer programming&nbsp;<span class=\"tdate\">Winter and Fall 2018</span>",
+        "<strong>Content developer</strong> for introduction to discrete mathematics, common mistakes in discrete mathematics, applied probability and statistics in R, and basic C++ exercises"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "TA <span class=\"nf\">and</span> content developer",
+       "org": "data science workshops over Tehran",
+       "intro": "",
+       "items": [
+        "<strong>TA</strong> in Tehran Polytechnic&nbsp;<span class=\"tdate\">Spring&nbsp;2020</span>, Khatam University&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>, and University of Tehran&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>",
+        "<strong>Content developer</strong> for python exercises"
+       ]
+      }
+     ],
+     "subsections": []
+    }
+   ]
+  }
+ ],
+ "email": "the.shayegh@gmail.com"
+}
