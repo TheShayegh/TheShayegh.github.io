@@ -74,18 +74,22 @@
         transform: translate(-50%, -50%) rotateX(90deg);
         transform-style: preserve-3d;
         cursor: pointer;
-        opacity: 0; /* fades in once the covers have formed the circle */
         pointer-events: none;
-        transition: opacity 1s;
       }
       #coin.ready {
-        opacity: 1;
         pointer-events: auto;
       }
       #coin div {
         position: absolute;
         inset: 0;
         border-radius: 50%;
+        /* fades in once the covers have formed the circle; the faces fade
+           one by one because opacity on #coin itself would flatten its 3D */
+        opacity: 0;
+        transition: opacity 2s;
+      }
+      #coin.ready div {
+        opacity: 1;
       }
       #coin .side {
         background: #8d8d97;
