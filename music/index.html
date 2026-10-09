@@ -86,15 +86,20 @@
       #drag-container .back {
         position: absolute;
       }
+      /* clear, frosted glass: no tint of its own, it shows whatever is behind it */
       #drag-container .edge {
-        background: rgba(120, 165, 175, 0.9);
+        background: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(9px);
+        backdrop-filter: blur(9px);
       }
       #drag-container .back {
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        background: rgba(170, 225, 235, 0.22);
+        background: rgba(255, 255, 255, 0.14);
+        -webkit-backdrop-filter: blur(2.2px);
+        backdrop-filter: blur(2.2px);
       }
 
       #drag-container img:hover,
