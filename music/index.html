@@ -57,6 +57,16 @@
         user-select: none;
       }
 
+      /* thickness behind each cover: thin copper plates, half the coin's */
+      #drag-container .slab {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #7a431f;
+      }
+
       #drag-container img:hover,
       #drag-container img.active {
         box-shadow: 0 0 15px #fffd;
@@ -92,22 +102,26 @@
         opacity: 1;
       }
       #coin .side {
-        background: #9c7a14;
+        background: #7a431f;
       }
+      /* worn copper: logo, scratches, tarnish blotches, fine grain, then the base */
       #coin .top {
+        --base: radial-gradient(circle at 35% 30%, #f7bd94, #c97b45 55%, #8e4d26);
         background: url("../img/favicon.png") center / 58% no-repeat,
-          radial-gradient(circle at 35% 30%, #fff1b0, #f2c230 55%, #b98a12);
-        box-shadow: inset 0 0 0 4px #d9a520, inset 0 0 0 5px #ffe58ab0,
-          inset 0 0 9px #0004;
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cline x1='34.1' y1='18.6' x2='31.4' y2='23.9' stroke='%234a2410' stroke-opacity='0.28' stroke-width='0.51'/%3E%3Cline x1='86.9' y1='24.3' x2='108.1' y2='30.2' stroke='%23ffe2c8' stroke-opacity='0.28' stroke-width='0.44'/%3E%3Cline x1='79.4' y1='16.1' x2='105.4' y2='38.1' stroke='%234a2410' stroke-opacity='0.45' stroke-width='0.43'/%3E%3Cline x1='92.9' y1='9.2' x2='80.2' y2='15.2' stroke='%23ffe2c8' stroke-opacity='0.44' stroke-width='0.51'/%3E%3Cline x1='55.4' y1='66.4' x2='87.7' y2='77.2' stroke='%234a2410' stroke-opacity='0.38' stroke-width='0.50'/%3E%3Cline x1='10.7' y1='10.4' x2='37.8' y2='30.9' stroke='%23ffe2c8' stroke-opacity='0.36' stroke-width='0.51'/%3E%3Cline x1='45.8' y1='32.0' x2='38.6' y2='37.4' stroke='%23ffe2c8' stroke-opacity='0.36' stroke-width='0.47'/%3E%3Cline x1='35.9' y1='45.4' x2='33.9' y2='51.0' stroke='%23ffe2c8' stroke-opacity='0.40' stroke-width='0.59'/%3E%3Cline x1='18.7' y1='49.0' x2='24.6' y2='49.7' stroke='%234a2410' stroke-opacity='0.45' stroke-width='0.64'/%3E%3Cline x1='33.2' y1='67.6' x2='23.3' y2='100.1' stroke='%234a2410' stroke-opacity='0.27' stroke-width='0.29'/%3E%3Cline x1='29.3' y1='67.7' x2='43.0' y2='70.6' stroke='%234a2410' stroke-opacity='0.60' stroke-width='0.62'/%3E%3Cline x1='30.6' y1='39.7' x2='27.6' y2='44.9' stroke='%234a2410' stroke-opacity='0.37' stroke-width='0.52'/%3E%3Cline x1='49.4' y1='24.6' x2='55.0' y2='31.7' stroke='%23ffe2c8' stroke-opacity='0.57' stroke-width='0.47'/%3E%3Cline x1='20.0' y1='41.1' x2='25.8' y2='48.0' stroke='%234a2410' stroke-opacity='0.55' stroke-width='0.38'/%3E%3Cline x1='42.4' y1='37.3' x2='34.0' y2='40.5' stroke='%23ffe2c8' stroke-opacity='0.31' stroke-width='0.35'/%3E%3Cline x1='26.0' y1='48.6' x2='22.1' y2='62.1' stroke='%23ffe2c8' stroke-opacity='0.30' stroke-width='0.49'/%3E%3Cline x1='59.9' y1='33.7' x2='91.3' y2='46.7' stroke='%234a2410' stroke-opacity='0.48' stroke-width='0.58'/%3E%3Cline x1='46.1' y1='83.4' x2='12.5' y2='88.5' stroke='%23ffe2c8' stroke-opacity='0.39' stroke-width='0.30'/%3E%3Cline x1='62.1' y1='10.6' x2='70.9' y2='12.5' stroke='%23ffe2c8' stroke-opacity='0.29' stroke-width='0.52'/%3E%3Cline x1='14.2' y1='56.0' x2='12.6' y2='69.9' stroke='%234a2410' stroke-opacity='0.27' stroke-width='0.34'/%3E%3Cline x1='38.9' y1='62.1' x2='5.2' y2='66.8' stroke='%23ffe2c8' stroke-opacity='0.29' stroke-width='0.63'/%3E%3Cline x1='94.4' y1='46.9' x2='94.7' y2='52.9' stroke='%23ffe2c8' stroke-opacity='0.51' stroke-width='0.58'/%3E%3Cline x1='48.1' y1='67.3' x2='47.6' y2='76.3' stroke='%234a2410' stroke-opacity='0.43' stroke-width='0.32'/%3E%3Cline x1='53.9' y1='7.4' x2='53.4' y2='13.4' stroke='%234a2410' stroke-opacity='0.34' stroke-width='0.42'/%3E%3Cline x1='20.0' y1='74.5' x2='16.6' y2='108.3' stroke='%23ffe2c8' stroke-opacity='0.33' stroke-width='0.62'/%3E%3Cline x1='93.6' y1='81.7' x2='75.6' y2='94.3' stroke='%234a2410' stroke-opacity='0.33' stroke-width='0.48'/%3E%3C/svg%3E") center / 100% 100%,
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.045' numOctaves='3' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 .3  0 0 0 0 .13  0 0 0 0 .05  1.8 0 0 0 -.75'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23t%29'/%3E%3C/svg%3E") center / 100% 100%,
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .25  0 0 0 0 .1  0 0 0 0 .03  1.6 0 0 0 -.62'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23g%29'/%3E%3C/svg%3E") center / 60px 60px,
+          var(--base);
+        box-shadow: inset 0 0 0 4px #b86a38, inset 0 0 0 5px #f6b98eb0,
+          inset 0 0 9px #0005;
       }
       #coin:hover .top,
       #coin.active .top {
-        background: url("../img/favicon.png") center / 58% no-repeat,
-          radial-gradient(circle at 35% 30%, #fff6c8, #ffd84a 55%, #cc9a1a);
+        --base: radial-gradient(circle at 35% 30%, #ffd2b0, #dc9157 55%, #a85d30);
       }
       #coin .glow {
         inset: -9px;
-        background: radial-gradient(circle, #ffd04a44, transparent 70%);
+        background: radial-gradient(circle, #e0804044, transparent 70%);
         pointer-events: none;
       }
 
@@ -552,9 +566,29 @@
       });
       var aEle = Array.prototype.slice.call(ospin.getElementsByTagName("img"));
 
+      // Thickness of the covers: plates stacked right behind each one
+      var COIN_THICKNESS = 5;
+      var CARD_THICKNESS = COIN_THICKNESS / 2;
+      var aSlab = [];
+      aEle.forEach(function (img) {
+        for (var d = 1; d < CARD_THICKNESS; d++) aSlab.push(makeSlab(img, d));
+        // the rearmost plate carries the cover too, so the far side of the circle
+        // still shows the (mirrored) artwork instead of a blank back
+        var back = makeSlab(img, CARD_THICKNESS);
+        back.style.background = 'url("' + img.src + '") center / cover';
+        aSlab.push(back);
+      });
+      function makeSlab(img, depth) {
+        var slab = document.createElement("div");
+        slab.className = "slab";
+        slab.cover = img;
+        slab.depth = depth;
+        ospin.insertBefore(slab, img);
+        return slab;
+      }
+
       // The coin: a stack of discs gives it thickness (top face last, with the logo)
       var coin = document.getElementById("coin");
-      var COIN_THICKNESS = 5;
       var glow = document.createElement("div");
       glow.className = "glow";
       glow.style.transform = "translateZ(-" + (COIN_THICKNESS + 1) + "px)";
@@ -593,6 +627,12 @@
           aEle[i].style.transitionDelay =
             delayTime || (aEle.length - i) / 4 + "s";
         }
+        aSlab.forEach(function (slab) {
+          var img = slab.cover;
+          slab.style.transform = img.style.transform + " translateZ(-" + slab.depth + "px)";
+          slab.style.transition = img.style.transition;
+          slab.style.transitionDelay = img.style.transitionDelay;
+        });
         // the last cover starts after aEle.length / 4 s and moves for 1 s
         setTimeout(function () {
           coin.classList.add("ready");
