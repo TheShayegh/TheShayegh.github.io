@@ -61,17 +61,30 @@
         user-select: none;
       }
 
-      /* thickness behind each cover: thin glass plates, as thick as the coin. The
-         artwork is the printed front face (the img); from inside the circle it
-         is seen through the plates, which frost it only very slightly */
+      /* thickness behind each cover: a solid glass slab. The artwork is the
+         printed front face (the img); the four edges are real faces, and from
+         inside the circle the artwork is seen through a very light frosting */
       #drag-container .slab {
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        background: rgba(170, 225, 235, 0.07);
-        box-shadow: inset 0 0 0 1px rgba(90, 130, 140, 0.5);
+        transform-style: preserve-3d;
+      }
+      #drag-container .edge,
+      #drag-container .back {
+        position: absolute;
+      }
+      #drag-container .edge {
+        background: rgba(120, 165, 175, 0.9);
+      }
+      #drag-container .back {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(170, 225, 235, 0.22);
       }
 
       #drag-container img:hover,
@@ -572,22 +585,39 @@
       });
       var aEle = Array.prototype.slice.call(ospin.getElementsByTagName("img"));
 
-      // Thickness of the covers: plates stacked right behind each one
+      // Thickness of the covers: each one gets a back and four edges, so it is
+      // a real slab (same thickness as the coin) rather than a stack of plates
       var COIN_THICKNESS = 5;
-      var CARD_THICKNESS = COIN_THICKNESS;
+      var CARD_THICKNESS = COIN_THICKNESS * 0.75 * 0.75;
       var aSlab = [];
       aEle.forEach(function (img) {
-        for (var d = 1; d < CARD_THICKNESS; d++) aSlab.push(makeSlab(img, d));
-        aSlab.push(makeSlab(img, CARD_THICKNESS));
-      });
-      function makeSlab(img, depth) {
+        // one group per cover; it gets the cover's transform, the faces sit inside
         var slab = document.createElement("div");
         slab.className = "slab";
         slab.cover = img;
-        slab.depth = depth;
         ospin.insertBefore(slab, img);
-        return slab;
-      }
+        aSlab.push(slab);
+        var T = CARD_THICKNESS;
+        var W = imgWidth;
+        var H = imgHeight;
+        // [class, left, top, width, height, transform in the cover's own frame]
+        [
+          ["back", 0, 0, W, H, "translateZ(-" + T + "px)"],
+          ["edge", -T / 2, 0, T, H, "translateZ(-" + T / 2 + "px) rotateY(90deg)"],
+          ["edge", W - T / 2, 0, T, H, "translateZ(-" + T / 2 + "px) rotateY(90deg)"],
+          ["edge", 0, -T / 2, W, T, "translateZ(-" + T / 2 + "px) rotateX(90deg)"],
+          ["edge", 0, H - T / 2, W, T, "translateZ(-" + T / 2 + "px) rotateX(90deg)"],
+        ].forEach(function (f) {
+          var face = document.createElement("div");
+          face.className = f[0];
+          face.style.left = f[1] + "px";
+          face.style.top = f[2] + "px";
+          face.style.width = f[3] + "px";
+          face.style.height = f[4] + "px";
+          face.style.transform = f[5];
+          slab.appendChild(face);
+        });
+      });
 
       // The coin: a stack of discs gives it thickness (top face last, with the logo)
       var coin = document.getElementById("coin");
@@ -631,7 +661,7 @@
         }
         aSlab.forEach(function (slab) {
           var img = slab.cover;
-          slab.style.transform = img.style.transform + " translateZ(-" + slab.depth + "px)";
+          slab.style.transform = img.style.transform;
           slab.style.transition = img.style.transition;
           slab.style.transitionDelay = img.style.transitionDelay;
         });
