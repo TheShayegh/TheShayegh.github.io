@@ -266,7 +266,7 @@
      "org": "University of Alberta",
      "lines": [
       "Major in computer science (<span class=\"gpa\">GPA <b>4.0</b>/<span>4.0</span></span>)",
-      "Thesis (2025). <a href=\"https://ualberta.scholaris.ca/items/ef4e1716-5ea5-4656-9559-9408bb4eb502\" target=\"_blank\" rel=\"noopener\">Ensemble methods for unsupervised syntactic parsing</a>. <br><svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Runner-up for the departmental best MSc thesis award."
+      "Thesis (2025). Ensemble methods for unsupervised syntactic parsing<span class=\"ref\" data-url=\"https://ualberta.scholaris.ca/items/ef4e1716-5ea5-4656-9559-9408bb4eb502\"></span>. <br><svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Runner-up for the departmental best MSc thesis award."
      ],
      "roles": [
       {
@@ -282,7 +282,7 @@
      "org": "University of Tehran",
      "lines": [
       "Major in computer engineering (<span class=\"gpa\">GPA <b>18.2</b>/<span>20</span></span>) and minor in computer science (<span class=\"gpa\">GPA <b>17.2</b>/<span>20</span></span>)",
-      "Thesis (2021). <a href=\"https://TheShayegh.github.io/PAT/\" target=\"_blank\" rel=\"noopener\">Geolocating addresses from informal Persian texts using hierarchical kernel-based Bayesian models</a>."
+      "Thesis (2021). Geolocating addresses from informal Persian texts using hierarchical kernel-based Bayesian models<span class=\"ref\" data-url=\"https://TheShayegh.github.io/PAT/\"></span>."
      ],
      "roles": [
       {
@@ -322,8 +322,8 @@
       {
        "type": "bullets",
        "items": [
-        "<a href=\"https://github.com/cnrl/Spiral\" target=\"_blank\" rel=\"noopener\">Spiral: A PyTorch-based tool to simulate spiking neural networks</a>",
-        "<a href=\"https://github.com/OpenBookshelf/PersianTextbookTemplate\" target=\"_blank\" rel=\"noopener\">Persian math textbook LaTeX template</a>"
+        "Spiral: A PyTorch-based tool to simulate spiking neural networks<span class=\"ref\" data-url=\"https://github.com/cnrl/Spiral\"></span>",
+        "Persian math textbook LaTeX template<span class=\"ref\" data-url=\"https://github.com/OpenBookshelf/PersianTextbookTemplate\"></span>"
        ]
       }
      ],
