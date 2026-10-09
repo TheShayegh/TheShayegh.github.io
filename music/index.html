@@ -55,14 +55,13 @@
         object-fit: cover;
         cursor: pointer;
         pointer-events: auto;
-        box-shadow: 0 0 8px #fff;
         -webkit-box-reflect: below 10px
           linear-gradient(transparent, transparent, #0005);
         -webkit-user-drag: none;
         user-select: none;
       }
 
-      /* thickness behind each cover: thin glass plates, half the coin's. The
+      /* thickness behind each cover: thin glass plates, as thick as the coin. The
          artwork is the printed front face (the img); from inside the circle it
          is seen through the plates, which frost it only very slightly */
       #drag-container .slab {
@@ -72,13 +71,11 @@
         width: 100%;
         height: 100%;
         background: rgba(170, 225, 235, 0.07);
-        box-shadow: inset 0 0 0 1px rgba(225, 252, 255, 0.55),
-          inset 0 0 5px rgba(120, 200, 215, 0.5);
+        box-shadow: inset 0 0 0 1px rgba(90, 130, 140, 0.5);
       }
 
       #drag-container img:hover,
       #drag-container img.active {
-        box-shadow: 0 0 15px #fffd;
         -webkit-box-reflect: below 10px
           linear-gradient(transparent, transparent, #0007);
       }
@@ -577,7 +574,7 @@
 
       // Thickness of the covers: plates stacked right behind each one
       var COIN_THICKNESS = 5;
-      var CARD_THICKNESS = COIN_THICKNESS / 2;
+      var CARD_THICKNESS = COIN_THICKNESS;
       var aSlab = [];
       aEle.forEach(function (img) {
         for (var d = 1; d < CARD_THICKNESS; d++) aSlab.push(makeSlab(img, d));
