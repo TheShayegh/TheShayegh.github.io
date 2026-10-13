@@ -166,7 +166,8 @@
      "acronym": "NeurIPS",
      "notes": [],
      "abstract": null,
-     "abstract_host": null
+     "abstract_host": null,
+     "citations": 0
     },
     {
      "type": "publication",
@@ -181,7 +182,8 @@
       "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5zM16 8 2 22M17.5 15H9\"/></svg> Independent research"
      ],
      "abstract": null,
-     "abstract_host": null
+     "abstract_host": null,
+     "citations": 0
     },
     {
      "type": "publication",
@@ -194,7 +196,8 @@
      "acronym": "WMT",
      "notes": [],
      "abstract": "We investigate the tradeoff between adequacy and fluency in machine translation. We show the severity of this tradeoff at the evaluation level and analyze where popular metrics fall within it. Essentially, current metrics generally lean toward adequacy, meaning that their scores correlate more strongly with the adequacy of translations than with fluency. More importantly, we find that this tradeoff also persists at the meta-evaluation level, and that the standard WMT meta-evaluation favors adequacy-oriented metrics over fluency-oriented ones. We show that this bias is partially attributed to the composition of the systems included in the meta-evaluation datasets. To control this bias, we propose a method that synthesizes translation systems in meta-evaluation. Our findings highlight the importance of understanding this tradeoff in meta-evaluation and its impact on metric rankings.",
-     "abstract_host": "aclanthology.org"
+     "abstract_host": "aclanthology.org",
+     "citations": 5
     },
     {
      "type": "publication",
@@ -209,7 +212,8 @@
       "Also presented at <em>NGSM@ICML’24</em> and <em>SPIGM@ICML’24</em> workshops."
      ],
      "abstract": "The ability of zero-shot translation emerges when we train a multilingual model with certain translation directions; the model can then directly translate in unseen directions. Alternatively, zero-shot translation can be accomplished by pivoting through a third language (e.g., English). In our work, we observe that both direct and pivot translations are noisy and achieve less satisfactory performance. We propose EBBS, an ensemble method with a novel bi-level beam search algorithm, where each ensemble component explores its own prediction step by step at the lower level but all components are synchronized by a \"soft voting\" mechanism at the upper level. Results on two popular multilingual translation datasets show that EBBS consistently outperforms direct and pivot translations, as well as existing ensemble techniques. Further, we can distill the ensemble's knowledge back to the multilingual model to improve inference efficiency; profoundly, our EBBS-distilled model can even outperform EBBS as it learns from the ensemble knowledge.",
-     "abstract_host": "ojs.aaai.org"
+     "abstract_host": "ojs.aaai.org",
+     "citations": 13
     },
     {
      "type": "publication",
@@ -222,7 +226,8 @@
      "acronym": "AAAI",
      "notes": [],
      "abstract": "We address unsupervised dependency parsing by building an ensemble of diverse existing models through post hoc aggregation of their output dependency parse structures. We observe that these ensembles often suffer from low robustness against weak ensemble components due to error accumulation. To tackle this problem, we propose an efficient ensemble-selection approach that considers error diversity and avoids error accumulation. Results demonstrate that our approach outperforms each individual model as well as previous ensemble techniques. Additionally, our experiments show that the proposed ensemble-selection method significantly enhances the performance and robustness of our ensemble, surpassing previously proposed strategies, which have not accounted for error diversity.",
-     "abstract_host": "ojs.aaai.org"
+     "abstract_host": "ojs.aaai.org",
+     "citations": 4
     },
     {
      "type": "publication",
@@ -238,7 +243,8 @@
       "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Won ACL area chair’s award, recognizing the best paper in its track."
      ],
      "abstract": "We address unsupervised discontinuous constituency parsing, where we observe a high variance in the performance of the only previous model in the literature. We propose to build an ensemble of different runs of the existing discontinuous parser by averaging the predicted trees, to stabilize and boost performance. To begin with, we provide comprehensive computational complexity analysis (in terms of P and NP-complete) for tree averaging under different setups of binarity and continuity. We then develop an efficient exact algorithm to tackle the task, which runs in a reasonable time for all samples in our experiments. Results on three datasets show our method outperforms all baselines in all metrics; we also provide in-depth analyses of our approach.",
-     "abstract_host": "aclanthology.org"
+     "abstract_host": "aclanthology.org",
+     "citations": 8
     },
     {
      "type": "publication",
@@ -251,7 +257,8 @@
      "acronym": "ICLR",
      "notes": [],
      "abstract": "We investigate the unsupervised constituency parsing task, which organizes words and phrases of a sentence into a hierarchical structure without using linguistically annotated data. We observe that existing unsupervised parsers capture different aspects of parsing structures, which can be leveraged to enhance unsupervised parsing performance.To this end, we propose a notion of \"tree averaging,\" based on which we further propose a novel ensemble method for unsupervised parsing.To improve inference efficiency, we further distill the ensemble knowledge into a student model; such an ensemble-then-distill process is an effective approach to mitigate the over-smoothing problem existing in common multi-teacher distilling methods.Experiments show that our method surpasses all previous approaches, consistently demonstrating its effectiveness and robustness across various runs, with different ensemble components, and under domain-shift conditions.",
-     "abstract_host": "proceedings.iclr.cc"
+     "abstract_host": "proceedings.iclr.cc",
+     "citations": 14
     }
    ],
    "subsections": []
@@ -447,5 +454,22 @@
    ]
   }
  ],
+ "scholar": {
+  "type": "scholarstats",
+  "url": "https://scholar.google.com/citations?user=mYwraykAAAAJ&hl=en",
+  "citations": 44,
+  "h_index": 4,
+  "papers": {
+   "Ensemble Distillation for Unsupervised Constituency Parsing": 14,
+   "EBBS: An Ensemble with Bi-Level Beam Search for Zero-Shot Machine Translation": 13,
+   "Tree-Averaging Algorithms for Ensemble-Based Unsupervised Discontinuous Constituency Parsing": 8,
+   "Feeding Two Birds or Favoring One? Adequacy-Fluency Tradeoffs in Evaluation and Meta-Evaluation of Machine Translation": 5,
+   "Error Diversity Matters: An Error-Resistant Ensemble Method for Unsupervised Dependency Parsing": 4,
+   "Mind Which Bird You Favour: Parameterizing Adequacy-Fluency Balance in Meta-Evaluation of Machine Translation": 0,
+   "Can LLMs Take Retrieved Information with a Grain of Salt?": 0,
+   "Ensemble Methods for Unsupervised Syntactic Parsing": 0,
+   "Geolocating Addresses from Informal Persian Texts using Hierarchical Kernel-Based Bayesian Models": 0
+  }
+ },
  "email": "the.shayegh@gmail.com"
 }
