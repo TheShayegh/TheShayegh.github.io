@@ -178,12 +178,13 @@ ul.bul li::before{content:"";position:absolute;left:3px;top:.72em;width:6px;heig
   .entry-body,.pub,.card{break-inside:avoid;box-shadow:none}
   body{font-size:11pt}
 }
-/* Google Scholar statistics: totals before the publications heading, count on each paper */
+/* Google Scholar statistics: totals after the publications heading, count on each paper */
 .cites{display:inline-flex;align-items:center;gap:5px;font-size:.85rem;font-weight:700;font-family:var(--sans,inherit);font-variant-numeric:lining-nums;color:var(--muted);white-space:nowrap;margin-left:6px}
 .cites svg{width:.95em;height:.95em;flex:none;color:var(--accent-ink)}
-.block>h2 .gs-stats{display:inline-flex;align-items:center;gap:12px;flex:none;font-family:var(--sans);margin-right:2px}
+.block>h2 .gs-stats{display:inline-flex;align-items:center;gap:12px;flex:none;font-family:var(--sans);margin-left:2px}
 .gs-stats .cites{margin:0;font-size:.95rem;color:var(--ink)}
 .gs-stats .hindex{font-size:.95rem;font-weight:500;color:var(--muted);white-space:nowrap}
 .gs-stats .hindex b{color:var(--ink);font-weight:700}
-.gs-stats .chip{padding:7px;line-height:0;box-shadow:none}
+.gs-stats .chip{padding:7px 10px;gap:6px;line-height:0;box-shadow:none}
+.gs-stats .chip .ext{width:.8em;height:.8em;color:var(--muted)}
 @media (max-width:560px){.block>h2{flex-wrap:wrap;row-gap:8px}.block>h2::after{display:none}}
