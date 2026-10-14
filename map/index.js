@@ -168,173 +168,73 @@ Toronto,43.6502,-79.4232
 
 require([
   "esri/Map",
-  "esri/views/MapView",
+  "esri/views/SceneView",
   "esri/Graphic",
   "esri/layers/GraphicsLayer",
-  "esri/widgets/ScaleBar",
-  "esri/widgets/BasemapToggle",
-  "esri/core/watchUtils"
-], function (Map, MapView, Graphic, GraphicsLayer, ScaleBar, BasemapToggle, watchUtils) {
+  "esri/widgets/BasemapToggle"
+], function (Map, SceneView, Graphic, GraphicsLayer, BasemapToggle) {
   var map = new Map({
-    basemap: "topo"
+    basemap: "satellite",
+    ground: "world-elevation"
   });
 
-  var view = new MapView({
+  // Globe view (spherical Earth with atmosphere, tilt and rotate).
+  var view = new SceneView({
     container: "viewDiv",
     map: map,
-    zoom: 3,
-    center: [0, 20],
-    constraints: {
-      minZoom: 3, // Set the minimum zoom level
-      // maxZoom: 10, // Set the maximum zoom level to prevent excessive zooming
-      snapToZoom: false // Disable snapping to zoom levels to allow smooth zooming
-    }
+    viewingMode: "global",
+    center: [10, 25],
+    zoom: 2
   });
 
-  // Add satellite basemap toggle bottom right.
   var toggle = new BasemapToggle({
     view: view,
-    nextBasemap: "satellite"
+    nextBasemap: "topo"
   });
   view.ui.add(toggle, "top-right");
 
-  // Add pins.
   var graphicsLayer = new GraphicsLayer();
   map.add(graphicsLayer);
 
-  // Function to create stay marker symbol
-  function createStayMarkerSymbol(size) {
+  var kinds = {
+    stay:    { style: "square", color: [64, 176, 64, 0.9],  base: 12 },
+    well:    { style: "square", color: [196, 64, 64, 0.85], base: 12 },
+    travel:  { style: "circle", color: [196, 64, 64, 0.5],  base: 8 }
+  };
+
+  function createSymbol(kind, size) {
+    var k = kinds[kind];
     return {
-      type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
-      color: [64, 176, 64, 0.9], // Green color
-      style: "square", // Specifies the marker is square-shaped
-      size: size, // Size
-      outline: {
-        color: [255, 255, 255], // White outline color
-        width: 1
-      }
-    };
-  }
-  function createWellExploreMarkerSymbol(size) {
-    return {
-      type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
-      color: [196, 64, 64, 0.85], // Green color
-      style: "square", // Specifies the marker is square-shaped
-      size: size, // Size
-      outline: {
-        color: [255, 255, 255], // White outline color
-        width: 1
-      }
+      type: "simple-marker",
+      color: k.color,
+      style: k.style,
+      size: size,
+      outline: { color: [255, 255, 255], width: 1 }
     };
   }
 
-  // Function to create travel marker symbol
-  function createTravelMarkerSymbol(size) {
-    return {
-      type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
-      color: [196, 64, 64, 0.5], // Red color
-      style: "circle", // Specifies the marker is circle-shaped
-      size: size, // Size
-      outline: {
-        color: [255, 255, 255], // White outline color
-        width: 1
-      }
-    };
-  }
-
-  // Function to scale markers based on zoom level
+  // Scale markers with zoom level.
   function scaleMarkers() {
-    var scale = view.scale;
-    var staySize = 12 * (45000000**.3 / scale**.3);
-    var travelSize = 8 * (45000000**.3 / scale**.3);
-
-    graphicsLayer.graphics.forEach(function(graphic) {
-      if (graphic.uid < well_explored.split(/\r\n|\r|\n/).length-2) { // travelMarkerSymbol color
-        graphic.symbol = createWellExploreMarkerSymbol(staySize);
-      } else if (graphic.uid < travels.split(/\r\n|\r|\n/).length+well_explored.split(/\r\n|\r|\n/).length-4) { // stayMarkerSymbol color
-        graphic.symbol = createTravelMarkerSymbol(travelSize);
-      } else  { // well_explored color
-        graphic.symbol = createStayMarkerSymbol(staySize);
-      }
+    var f = 45000000 ** 0.3 / view.scale ** 0.3;
+    graphicsLayer.graphics.forEach(function (g) {
+      var kind = g.attributes.kind;
+      g.symbol = createSymbol(kind, kinds[kind].base * f);
     });
   }
-
-  // Watch for zoom changes to scale the markers
   view.watch("scale", scaleMarkers);
 
-  // Parse CSV data and add graphics
-  const rows3 = well_explored.split('\n').slice(1); // skip header
-  rows3.forEach(row => {
-    const columns = row.split(',');
-    if (columns.length === 3) {
-      const city = columns[0];
-      const latitude = parseFloat(columns[1]);
-      const longitude = parseFloat(columns[2]);
-
-      // Create a point for each city
-      var point = {
-        type: "point",
-        longitude: longitude,
-        latitude: latitude
-      };
-
-      // Create a graphic for each city
-      var pointGraphic = new Graphic({
-        geometry: point,
-        symbol: createWellExploreMarkerSymbol(12)
-      });
-      graphicsLayer.add(pointGraphic);
-    }
+  // Parse CSV data and add graphics (drawn in order: well explored, travels, stays).
+  [["well", well_explored], ["travel", travels], ["stay", stays]].forEach(function (set) {
+    set[1].split("\n").slice(1).forEach(function (row) {
+      var c = row.split(",");
+      if (c.length !== 3) return;
+      graphicsLayer.add(new Graphic({
+        geometry: { type: "point", latitude: parseFloat(c[1]), longitude: parseFloat(c[2]) },
+        attributes: { kind: set[0], city: c[0] },
+        symbol: createSymbol(set[0], kinds[set[0]].base)
+      }));
+    });
   });
 
-  const rows1 = travels.split('\n').slice(1); // skip header
-  rows1.forEach(row => {
-    const columns = row.split(',');
-    if (columns.length === 3) {
-      const city = columns[0];
-      const latitude = parseFloat(columns[1]);
-      const longitude = parseFloat(columns[2]);
-
-      // Create a point for each city
-      var point = {
-        type: "point",
-        longitude: longitude,
-        latitude: latitude
-      };
-
-      // Create a graphic for each city
-      var pointGraphic = new Graphic({
-        geometry: point,
-        symbol: createTravelMarkerSymbol(8)
-      });
-      graphicsLayer.add(pointGraphic);
-    }
-  });
-
-  const rows2 = stays.split('\n').slice(1); // skip header
-  rows2.forEach(row => {
-    const columns = row.split(',');
-    if (columns.length === 3) {
-      const city = columns[0];
-      const latitude = parseFloat(columns[1]);
-      const longitude = parseFloat(columns[2]);
-
-      // Create a point for each city
-      var point = {
-        type: "point",
-        longitude: longitude,
-        latitude: latitude
-      };
-
-      // Create a graphic for each city
-      var pointGraphic = new Graphic({
-        geometry: point,
-        symbol: createStayMarkerSymbol(12)
-      });
-      graphicsLayer.add(pointGraphic);
-    }
-  });
-
-  // Initial call to set the marker sizes
-  scaleMarkers();
+  view.when(scaleMarkers);
 });
