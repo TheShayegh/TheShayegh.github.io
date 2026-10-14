@@ -14,5 +14,6 @@ at `https://TheShayegh.github.io/<name>/`.
 |---|---|
 | [`home/`](home/) | Personal website |
 | [`music/`](music/) | Music catalogue: a 3D cover carousel with per-track links to YouTube, Spotify, Apple Music and Amazon Music |
+| [`map/`](map/) | World Exp: an interactive map of places visited (ArcGIS), with stays, travels and well-explored areas |
 
 Pages use relative links only, since they are served from a sub-path.
