@@ -55,17 +55,21 @@ require([
   }
   view.watch("scale", scaleMarkers);
 
-  // Load markers from places.csv (columns: type,city,latitude,longitude).
+  // Load markers from places.csv (columns: type,city,latitude,longitude,removed).
   fetch("places.csv")
     .then(function (r) { return r.text(); })
     .then(function (text) {
-      text.trim().split(/\r?\n/).slice(1).forEach(function (row) {
-        var c = row.split(",");
-        if (c.length !== 4 || !kinds[c[0]]) return;
+      var rows = text.trim().split(/\r?\n/).map(function (row) { return row.split(","); });
+      var col = {};
+      rows[0].forEach(function (name, i) { col[name] = i; });
+      rows.slice(1).forEach(function (c) {
+        var kind = c[col.type];
+        // Rows with a value in the "removed" column are kept in the CSV but not shown.
+        if (!kinds[kind] || (c[col.removed] || "").trim()) return;
         graphicsLayer.add(new Graphic({
-          geometry: { type: "point", latitude: parseFloat(c[2]), longitude: parseFloat(c[3]) },
-          attributes: { kind: c[0], city: c[1] },
-          symbol: createSymbol(c[0], kinds[c[0]].base)
+          geometry: { type: "point", latitude: parseFloat(c[col.latitude]), longitude: parseFloat(c[col.longitude]) },
+          attributes: { kind: kind, city: c[col.city] },
+          symbol: createSymbol(kind, kinds[kind].base)
         }));
       });
       scaleMarkers();
