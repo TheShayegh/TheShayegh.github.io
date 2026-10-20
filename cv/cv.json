@@ -48,9 +48,9 @@
        "date": "Since Jan.&nbsp;2026",
        "title": "Research Engineer",
        "bullets": [
-        "Co-developing “Executive Agent,” utilized daily by the RBC CEO, Head of Asset Management, and the executive board.",
-        "Developing “Timely Signal Intelligence” to detect the most strategic signals from worldwide daily news.",
-        "Designing and developing “Collaborative Writing Agent” and its automated evaluation pipeline, which composes long-form text by actively eliciting user preferences and domain knowledge.",
+        "Designing and developing collaborative writing capabilities and evaluation for LLMs, composing long-form text by actively eliciting user preferences and domain knowledge efficiently.",
+        "Designing and developing auto style-guide evaluation and generation, controlling the style of LLM outputs by automatically writing style guides as skills.",
+        "Designed and developed deep market research and signal intelligence systems, providing critical strategic insights continuously utilized by RBC’s C-suite and senior management teams.",
         "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Recognized with two internal awards for cross-team enablement and knowledge sharing, including representing RBC at external quantum hackathons and driving GenAI education initiatives."
        ]
       },
@@ -373,6 +373,15 @@
      "title": "Supervision and Mentorship",
      "id": "supervision-and-mentorship",
      "blocks": [
+      {
+       "type": "teaching",
+       "role": "Research mentor",
+       "org": "RBC Borealis",
+       "intro": "",
+       "items": [
+        "for let’s solve it (LSi) program&nbsp;<span class=\"tdate\">Fall&nbsp;2026</span>"
+       ]
+      },
       {
        "type": "teaching",
        "role": "Research mentor",
