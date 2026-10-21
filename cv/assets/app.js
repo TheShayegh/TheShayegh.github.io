@@ -34,7 +34,7 @@
   // scroll-spy
   var links = {};
   document.querySelectorAll(".nav nav a").forEach(function (a) { links[a.getAttribute("href").slice(1)] = a; });
-  var secs = Array.prototype.filter.call(document.querySelectorAll("section.block"), function (s) { return links[s.id]; });
+  var secs = Array.prototype.filter.call(document.querySelectorAll("section.block, section.hero"), function (s) { return links[s.id]; });
   if ("IntersectionObserver" in window && secs.length) {
     var spy = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
