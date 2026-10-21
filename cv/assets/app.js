@@ -48,6 +48,11 @@
     secs.forEach(function (s) { spy.observe(s); });
   }
 
+  // print with everything open
+  addEventListener("beforeprint", function () {
+    document.querySelectorAll("details").forEach(function (d) { d.open = true; });
+  });
+
   // live filter for lists (e.g. publications)
   document.querySelectorAll("input[data-filter]").forEach(function (inp) {
     var targets = document.querySelectorAll(inp.dataset.filter);

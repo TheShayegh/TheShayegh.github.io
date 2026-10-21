@@ -1,9 +1,9 @@
 {
  "files": {
-  "assets/app.js": "ef9b02cd63a0727972b9bf1d593dd130a9867bc604615fe153f2aaee31612b26",
-  "assets/style.css": "2ce3c329da6f09b080599300b32b54ed811bb3432813ede77996faea92b9e669",
-  "cv.json": "1bf2bebdc4ff3864750600796ef225a61e2ccf9acb21d4d79ba29946ca059738",
-  "index.html": "55db8dabba8154e258e0ead847599840b288d6fc47f9ce39f68fb7c28ca216a7"
+  "assets/app.js": "abf3eaac7f44d36fc4ed12e381c20c6285a1ea76bfaa61024b663d37fc109a17",
+  "assets/style.css": "fdb8a50a8a4e1fbaafacf5b4caacd4bda038c79f165c87b188ee9e8358f8338a",
+  "cv.json": "615c36f650f4e2a08250b29b5464740b81f5737145405c0d0119993da77300f7",
+  "index.html": "daa323777ca0d2d93e939d25fd7b46f5b72f04c6e06085f4fcfd66a09e572735"
  },
- "fingerprint": "df16f98b683dc858eeffc10bcf01e1a80316f9a663e8ac6f58b0110c5cdebc5d"
+ "fingerprint": "80bbc31c3e046657f5677affeb1406c4769a4009ecea84398b040ef16eb2a54e"
 }

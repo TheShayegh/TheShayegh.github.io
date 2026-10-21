@@ -475,7 +475,7 @@
       ],
       [
        "ML Methods",
-       "Unsupervised/self-supervised/contrastive learning, zero-/few-shot transfer, knowledge distillation, ensemble methods, gradient boosting (XGBoost), decoding algorithms (beam search, dynamic programming), synthetic data, explainability"
+       "Unsupervised/self-supervised learning, contrastive learning, zero-/few-shot transfer, knowledge distillation, ensemble methods, gradient boosting (XGBoost), decoding algorithms (beam search, dynamic programming), synthetic data, explainability"
       ],
       [
        "Deep Learning",
