@@ -303,42 +303,6 @@
    "subsections": []
   },
   {
-   "title": "Service and Outreach",
-   "id": "service-and-outreach",
-   "blocks": [],
-   "subsections": [
-    {
-     "title": "Peer Review",
-     "id": "peer-review",
-     "blocks": [
-      {
-       "type": "bullets",
-       "items": [
-        "<strong>Reviewer</strong> for the 40th Annual Conference on Neural Information Processing Systems (NeurIPS), 2026.",
-        "<strong>Emergency reviewer</strong> for ACL Rolling Review (ARR), February cycle, 2025.",
-        "<strong>Reviewer</strong> for the 13th International Conference on Learning Representations (ICLR), 2025."
-       ]
-      }
-     ],
-     "subsections": []
-    },
-    {
-     "title": "Open Source",
-     "id": "open-source",
-     "blocks": [
-      {
-       "type": "bullets",
-       "items": [
-        "Spiral: A PyTorch-based tool to simulate spiking neural networks<span class=\"ref\" data-url=\"https://github.com/cnrl/Spiral\"></span>",
-        "Persian math textbook LaTeX template<span class=\"ref\" data-url=\"https://github.com/OpenBookshelf/PersianTextbookTemplate\"></span>"
-       ]
-      }
-     ],
-     "subsections": []
-    }
-   ]
-  },
-  {
    "title": "Teaching Experience",
    "id": "teaching-experience",
    "blocks": [],
@@ -461,6 +425,53 @@
      "subsections": []
     }
    ]
+  },
+  {
+   "title": "Service and Outreach",
+   "id": "service-and-outreach",
+   "blocks": [],
+   "subsections": [
+    {
+     "title": "Peer Review",
+     "id": "peer-review",
+     "blocks": [
+      {
+       "type": "bullets",
+       "items": [
+        "<strong>Reviewer</strong> for the 40th Annual Conference on Neural Information Processing Systems (NeurIPS), 2026.",
+        "<strong>Emergency reviewer</strong> for ACL Rolling Review (ARR), February cycle, 2025.",
+        "<strong>Reviewer</strong> for the 13th International Conference on Learning Representations (ICLR), 2025."
+       ]
+      }
+     ],
+     "subsections": []
+    },
+    {
+     "title": "Open Source",
+     "id": "open-source",
+     "blocks": [
+      {
+       "type": "bullets",
+       "items": [
+        "Spiral: A PyTorch-based tool to simulate spiking neural networks<span class=\"ref\" data-url=\"https://github.com/cnrl/Spiral\"></span>",
+        "Persian math textbook LaTeX template<span class=\"ref\" data-url=\"https://github.com/OpenBookshelf/PersianTextbookTemplate\"></span>"
+       ]
+      }
+     ],
+     "subsections": []
+    }
+   ]
+  },
+  {
+   "title": "Skills",
+   "id": "skills",
+   "blocks": [
+    {
+     "type": "paragraph",
+     "html": "ProgrammingPython (PyTorch, Hugging Face, vLLM, SciPy, NumPy, Pandas), C/C++, SQL, R, LaTeX ML MethodsUnsupervised/self-supervised/contrastive learning, zero-/few-shot transfer, knowledge distillation, ensemble methods, gradient boosting (XGBoost), decoding algorithms (beam search, dynamic programming), synthetic data, explainability Deep LearningTransformers, encoder–decoder models, RNNs/LSTMs, CNNs, GNNs, GANs LLMs &amp; NLPAgentic workflows, MCP, proprietary and open-weight LLMs, prompt engineering, LLM evaluation and meta-evaluation, RAG, machine translation, style transfer StatisticsEstimation and Bayesian inference (MLE, MAP, EM, MCMC, variational inference, Gaussian processes), nonparametric methods, hypothesis testing (bootstrap, permutation, goodness-of-fit, multiple-comparison correction), uncertainty quantification Infra &amp; ToolsLinux/Bash, Docker, Slurm, CUDA, Apache Spark, PostgreSQL"
+    }
+   ],
+   "subsections": []
   }
  ],
  "scholar": {
