@@ -467,8 +467,33 @@
    "id": "skills",
    "blocks": [
     {
-     "type": "paragraph",
-     "html": "ProgrammingPython (PyTorch, Hugging Face, vLLM, SciPy, NumPy, Pandas), C/C++, SQL, R, LaTeX ML MethodsUnsupervised/self-supervised/contrastive learning, zero-/few-shot transfer, knowledge distillation, ensemble methods, gradient boosting (XGBoost), decoding algorithms (beam search, dynamic programming), synthetic data, explainability Deep LearningTransformers, encoder–decoder models, RNNs/LSTMs, CNNs, GNNs, GANs LLMs &amp; NLPAgentic workflows, MCP, proprietary and open-weight LLMs, prompt engineering, LLM evaluation and meta-evaluation, RAG, machine translation, style transfer StatisticsEstimation and Bayesian inference (MLE, MAP, EM, MCMC, variational inference, Gaussian processes), nonparametric methods, hypothesis testing (bootstrap, permutation, goodness-of-fit, multiple-comparison correction), uncertainty quantification Infra &amp; ToolsLinux/Bash, Docker, Slurm, CUDA, Apache Spark, PostgreSQL"
+     "type": "skills",
+     "rows": [
+      [
+       "Programming",
+       "Python (PyTorch, Hugging Face, vLLM, SciPy, NumPy, Pandas), C/C++, SQL, R, LaTeX"
+      ],
+      [
+       "ML Methods",
+       "Unsupervised/self-supervised/contrastive learning, zero-/few-shot transfer, knowledge distillation, ensemble methods, gradient boosting (XGBoost), decoding algorithms (beam search, dynamic programming), synthetic data, explainability"
+      ],
+      [
+       "Deep Learning",
+       "Transformers, encoder–decoder models, RNNs/LSTMs, CNNs, GNNs, GANs"
+      ],
+      [
+       "LLMs &amp; NLP",
+       "Agentic workflows, MCP, proprietary and open-weight LLMs, prompt engineering, LLM evaluation and meta-evaluation, RAG, machine translation, style transfer"
+      ],
+      [
+       "Statistics",
+       "Estimation and Bayesian inference (MLE, MAP, EM, MCMC, variational inference, Gaussian processes), nonparametric methods, hypothesis testing (bootstrap, permutation, goodness-of-fit, multiple-comparison correction), uncertainty quantification"
+      ],
+      [
+       "Infra &amp; Tools",
+       "Linux/Bash, Docker, Slurm, CUDA, Apache Spark, PostgreSQL"
+      ]
+     ]
     }
    ],
    "subsections": []
