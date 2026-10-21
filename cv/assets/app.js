@@ -2,6 +2,20 @@
   "use strict";
   var root = document.documentElement;
 
+  // links and email drop-down (narrow screens)
+  var more = document.querySelector(".more"), menu = document.querySelector(".menu");
+  function setMenu(open) {
+    if (!more || !menu) return;
+    menu.classList.toggle("open", open);
+    more.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+  if (more && menu) {
+    more.addEventListener("click", function (e) { e.stopPropagation(); setMenu(!menu.classList.contains("open")); });
+    menu.addEventListener("click", function () { setMenu(false); });
+    document.addEventListener("click", function () { setMenu(false); });
+    addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+  }
+
   // nav border once scrolled
   var nav = document.querySelector(".nav");
   function onScroll() { if (nav) nav.classList.toggle("stuck", window.scrollY > 140); }

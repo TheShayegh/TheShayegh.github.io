@@ -34,10 +34,24 @@ a:hover{text-decoration-color:currentColor}
 /* wide screens: the section links and the contact links move to a left rail; the page shifts right */
 .rail{display:contents}
 .rail-links{display:none}
+/* links and email: a rail block on wide screens, a drop-down from the top bar on narrow ones */
+.rl{display:flex;align-items:center;gap:12px;height:36px;padding:0 12px 0 15px;font-size:.84rem;color:var(--muted);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:0 10px 10px 0}
+.rl svg{flex:none;color:var(--accent-ink)}
+.rl.overleaf svg{color:#138a07}
+.rl:hover{color:var(--ink);background:var(--accent-soft)}
+.rl{padding:0 14px 0 15px}
+.more{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--muted);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;cursor:pointer;transition:.15s}
+.more:hover,.more[aria-expanded=true]{color:var(--ink);border-color:var(--accent-ink)}
+.menu{position:absolute;right:16px;top:50px;min-width:240px;max-width:calc(100vw - 32px);padding:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:none;flex-direction:column}
+.menu.open{display:flex}
+.menu .rl{height:42px;border-radius:9px;font-size:.9rem;color:var(--ink)}
 @media (min-width:1100px){
+  .nav{position:static;height:0;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;border:0}
+  .nav-in{height:0}
+  .brand,.more,.menu{display:none}
   .wrap{margin-left:max(260px,calc((100vw - 860px)/2 + 94px));margin-right:auto;max-width:860px}
   .nav-in{justify-content:flex-end}
-  .rail{display:flex;flex-direction:column;position:fixed;left:max(28px,calc((100vw - 1180px)/2));top:100px;width:216px}
+  .rail{display:flex;flex-direction:column;position:fixed;left:max(28px,calc((100vw - 1180px)/2));top:64px;width:216px}
   .nav nav{margin:0;flex-direction:column;gap:2px}
   .nav nav a{width:auto;height:40px;display:flex;align-items:center;justify-content:flex-start;gap:12px;padding:0 12px;font-size:.9rem;font-weight:500;white-space:nowrap;border-left:3px solid transparent;border-radius:0 10px 10px 0}
   .nav nav a .lbl{display:inline}
@@ -45,10 +59,6 @@ a:hover{text-decoration-color:currentColor}
   .nav nav a::after{display:none}
   .nav nav a.on{color:var(--ink);font-weight:700;border-left-color:var(--sec)}
   .rail-links{display:flex;flex-direction:column;gap:2px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
-  .rl{display:flex;align-items:center;gap:12px;height:36px;padding:0 12px 0 15px;font-size:.84rem;color:var(--muted);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:0 10px 10px 0}
-  .rl svg{flex:none;color:var(--accent-ink)}
-  .rl.overleaf svg{color:#138a07}
-  .rl:hover{color:var(--ink);background:var(--accent-soft)}
   .hero .chips{display:none}
 }
 
