@@ -2,18 +2,6 @@
   "use strict";
   var root = document.documentElement;
 
-  // theme toggle (auto -> follows OS until the visitor picks one)
-  var btn = document.querySelector(".theme");
-  function isDark() {
-    var t = root.dataset.theme;
-    return t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
-  }
-  if (btn) btn.addEventListener("click", function () {
-    var next = isDark() ? "light" : "dark";
-    root.dataset.theme = next;
-    try { localStorage.setItem("cv-theme", next); } catch (e) {}
-  });
-
   // nav border once scrolled
   var nav = document.querySelector(".nav");
   function onScroll() { if (nav) nav.classList.toggle("stuck", window.scrollY > 140); }

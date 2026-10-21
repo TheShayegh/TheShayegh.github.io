@@ -6,20 +6,6 @@
   --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --r:14px; --sl:42%; --soft:12%;
 }
-:root[data-theme=dark]{
-  --bg:#0d0f13; --surface:#151821; --ink:#eceef3; --muted:#9aa2b1; --line:#252a36;
-  --accent-ink:color-mix(in srgb,var(--accent) 55%,white);
-  --accent-soft:color-mix(in srgb,var(--accent) 22%,transparent);
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6); --sl:70%; --soft:22%;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme=light]){
-    --bg:#0d0f13; --surface:#151821; --ink:#eceef3; --muted:#9aa2b1; --line:#252a36;
-    --accent-ink:color-mix(in srgb,var(--accent) 55%,white);
-    --accent-soft:color-mix(in srgb,var(--accent) 22%,transparent);
-    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6); --sl:70%; --soft:22%;
-  }
-}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
@@ -44,8 +30,6 @@ a:hover{text-decoration-color:currentColor}
 .nav nav a .lbl{display:none}
 .nav nav a::after{content:attr(data-tip);position:absolute;top:calc(100% + 6px);left:50%;transform:translateX(-50%) translateY(-2px);white-space:nowrap;font-size:.76rem;font-weight:600;padding:4px 10px;border-radius:8px;background:var(--ink);color:var(--bg);opacity:0;pointer-events:none;transition:opacity .15s,transform .15s;z-index:60}
 .nav nav a:hover::after,.nav nav a:focus-visible::after{opacity:1;transform:translateX(-50%)}
-.theme{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--muted);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;cursor:pointer;transition:.15s}
-.theme:hover{color:var(--ink);border-color:var(--accent-ink)}
 
 /* wide screens: the section links and the contact links move to a left rail; the page shifts right */
 .rail{display:contents}
@@ -67,8 +51,6 @@ a:hover{text-decoration-color:currentColor}
   .rl:hover{color:var(--ink);background:var(--accent-soft)}
   .hero .chips{display:none}
 }
-:root[data-theme=dark] .rl.overleaf svg{color:#5fcf4f}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .rl.overleaf svg{color:#5fcf4f}}
 
 /* hero */
 .hero{position:relative;padding:72px 0 40px;overflow:hidden}
@@ -82,8 +64,6 @@ a:hover{text-decoration-color:currentColor}
 .chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;color:var(--ink);text-decoration:none;font-size:.92rem;box-shadow:var(--shadow);transition:.15s}
 .chip:hover{border-color:var(--accent-ink);color:var(--accent-ink);transform:translateY(-1px)}
 .chip.overleaf svg{color:#138a07}
-:root[data-theme=dark] .chip.overleaf svg{color:#5fcf4f}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .chip.overleaf svg{color:#5fcf4f}}
 .chip svg{flex:none;color:var(--accent-ink)}
 
 /* sections: every kind of section has its own colour, which recolours its accents */
@@ -109,8 +89,6 @@ a:hover{text-decoration-color:currentColor}
 .entries::before{content:"";position:absolute;left:25px;top:30px;bottom:30px;width:2px;background:linear-gradient(var(--sec),var(--line) 40%);opacity:.5;z-index:0}
 .entry{position:relative;display:grid;grid-template-columns:52px 1fr;gap:20px;z-index:1}
 .logo{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-weight:700;font-size:1rem;letter-spacing:.02em;color:hsl(var(--h) 55% 32%);background:hsl(var(--h) 80% 93%);border:3px solid var(--bg);box-shadow:0 0 0 1px hsl(var(--h) 45% 80%)}
-:root[data-theme=dark] .logo{color:hsl(var(--h) 80% 82%);background:hsl(var(--h) 35% 20%);box-shadow:0 0 0 1px hsl(var(--h) 30% 32%)}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .logo{color:hsl(var(--h) 80% 82%);background:hsl(var(--h) 35% 20%);box-shadow:0 0 0 1px hsl(var(--h) 30% 32%)}}
 .entry-body{padding-top:2px;min-width:0}
 .org{font-family:var(--serif);font-size:1.35rem;margin:0;line-height:1.3}
 .sub{margin:2px 0 0;color:var(--muted);font-size:.93rem}
@@ -207,7 +185,7 @@ ul.bul.boxed li::before{left:16px;top:1.15em}
 }
 @media print{
   :root{--bg:#fff;--surface:#fff;--shadow:none}
-  .nav,.chip.overleaf,.sec-tools,.theme{display:none}
+  .nav,.chip.overleaf,.sec-tools{display:none}
   .hero::before{display:none}
   .js .reveal{opacity:1;transform:none}
   .entry,.pub,.card{break-inside:avoid;box-shadow:none}
