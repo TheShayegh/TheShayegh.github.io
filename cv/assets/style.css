@@ -53,7 +53,7 @@ a:hover{text-decoration-color:currentColor}
   .brand,.more,.menu{display:none}
   .wrap{margin-left:max(260px,calc((100vw - 860px)/2 + 94px));margin-right:auto;max-width:860px}
   .nav-in{justify-content:flex-end}
-  .rail{display:flex;flex-direction:column;position:fixed;left:max(28px,calc((100vw - 1180px)/2));top:64px;width:216px}
+  .rail{display:flex;flex-direction:column;position:fixed;left:max(28px,calc((100vw - 1180px)/2));top:64px;width:216px;z-index:50}
   .nav nav{margin:0;flex-direction:column;gap:2px}
   .nav nav a{width:auto;height:40px;display:flex;align-items:center;justify-content:flex-start;gap:12px;padding:0 12px;font-size:.9rem;font-weight:500;white-space:nowrap;border-left:3px solid transparent;border-radius:0 10px 10px 0}
   .nav nav a .lbl{display:inline}
