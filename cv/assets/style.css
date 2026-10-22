@@ -55,16 +55,17 @@ a:hover{text-decoration-color:currentColor}
   .nav-in{justify-content:flex-end}
   .rail{display:flex;flex-direction:column;position:fixed;left:max(28px,calc((100vw - 1180px)/2));top:64px;width:216px;z-index:50}
   .nav nav{margin:0;flex-direction:column;gap:2px}
-  .nav nav a{width:auto;height:40px;display:flex;align-items:center;justify-content:flex-start;gap:12px;padding:0 12px;font-size:.9rem;font-weight:500;white-space:nowrap;border-left:3px solid transparent;border-radius:0 10px 10px 0}
+  .nav nav a{width:auto;min-height:40px;box-sizing:border-box;display:flex;align-items:center;justify-content:flex-start;gap:12px;padding:6px 12px;font-size:.9rem;line-height:1.25;font-weight:500;border-left:3px solid transparent;border-radius:0 10px 10px 0}
   .nav nav a .lbl{display:inline}
   .nav nav a svg{flex:none;color:var(--sec)}
   .nav nav a::after{display:none}
-  .nav nav a.on{color:var(--ink);font-weight:700;border-left-color:var(--sec)}
+  .nav nav a.on{color:var(--ink);border-left-color:var(--sec)}
   .rail-links{display:flex;flex-direction:column;gap:2px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
 }
 
 /* hero */
-.hero{position:relative;padding:72px 0 40px;overflow:hidden}
+main{overflow-x:clip}  /* the hero glow may spill down into the next sections but never widens the page */
+.hero{position:relative;padding:72px 0 40px}
 .hero-in{display:flex;align-items:center;justify-content:space-between;gap:40px}
 .hero-text{flex:1;min-width:0}
 .photo{flex:none;width:200px;height:200px;border-radius:50%;object-fit:cover;background:var(--surface);border:4px solid var(--surface);box-shadow:0 0 0 1px var(--line),var(--shadow)}
