@@ -70,6 +70,7 @@ main{overflow-x:clip}  /* the hero glow may spill down into the next sections bu
 .hero-text{flex:1;min-width:0}
 .photo{flex:none;width:200px;height:200px;border-radius:50%;object-fit:cover;background:var(--surface);border:4px solid var(--surface);box-shadow:0 0 0 1px var(--line),var(--shadow)}
 .hero::before{content:"";position:absolute;inset:-40% -10% auto auto;width:640px;height:640px;background:radial-gradient(closest-side,color-mix(in srgb,var(--accent) 22%,transparent),transparent);filter:blur(10px);opacity:.7;pointer-events:none;z-index:-1}
+.js .name{white-space:nowrap}
 .name{font-family:var(--serif);font-weight:700;font-variant:small-caps;letter-spacing:.08em;font-size:clamp(2.4rem,8vw,4.6rem);line-height:1.05;margin:0 0 22px}
 .lede{max-width:64ch;font-size:1.12rem;color:var(--muted);margin:0 0 26px}
 .chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;color:var(--ink);text-decoration:none;font-size:.92rem;box-shadow:var(--shadow);transition:.15s}

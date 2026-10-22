@@ -2,11 +2,27 @@
   "use strict";
   var root = document.documentElement;
 
+  // text that must stay on one line: the font shrinks from its CSS size (the maximum) until the text fits its box
+  function fit(el, min) {
+    el.style.fontSize = "";
+    if (!el.clientWidth) return;  // not displayed (closed menu): fitted when it opens
+    var size = parseFloat(getComputedStyle(el).fontSize);
+    while (el.scrollWidth > el.clientWidth && size > min) { size -= 0.5; el.style.fontSize = size + "px"; }
+  }
+  function fitAll() {
+    document.querySelectorAll(".name").forEach(function (el) { fit(el, 16); });
+    document.querySelectorAll(".rl").forEach(function (el) { fit(el, 9); });
+  }
+  fitAll();
+  addEventListener("resize", fitAll);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
+
   // links and email drop-down (narrow screens)
   var more = document.querySelector(".more"), menu = document.querySelector(".menu");
   function setMenu(open) {
     if (!more || !menu) return;
     menu.classList.toggle("open", open);
+    if (open) menu.querySelectorAll(".rl").forEach(function (el) { fit(el, 9); });
     more.setAttribute("aria-expanded", open ? "true" : "false");
   }
   if (more && menu) {
