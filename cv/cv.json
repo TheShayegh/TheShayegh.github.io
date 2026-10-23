@@ -258,7 +258,7 @@
      "notes": [],
      "abstract": "We investigate the unsupervised constituency parsing task, which organizes words and phrases of a sentence into a hierarchical structure without using linguistically annotated data. We observe that existing unsupervised parsers capture different aspects of parsing structures, which can be leveraged to enhance unsupervised parsing performance.To this end, we propose a notion of \"tree averaging,\" based on which we further propose a novel ensemble method for unsupervised parsing.To improve inference efficiency, we further distill the ensemble knowledge into a student model; such an ensemble-then-distill process is an effective approach to mitigate the over-smoothing problem existing in common multi-teacher distilling methods.Experiments show that our method surpasses all previous approaches, consistently demonstrating its effectiveness and robustness across various runs, with different ensemble components, and under domain-shift conditions.",
      "abstract_host": "proceedings.iclr.cc",
-     "citations": 14
+     "citations": 15
     }
    ],
    "subsections": []
@@ -502,10 +502,10 @@
  "scholar": {
   "type": "scholarstats",
   "url": "https://scholar.google.com/citations?user=mYwraykAAAAJ&hl=en",
-  "citations": 44,
+  "citations": 45,
   "h_index": 4,
   "papers": {
-   "Ensemble Distillation for Unsupervised Constituency Parsing": 14,
+   "Ensemble Distillation for Unsupervised Constituency Parsing": 15,
    "EBBS: An Ensemble with Bi-Level Beam Search for Zero-Shot Machine Translation": 13,
    "Tree-Averaging Algorithms for Ensemble-Based Unsupervised Discontinuous Constituency Parsing": 8,
    "Feeding Two Birds or Favoring One? Adequacy-Fluency Tradeoffs in Evaluation and Meta-Evaluation of Machine Translation": 5,
