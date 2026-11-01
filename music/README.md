@@ -33,8 +33,10 @@ Where to find each value:
 | `visualizer` | Optional. Only for tracks that have a visualizer video on my own channel. Adds a second "YouTube (Visualizer)" row (same YouTube icon) under the YouTube row. Leave the line out for tracks without one. |
 | (Amazon Music) | Nothing to add. The Amazon Music row always opens an Amazon Music search for the track title plus the artist name, so it is generated automatically. |
 
-Keep the cover count reasonable: the carousel spaces covers evenly, so a dozen or more get crowded.
-To change the radius or cover size, edit `radius` and `imgWidth` in the same script.
+The circle grows automatically with the number of covers (`radiusFor`, spacing set by `COVER_GAP`), so
+covers never overlap; on phones the covers shrink instead so the circle stays on screen. To change the
+cover size, edit `imgWidth` in the same script. On load the covers are already on the circle and just
+fade in (the coin follows), there is no fly-in animation.
 
 ## Notes
 

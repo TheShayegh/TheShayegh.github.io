@@ -102,6 +102,19 @@
         backdrop-filter: blur(2.2px);
       }
 
+      /* gentle load: everything is already on the circle and fades in */
+      #drag-container img,
+      #drag-container .back,
+      #drag-container .edge {
+        opacity: 0;
+        transition: opacity 2.4s ease;
+      }
+      #spin-container.ready img,
+      #spin-container.ready .back,
+      #spin-container.ready .edge {
+        opacity: 1;
+      }
+
       #drag-container img:hover,
       #drag-container img.active {
         -webkit-box-reflect: below 10px
@@ -587,10 +600,24 @@
 
       // You can change global variables here:
       var narrow = Math.min(window.innerWidth, window.innerHeight) < 600;
-      var radius = narrow ? Math.min(150, window.innerWidth * 0.36) : 180; // how big of the radius
       var autoRotate = true; // auto rotate or not
       var rotateSpeed = -60; // unit: seconds/360 degrees
       var imgWidth = narrow ? 100 : 120; // width of images (unit: px)
+      // The circle grows with the number of covers so that neighbours never
+      // overlap: radius = (cover width + gap) / (2 sin(180deg / count)).
+      var COVER_GAP = 1.12; // spacing between neighbours, as a multiple of the cover width
+      var radiusFor = function (w) {
+        return (w * COVER_GAP) / (2 * Math.sin(Math.PI / TRACKS.length));
+      };
+      var radius = Math.max(narrow ? 150 : 180, radiusFor(imgWidth));
+      if (narrow) {
+        // keep the circle within the screen: shrink the covers instead
+        var maxRadius = window.innerWidth * 0.4;
+        if (radius > maxRadius) {
+          imgWidth = Math.max(60, Math.floor(imgWidth * (maxRadius / radius)));
+          radius = Math.max(maxRadius, radiusFor(imgWidth));
+        }
+      }
       var imgHeight = imgWidth; // height of images (unit: px)
 
       var odrag = document.getElementById("drag-container");
@@ -670,7 +697,7 @@
       // ===================== carousel =======================
       setTimeout(init, 100);
 
-      function init(delayTime) {
+      function init() {
         for (var i = 0; i < aEle.length; i++) {
           aEle[i].style.transform =
             "rotateY(" +
@@ -678,20 +705,15 @@
             "deg) translateZ(" +
             radius +
             "px)";
-          aEle[i].style.transition = "transform 1s";
-          aEle[i].style.transitionDelay =
-            delayTime || (aEle.length - i) / 4 + "s";
         }
         aSlab.forEach(function (slab) {
-          var img = slab.cover;
-          slab.style.transform = img.style.transform;
-          slab.style.transition = img.style.transition;
-          slab.style.transitionDelay = img.style.transitionDelay;
+          slab.style.transform = slab.cover.style.transform;
         });
-        // the last cover starts after aEle.length / 4 s and moves for 1 s
+        // fade everything in; the coin follows once the covers are mostly there
+        ospin.classList.add("ready");
         setTimeout(function () {
           coin.classList.add("ready");
-        }, (aEle.length / 4 + 1) * 1000);
+        }, 1200);
       }
 
       function applyTranform(obj) {
