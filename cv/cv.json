@@ -69,7 +69,8 @@
         "Addressed over-smoothing in multi-teacher knowledge distillation by proposing ensemble distillation."
        ]
       }
-     ]
+     ],
+     "logo": "RBClogo.png"
     },
     {
      "type": "entry",
@@ -87,7 +88,8 @@
         "Developed AdequacyX and FluencyX as specialized MetricX variants for adequacy and fluency evaluation, achieving &nbsp;80% soft pairwise accuracy on their respective objectives."
        ]
       }
-     ]
+     ],
+     "logo": "Googlelogo.png"
     },
     {
      "type": "entry",
@@ -106,7 +108,8 @@
         "Mentored an undergraduate student from project launch to AAAI co-authorship."
        ]
       }
-     ]
+     ],
+     "logo": "UofAlogo.png"
     },
     {
      "type": "entry",
@@ -126,7 +129,8 @@
         "Improved car-price estimation MAPE by 4%: Identified and leveraged previously unrecognized and unaccounted categorical features using Gaussian Mixture Models and goodness-of-fit tests."
        ]
       }
-     ]
+     ],
+     "logo": "Divarlogo.png"
     },
     {
      "type": "entry",
@@ -146,7 +150,8 @@
         "Engineered 400+ features for real-estate price estimation: Developed a feature-extraction pipeline using OpenStreetMap, PostgreSQL, QGIS, Python, and C++; Curated a 1M-sample training dataset accordingly."
        ]
       }
-     ]
+     ],
+     "logo": "Ashianehlogo.png"
     }
    ],
    "subsections": []
@@ -281,7 +286,8 @@
        "title": "M.Sc.",
        "bullets": []
       }
-     ]
+     ],
+     "logo": "UofAlogo.png"
     },
     {
      "type": "entry",
@@ -297,7 +303,8 @@
        "title": "B.Sc.",
        "bullets": []
       }
-     ]
+     ],
+     "logo": "UTlogo.png"
     }
    ],
    "subsections": []
