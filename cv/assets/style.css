@@ -34,7 +34,7 @@ a:hover{text-decoration-color:currentColor}
 /* wide screens: the section links and the contact links move to a left rail; the page shifts right */
 .rail{display:contents}
 .rail-links{display:none}
-.rail-logo{display:none}
+.rail-foot{display:none}
 /* links and email: a rail block on wide screens, a drop-down from the top bar on narrow ones */
 .rl{display:flex;align-items:center;gap:12px;height:36px;padding:0 12px 0 15px;font-size:.84rem;color:var(--muted);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:0 10px 10px 0}
 .rl svg{flex:none;color:var(--accent-ink)}
@@ -63,10 +63,11 @@ a:hover{text-decoration-color:currentColor}
   .nav nav a.on{color:var(--ink);border-left-color:var(--sec)}
   .rail-links{display:flex;flex-direction:column;gap:2px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
   /* the personal logo closes the panel, right after the links (the footer copy is for narrow screens) */
-  .rail-logo{display:block;flex:none;margin:20px 0 0 12px;width:88px;height:88px;object-fit:contain}
+  .rail-foot{display:block;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+  .rail-logo{display:block;width:88px;height:88px;margin:0 auto;object-fit:contain}
   .foot .foot-logo{display:none}
 }
-@media (min-width:1100px) and (max-height:660px){.rail-logo{display:none}.foot .foot-logo{display:block}}
+@media (min-width:1100px) and (max-height:660px){.rail-foot{display:none}.foot .foot-logo{display:block}}
 
 /* hero */
 main{overflow-x:clip}  /* the hero glow may spill down into the next sections but never widens the page */
