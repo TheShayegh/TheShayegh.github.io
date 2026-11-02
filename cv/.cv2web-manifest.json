@@ -1,15 +1,15 @@
 {
  "files": {
-  "assets/app.js": "4e1d24e20fb77b55bbc1fd21b86346f50c1c0e28c839446a9693f75da507ddf1",
+  "assets/app.js": "1d3f1b502ee68c86174c5e811ea4a74e1d96933d9c928008431232bce2f354ab",
   "assets/logos/Ashianehlogo.png": "359cd38f5011077ae0db76ccad34f1ffaa21420fd9c7c2987742e856bd350c56",
   "assets/logos/Divarlogo.png": "4dc37d30f38743ca91ed1c896adebbb73463f782516a0e369414b4606bba66cb",
   "assets/logos/Googlelogo.png": "0b144f35abd5b12b7747317635b648c7ec8c7d5450d6b80df75af43b242390f6",
   "assets/logos/RBClogo.png": "6adeae274dfd82d218b99e61db4289e3cc7198d928178b68f1df40f786f72d6d",
   "assets/logos/UTlogo.png": "9d7349b822e5daf02ec9d5c01ef6f6916a4a258a13295805e1532d9013b748be",
   "assets/logos/UofAlogo.png": "fc58a274b19a0a99d473b3fe9daa33f67ba4886b34ed1d33b353a0a782eb4d2f",
-  "assets/style.css": "2bf5448402688be9e8cfcf9327475ba68955c836adc407646913d6cdf2060206",
-  "cv.json": "57058cccafe8e58137dc91f485562791241b1259563167bbe0f1eaf9aa2e31c4",
-  "index.html": "71078803737125e47d9f338f88d82f80b2b8eae000900217095c4fda1f7d196a"
+  "assets/style.css": "454d70badc6c04dbdbfb499d4a1cf640f5c80a6d712476229a4957cdbe541568",
+  "cv.json": "302dee145509b07e4955a2e85948a3a575030cdcd3aa7fc25a213ac091beea42",
+  "index.html": "c5324fba690ca437142365635962ac91b23391d5ac31a6df470ce7daca5b561b"
  },
- "fingerprint": "6b1cd36a39ddeed5484437d7d427fd483e1c8d889fa6f8ab01023ea83131009c"
+ "fingerprint": "d3af38639d2f5f6aa249bbe90060ae7d53c4211ac588262643be0580c51d14af"
 }

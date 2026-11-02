@@ -71,16 +71,33 @@
     document.querySelectorAll("details").forEach(function (d) { d.open = true; });
   });
 
-  // live filter for lists (e.g. publications)
+  // live filter for lists (e.g. publications); with an empty box nothing changes. While it is in use the
+  // publications are one flat list: no subsection titles, no collapsed groups, and the matches are counted
   document.querySelectorAll("input[data-filter]").forEach(function (inp) {
     var targets = document.querySelectorAll(inp.dataset.filter);
+    var section = inp.closest(".block") || document;
+    var groups = section.querySelector(".pub-groups");
+    var out = inp.parentNode.querySelector(".count");
+    var was = null;  // open state of each collapsed group before the search
     inp.addEventListener("input", function () {
       var terms = inp.value.toLowerCase().split(/\s+/).filter(Boolean);
+      var shown = 0;
       targets.forEach(function (el) {
         var hay = el.textContent.toLowerCase();
         el.hidden = !terms.every(function (t) { return hay.indexOf(t) >= 0; });
-        if (!el.hidden) el.classList.add("in");
+        if (!el.hidden) { el.classList.add("in"); shown++; }
       });
+      if (out) out.textContent = terms.length ? (shown ? shown + (shown === 1 ? " result" : " results") : "No results") : "";
+      if (!groups) return;
+      var details = groups.querySelectorAll("details.grp");
+      if (terms.length && !was) {
+        was = Array.prototype.map.call(details, function (d) { return d.open; });
+        details.forEach(function (d) { d.open = true; });
+      } else if (!terms.length && was) {
+        details.forEach(function (d, i) { d.open = was[i]; });
+        was = null;
+      }
+      groups.classList.toggle("searching", terms.length > 0);
     });
   });
 })();
