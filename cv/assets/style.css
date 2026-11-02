@@ -104,7 +104,8 @@ main{overflow-x:clip}  /* the hero glow may spill down into the next sections bu
 .grp>summary::before{content:"";flex:none;width:7px;height:7px;border-right:2px solid var(--accent-ink);border-bottom:2px solid var(--accent-ink);transform:rotate(-45deg);transition:transform .2s;margin:0 4px 0 2px}
 .grp[open]>summary::before{transform:rotate(45deg)}
 .grp-head .t,.grp>summary .t{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--ink)}
-.grp-head .n,.grp>summary .n{margin-left:auto;font-size:.85rem;font-weight:600;white-space:nowrap}
+.grp-head .n,.grp>summary .n{font-size:.9rem;font-weight:600;white-space:nowrap}
+.grp-head .n::before,.grp>summary .n::before{content:"—";margin-right:10px;font-weight:400;color:var(--muted)}
 .grp>summary .n{color:var(--accent-ink)}
 .grp-head .n{color:var(--muted)}
 .grp .hide,.grp[open] .show{display:none}
