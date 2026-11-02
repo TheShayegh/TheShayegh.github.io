@@ -348,15 +348,16 @@
        "intro": "",
        "items": [
         "<strong>Module architect</strong> for “how to write proofs” in discrete mathematics&nbsp;<span class=\"tdate\">February&nbsp;2020</span>",
-        "<strong>Guest lecturer</strong> for “invariance principle” in discrete mathematics&nbsp;<span class=\"tdate\">September.&nbsp;2019</span>"
+        "<strong>Guest lecturer</strong> for “invariance principle” in discrete mathematics&nbsp;<span class=\"tdate\">September.&nbsp;2019</span>",
+        "<strong>Content developer</strong> for introduction to discrete mathematics, common mistakes in discrete mathematics, applied probability and statistics in R, and basic C++ exercises"
        ]
       }
      ],
      "subsections": []
     },
     {
-     "title": "Supervision and Mentorship",
-     "id": "supervision-and-mentorship",
+     "title": "Mentorship",
+     "id": "mentorship",
      "blocks": [
       {
        "type": "teaching",
@@ -398,12 +399,12 @@
      "subsections": []
     },
     {
-     "title": "Teaching Assistantship and Support",
-     "id": "teaching-assistantship-and-support",
+     "title": "Teaching Assistantship",
+     "id": "teaching-assistantship",
      "blocks": [
       {
        "type": "teaching",
-       "role": "TA <span class=\"nf\">and</span> volunteer TA",
+       "role": "",
        "org": "University of Alberta",
        "intro": "",
        "items": [
@@ -413,33 +414,31 @@
       },
       {
        "type": "teaching",
-       "role": "Content developer",
+       "role": "",
        "org": "Alberta Machine Intelligence Institute (AMII)",
        "intro": "",
        "items": [
-        "for “explainability and transparency in machine learning” in applied ethics in artificial intelligence&nbsp;<span class=\"tdate\">Summer&nbsp;2023</span>"
+        "TA for “explainability and transparency in machine learning” in applied ethics in artificial intelligence&nbsp;<span class=\"tdate\">Summer&nbsp;2023</span>"
        ]
       },
       {
        "type": "teaching",
-       "role": "TAs’ supervisor, head TA, volunteer TA, <span class=\"nf\">and</span> content developer",
+       "role": "",
        "org": "University of Tehran",
        "intro": "",
        "items": [
         "<strong>TAs’ supervisor</strong> for discrete mathematics <span class=\"tdate\">Winter 2021</span>",
         "<strong>Head TA</strong> for probability and statistics <span class=\"tdate\">Fall 2021</span> &amp; discrete mathematics <span class=\"tdate\">Winter and Fall 2020</span>",
-        "<strong>Volunteer TA</strong> for natural language processing&nbsp;<span class=\"tdate\">Winter&nbsp;and&nbsp;Fall&nbsp;2021</span>, artificial intelligence&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>, discrete mathematics&nbsp;<span class=\"tdate\">Winter and Fall 2019</span>, probability and statistics&nbsp;<span class=\"tdate\">Fall&nbsp;2019</span>, data structures and algorithms&nbsp;<span class=\"tdate\">Fall&nbsp;2019</span>, intro to computing systems and programming&nbsp;<span class=\"tdate\">Fall&nbsp;2019</span>, and computer programming&nbsp;<span class=\"tdate\">Winter and Fall 2018</span>",
-        "<strong>Content developer</strong> for introduction to discrete mathematics, common mistakes in discrete mathematics, applied probability and statistics in R, and basic C++ exercises"
+        "<strong>Volunteer TA</strong> for natural language processing&nbsp;<span class=\"tdate\">Winter&nbsp;and&nbsp;Fall&nbsp;2021</span>, artificial intelligence&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>, discrete mathematics&nbsp;<span class=\"tdate\">Winter and Fall 2019</span>, probability and statistics&nbsp;<span class=\"tdate\">Fall&nbsp;2019</span>, data structures and algorithms&nbsp;<span class=\"tdate\">Fall&nbsp;2019</span>, intro to computing systems and programming&nbsp;<span class=\"tdate\">Fall&nbsp;2019</span>, and computer programming&nbsp;<span class=\"tdate\">Winter and Fall 2018</span>"
        ]
       },
       {
        "type": "teaching",
-       "role": "TA <span class=\"nf\">and</span> content developer",
+       "role": "",
        "org": "data science workshops over Tehran",
        "intro": "",
        "items": [
-        "<strong>TA</strong> in Tehran Polytechnic&nbsp;<span class=\"tdate\">Spring&nbsp;2020</span>, Khatam University&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>, and University of Tehran&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>",
-        "<strong>Content developer</strong> for python exercises"
+        "<strong>TA</strong> at Tehran Polytechnic&nbsp;<span class=\"tdate\">Spring&nbsp;2020</span>, Khatam University&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>, and University of Tehran&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>"
        ]
       }
      ],
