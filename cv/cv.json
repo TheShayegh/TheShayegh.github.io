@@ -338,7 +338,10 @@
        "org": "RBC Borealis",
        "intro": "",
        "items": [
-        "for let’s solve it (LSi) program&nbsp;<span class=\"tdate\">Fall&nbsp;2026</span>"
+        "Let’s solve it (LSi) program&nbsp;<span class=\"tdate\">Fall&nbsp;2026</span>"
+       ],
+       "half": [
+        false
        ]
       },
       {
@@ -347,7 +350,10 @@
        "org": "NLP Group, University of Alberta",
        "intro": "",
        "items": [
-        "Mentored senior bachelor Hobie H.-B. Li in his first research project within the group, resulting in collaborative work published at AAAI&nbsp;<span class=\"tdate\">Fall&nbsp;2023</span>"
+        "First research project of senior bachelor Hobie H.-B. Li, resulting in collaborative work published at AAAI&nbsp;<span class=\"tdate\">Fall&nbsp;2023</span>"
+       ],
+       "half": [
+        false
        ]
       },
       {
@@ -356,7 +362,10 @@
        "org": "Computing Research Association (CRA)",
        "intro": "",
        "items": [
-        "for undergraduate research to Ph.D. (UR2PhD) program&nbsp;<span class=\"tdate\">Fall&nbsp;2023</span>"
+        "Undergraduate research to Ph.D. (UR2PhD) program&nbsp;<span class=\"tdate\">Fall&nbsp;2023</span>"
+       ],
+       "half": [
+        false
        ]
       },
       {
@@ -365,7 +374,10 @@
        "org": "ACM Student Chapter, University of Tehran",
        "intro": "",
        "items": [
-        "for summer of code: intro to artificial intelligence&nbsp;<span class=\"tdate\">Summer&nbsp;2019</span>"
+        "Summer of code: intro to artificial intelligence&nbsp;<span class=\"tdate\">Summer&nbsp;2019</span>"
+       ],
+       "half": [
+        false
        ]
       }
      ],
@@ -377,22 +389,30 @@
      "blocks": [
       {
        "type": "teaching",
-       "role": "Guest Lecturer",
+       "role": "Guest Lecturer <span class=\"nf\">for Machine Learning</span>",
        "org": "University of Alberta",
        "intro": "",
        "items": [
-        "“max a posteriori estimation”&nbsp;<span class=\"tdate\">February&nbsp;2025</span> in machine learning",
-        "“maximum likelihood estimation”&nbsp;<span class=\"tdate\">September&nbsp;2024</span> in machine learning",
-        "“gradient descent”&nbsp;<span class=\"tdate\">September&nbsp;2024</span> in machine learning"
+        "Max a posteriori estimation&nbsp;<span class=\"tdate\">February&nbsp;2025</span>",
+        "Maximum likelihood estimation&nbsp;<span class=\"tdate\">September&nbsp;2024</span>",
+        "Gradient descent&nbsp;<span class=\"tdate\">September&nbsp;2024</span>"
+       ],
+       "half": [
+        true,
+        true,
+        true
        ]
       },
       {
        "type": "teaching",
-       "role": "Content Developer",
-       "org": "Alberta Machine Intelligence Institute (AMII)",
+       "role": "Guest Lecturer <span class=\"nf\">for Discrete Mathematics</span>",
+       "org": "University of Tehran",
        "intro": "",
        "items": [
-        "“explainability and transparency in machine learning” module for the applied ethics in AI course"
+        "Invariance principle&nbsp;<span class=\"tdate\">September&nbsp;2019</span>"
+       ],
+       "half": [
+        false
        ]
       },
       {
@@ -401,16 +421,22 @@
        "org": "University of Tehran",
        "intro": "",
        "items": [
-        "for “how to write proofs” in discrete mathematics"
+        "How to write proofs in discrete mathematics"
+       ],
+       "half": [
+        false
        ]
       },
       {
        "type": "teaching",
-       "role": "Guest Lecturer",
-       "org": "University of Tehran",
+       "role": "Content Developer",
+       "org": "Alberta Machine Intelligence Institute (AMII)",
        "intro": "",
        "items": [
-        "for “invariance principle” in discrete mathematics&nbsp;<span class=\"tdate\">September&nbsp;2019</span>"
+        "Explainability and transparency in machine learning"
+       ],
+       "half": [
+        false
        ]
       },
       {
@@ -423,6 +449,12 @@
         "Common mistakes in discrete mathematics",
         "Applied probability and statistics in R",
         "Basic C++ exercises"
+       ],
+       "half": [
+        true,
+        true,
+        true,
+        true
        ]
       },
       {
@@ -432,6 +464,9 @@
        "intro": "",
        "items": [
         "Python tutorial"
+       ],
+       "half": [
+        false
        ]
       }
      ],
@@ -447,7 +482,12 @@
        "org": "University of Tehran",
        "intro": "",
        "items": [
-        "discrete mathematics <span class=\"math\">×3</span>, probability and statistics"
+        "Discrete mathematics <span class=\"math\">×3</span>",
+        "Probability and statistics"
+       ],
+       "half": [
+        true,
+        true
        ]
       },
       {
@@ -456,7 +496,12 @@
        "org": "University of Alberta",
        "intro": "",
        "items": [
-        "machine learning <span class=\"math\">×2</span>, intro to the foundations of computation II <span class=\"math\">×2</span>"
+        "Machine learning <span class=\"math\">×2</span>",
+        "Intro to the foundations of computation II <span class=\"math\">×2</span>"
+       ],
+       "half": [
+        true,
+        true
        ]
       },
       {
@@ -465,7 +510,22 @@
        "org": "University of Tehran",
        "intro": "",
        "items": [
-        "natural language processing <span class=\"math\">×2</span>, artificial intelligence, discrete mathematics <span class=\"math\">×2</span>, probability and statistics, data structures and algorithms, intro to computing systems and programming, computer programming <span class=\"math\">×2</span>"
+        "Natural language processing <span class=\"math\">×2</span>",
+        "Artificial intelligence",
+        "Discrete mathematics <span class=\"math\">×2</span>",
+        "Probability and statistics",
+        "Data structures and algorithms",
+        "Intro to computing systems and programming",
+        "Computer programming <span class=\"math\">×2</span>"
+       ],
+       "half": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
        ]
       }
      ],

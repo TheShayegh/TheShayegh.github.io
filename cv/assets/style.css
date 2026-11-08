@@ -104,8 +104,11 @@ main{overflow-x:clip}  /* the hero glow may spill down into the next sections bu
 .grp>summary::before{content:"";flex:none;width:7px;height:7px;border-right:2px solid var(--accent-ink);border-bottom:2px solid var(--accent-ink);transform:rotate(-45deg);transition:transform .2s;margin:0 4px 0 2px}
 .grp[open]>summary::before{transform:rotate(45deg)}
 .grp-head .t,.grp>summary .t{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--ink)}
-.grp-head .n,.grp>summary .n{font-size:.9rem;font-weight:600;white-space:nowrap}
+/* title and count flow as one line of text, so a long title wraps instead of squeezing */
+.grp-head .lbl,.grp>summary .lbl{flex:1;min-width:0}
+.grp-head .n,.grp>summary .n{margin-left:10px;font-size:.9rem;font-weight:600;white-space:nowrap}
 .grp-head .n::before,.grp>summary .n::before{content:"—";margin-right:10px;font-weight:400;color:var(--muted)}
+.grp-head .n.after-note::before,.grp>summary .n.after-note::before{content:"·"}
 .grp>summary .n{color:var(--accent-ink)}
 .grp-head .n{color:var(--muted)}
 .grp .hide,.grp[open] .show{display:none}
@@ -193,6 +196,11 @@ ul.bul li::before{content:"";position:absolute;left:3px;top:.72em;width:6px;heig
 .card h4{margin:0;font-size:1rem;line-height:1.35}
 .card .where{margin:2px 0 6px;color:var(--muted);font-size:.9rem}
 .card ul.bul li{font-size:.92rem;margin:5px 0}
+/* teaching items: \texpHalf items pair up two to a row on wide screens, like the PDF; \texpItem takes a row */
+@media (min-width:700px){
+  .titems{display:grid;grid-template-columns:1fr 1fr;column-gap:28px}
+  .titems li:not(.half){grid-column:1/-1}
+}
 ul.bul.boxed{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;margin:0 0 6px}
 ul.bul.boxed li{margin:0;padding:12px 16px 12px 34px;background:var(--surface);border:1px solid var(--line);border-radius:12px;font-size:.93rem}
 ul.bul.boxed li::before{left:16px;top:1.15em}
