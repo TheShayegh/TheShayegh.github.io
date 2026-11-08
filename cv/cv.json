@@ -329,66 +329,6 @@
    "blocks": [],
    "subsections": [
     {
-     "title": "Lectures",
-     "id": "lectures",
-     "blocks": [
-      {
-       "type": "teaching",
-       "role": "Guest Lecturer",
-       "org": "University of Alberta",
-       "intro": "",
-       "items": [
-        "for “max a posteriori estimation”&nbsp;<span class=\"tdate\">February&nbsp;2025</span>, “maximum likelihood estimation”&nbsp;<span class=\"tdate\">September&nbsp;2024</span>, and “gradient descent”&nbsp;<span class=\"tdate\">September&nbsp;2024</span> in machine learning"
-       ]
-      },
-      {
-       "type": "teaching",
-       "role": "Guest Lecturer",
-       "org": "University of Tehran",
-       "intro": "",
-       "items": [
-        "for “invariance principle” in discrete mathematics&nbsp;<span class=\"tdate\">September&nbsp;2019</span>"
-       ]
-      }
-     ],
-     "subsections": []
-    },
-    {
-     "title": "Course Development",
-     "id": "course-development",
-     "blocks": [
-      {
-       "type": "teaching",
-       "role": "Content Developer",
-       "org": "Alberta Machine Intelligence Institute (AMII)",
-       "intro": "",
-       "items": [
-        "for “explainability and transparency in machine learning” in applied ethics in artificial intelligence&nbsp;<span class=\"tdate\">Summer&nbsp;2023</span>"
-       ]
-      },
-      {
-       "type": "teaching",
-       "role": "",
-       "org": "University of Tehran",
-       "intro": "",
-       "items": [
-        "<strong>Module architect</strong> for “how to write proofs” in discrete mathematics&nbsp;<span class=\"tdate\">February&nbsp;2020</span>",
-        "<strong>Content developer</strong> for introduction to discrete mathematics, common mistakes in discrete mathematics, applied probability and statistics in R, and basic C++ exercises"
-       ]
-      },
-      {
-       "type": "teaching",
-       "role": "Content Developer",
-       "org": "data science workshops over Tehran",
-       "intro": "",
-       "items": [
-        "for Python exercises&nbsp;<span class=\"tdate\">2020</span>"
-       ]
-      }
-     ],
-     "subsections": []
-    },
-    {
      "title": "Mentorship",
      "id": "mentorship",
      "blocks": [
@@ -427,14 +367,71 @@
        "items": [
         "for summer of code: intro to artificial intelligence&nbsp;<span class=\"tdate\">Summer&nbsp;2019</span>"
        ]
+      }
+     ],
+     "subsections": []
+    },
+    {
+     "title": "Lectures and Course Development",
+     "id": "lectures-and-course-development",
+     "blocks": [
+      {
+       "type": "teaching",
+       "role": "Guest Lecturer",
+       "org": "University of Alberta",
+       "intro": "",
+       "items": [
+        "“max a posteriori estimation”&nbsp;<span class=\"tdate\">February&nbsp;2025</span> in machine learning",
+        "“maximum likelihood estimation”&nbsp;<span class=\"tdate\">September&nbsp;2024</span> in machine learning",
+        "“gradient descent”&nbsp;<span class=\"tdate\">September&nbsp;2024</span> in machine learning"
+       ]
       },
       {
        "type": "teaching",
-       "role": "TA",
-       "org": "data science workshops over Tehran",
+       "role": "Content Developer",
+       "org": "Alberta Machine Intelligence Institute (AMII)",
        "intro": "",
        "items": [
-        "at Tehran Polytechnic&nbsp;<span class=\"tdate\">Spring&nbsp;2020</span>, Khatam University&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span>, and University of Tehran&nbsp;<span class=\"tdate\">Winter&nbsp;2020</span> [high school internship program at UofA (volunteer)]"
+        "“explainability and transparency in machine learning” module for the applied ethics in AI course"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "Module Architect",
+       "org": "University of Tehran",
+       "intro": "",
+       "items": [
+        "for “how to write proofs” in discrete mathematics"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "Guest Lecturer",
+       "org": "University of Tehran",
+       "intro": "",
+       "items": [
+        "for “invariance principle” in discrete mathematics&nbsp;<span class=\"tdate\">September&nbsp;2019</span>"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "Content Developer",
+       "org": "University of Tehran",
+       "intro": "",
+       "items": [
+        "Introduction to discrete mathematics",
+        "Common mistakes in discrete mathematics",
+        "Applied probability and statistics in R",
+        "Basic C++ exercises"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "Content Developer",
+       "org": "Tehran Polytechnic",
+       "intro": "",
+       "items": [
+        "Python tutorial"
        ]
       }
      ],
@@ -456,12 +453,19 @@
       {
        "type": "teaching",
        "role": "TA",
-       "org": "",
+       "org": "University of Alberta",
        "intro": "",
        "items": [
-        "<em>University of Alberta</em>: machine learning <span class=\"math\">×2</span>, intro to the foundations of computation II <span class=\"math\">×2</span>",
-        "<em>University of Tehran</em> (volunteer): natural language processing <span class=\"math\">×2</span>, artificial intelligence, discrete mathematics <span class=\"math\">×2</span>, probability and statistics, data structures and algorithms, intro to computing systems and programming, computer programming <span class=\"math\">×2</span>",
-        "<em>Workshops and programs</em>: high school internship program at University of Alberta (volunteer), data science workshops at Tehran Polytechnic, Khatam University, and University of Tehran"
+        "machine learning <span class=\"math\">×2</span>, intro to the foundations of computation II <span class=\"math\">×2</span>"
+       ]
+      },
+      {
+       "type": "teaching",
+       "role": "Volunteer TA",
+       "org": "University of Tehran",
+       "intro": "",
+       "items": [
+        "natural language processing <span class=\"math\">×2</span>, artificial intelligence, discrete mathematics <span class=\"math\">×2</span>, probability and statistics, data structures and algorithms, intro to computing systems and programming, computer programming <span class=\"math\">×2</span>"
        ]
       }
      ],
@@ -475,7 +479,7 @@
        "type": "bullets",
        "items": [
         "<strong>Reviewer</strong> for the 40th Annual Conference on Neural Information Processing Systems (NeurIPS), 2026.",
-        "<strong>Emergency reviewer</strong> for ACL Rolling Review (ARR), February cycle, 2025.",
+        "<strong>Emergency Reviewer</strong> for ACL Rolling Review (ARR), February cycle, 2025.",
         "<strong>Reviewer</strong> for the 13th International Conference on Learning Representations (ICLR), 2025."
        ]
       }
