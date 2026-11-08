@@ -115,6 +115,9 @@ main{overflow-x:clip}  /* the hero glow may spill down into the next sections bu
 .grp[open] .hide{display:inline}
 /* teaching: a thin rule between subsections, like the one the paper list draws in publications */
 .groups:not(.pub-groups)>.grp{margin-top:24px;border-top:1px solid var(--line)}
+/* teaching: a subsection's contents sit to the right of its title (publications get this from the year column) */
+.groups:not(.pub-groups)>:not(.grp-head):not(.grp),.groups:not(.pub-groups)>.grp>:not(summary){margin-left:44px}
+@media (max-width:640px){.groups:not(.pub-groups)>:not(.grp-head):not(.grp),.groups:not(.pub-groups)>.grp>:not(summary){margin-left:40px}}
 .pub-groups.searching{border-top:1px solid var(--line)}
 .pub-groups.searching .grp-head,.pub-groups.searching .grp>summary{display:none}
 .pub-groups.searching .grp{margin:0}
