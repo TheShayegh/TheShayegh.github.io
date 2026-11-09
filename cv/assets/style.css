@@ -114,10 +114,10 @@ main{overflow-x:clip}  /* the hero glow may spill down into the next sections bu
 .grp .hide,.grp[open] .show{display:none}
 .grp[open] .hide{display:inline}
 /* teaching: a thin rule between subsections, like the one the paper list draws in publications */
-.groups:not(.pub-groups)>.grp{margin-top:24px;border-top:1px solid var(--line)}
+.groups:not(.pub-groups)>.grp:not(:first-child){margin-top:24px;border-top:1px solid var(--line)}
 /* teaching: a subsection's contents sit to the right of its title (publications get this from the year column) */
-.groups:not(.pub-groups)>:not(.grp-head):not(.grp),.groups:not(.pub-groups)>.grp>:not(summary){margin-left:44px}
-@media (max-width:640px){.groups:not(.pub-groups)>:not(.grp-head):not(.grp),.groups:not(.pub-groups)>.grp>:not(summary){margin-left:40px}}
+.groups:not(.pub-groups)>:not(.grp),.groups:not(.pub-groups)>.grp>:not(summary){margin-left:56px}
+@media (max-width:640px){.groups:not(.pub-groups)>:not(.grp),.groups:not(.pub-groups)>.grp>:not(summary){margin-left:0}}
 .pub-groups.searching{border-top:1px solid var(--line)}
 .pub-groups.searching .grp-head,.pub-groups.searching .grp>summary{display:none}
 .pub-groups.searching .grp{margin:0}
