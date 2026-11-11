@@ -38,7 +38,7 @@ a:hover{text-decoration-color:currentColor}
 /* links and email: a rail block on wide screens, a drop-down from the top bar on narrow ones */
 .rl{display:flex;align-items:center;gap:12px;height:36px;padding:0 12px 0 15px;font-size:.84rem;color:var(--muted);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:0 10px 10px 0}
 .rl svg{flex:none;color:var(--accent-ink)}
-.rl.overleaf svg{color:#138a07}
+.rl.pdf svg{color:#d13b30}
 .rl:hover{color:var(--ink);background:var(--accent-soft)}
 .rl{padding:0 14px 0 15px}
 .more{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--muted);height:36px;padding:0 11px 0 12px;border-radius:999px;display:flex;align-items:center;gap:5px;cursor:pointer;transition:.15s}
@@ -243,7 +243,7 @@ ul.bul.boxed li::before{left:16px;top:1.15em}
 }
 @media print{
   :root{--bg:#fff;--surface:#fff;--shadow:none}
-  .nav,.chip.overleaf,.sec-tools{display:none}
+  .nav,.sec-tools{display:none}
   .hero::before{display:none}
   .js .reveal{opacity:1;transform:none}
   .entry,.pub,.card{break-inside:avoid;box-shadow:none}
