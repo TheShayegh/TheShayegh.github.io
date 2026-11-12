@@ -125,7 +125,7 @@
        "bullets": [
         "Curated a high-quality 1M-sample training dataset for car-price estimation using Spark: Detected outliers and interpolated missing entries.",
         "Designed an evaluation metric for car-price interval prediction that incorporates interval length as a proxy for uncertainty, and normalizes it by the real-world standard deviation of comparable data.",
-        "Reduced car-price estimation uncertainty by 40%: Replaced the legacy over-complicated XGBoost model with an ensemble of quantile regressions using Scikit-learn.",
+        "Reduced car-price estimation uncertainty by 40%: Replaced the legacy over-complicated model with an ensemble of quantile regressions using Scikit-learn.",
         "Improved car-price estimation MAPE by 4%: Identified and leveraged previously unrecognized and unaccounted categorical features using Gaussian Mixture Models and goodness-of-fit tests."
        ]
       }
