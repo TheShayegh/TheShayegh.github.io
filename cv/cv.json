@@ -5,17 +5,17 @@
    "text": "TheShayegh.github.io",
    "url": "https://TheShayegh.github.io/",
    "icons": [
-    "faGlobe",
-    "faGithub",
-    "faLinkedin",
-    "aiGoogleScholar"
+    "globe",
+    "github",
+    "linkedin",
+    "scholar"
    ]
   },
   {
    "text": "the.shayegh@gmail.com",
    "url": "mailto:the.shayegh@gmail.com",
    "icons": [
-    "faEnvelope"
+    "mail"
    ]
   }
  ],
@@ -51,7 +51,7 @@
         "Designing and developing collaborative writing capabilities and evaluation for LLMs, composing long-form text by actively eliciting user preferences and domain knowledge efficiently.",
         "Designing and developing auto style-guide evaluation and generation, controlling the style of LLM outputs by automatically writing style guides as skills.",
         "Designed and developed deep market research and signal intelligence systems, providing critical strategic insights continuously utilized by RBC’s C-suite and senior management teams.",
-        "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Recognized with two internal awards for cross-team enablement and knowledge sharing, including representing RBC at external quantum hackathons and driving GenAI education initiatives."
+        "<!--icon:trophy--> Recognized with two internal awards for cross-team enablement and knowledge sharing, including representing RBC at external quantum hackathons and driving GenAI education initiatives."
        ]
       },
       {
@@ -189,8 +189,8 @@
        "venue": "Proceedings of the Annual Meeting of the Association for Computational Linguistics",
        "acronym": "ACL",
        "notes": [
-        "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3ZM19 10v2a7 7 0 0 1-14 0v-2M12 19v3\"/></svg> Oral (top 2.5% of submissions)",
-        "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Won ACL area chair’s award, recognizing the best paper in its track."
+        "<!--icon:mic--> Oral (top 2.5% of submissions)",
+        "<!--icon:trophy--> Won ACL area chair’s award, recognizing the best paper in its track."
        ],
        "abstract": "We address unsupervised discontinuous constituency parsing, where we observe a high variance in the performance of the only previous model in the literature. We propose to build an ensemble of different runs of the existing discontinuous parser by averaging the predicted trees, to stabilize and boost performance. To begin with, we provide comprehensive computational complexity analysis (in terms of P and NP-complete) for tree averaging under different setups of binarity and continuity. We then develop an efficient exact algorithm to tackle the task, which runs in a reasonable time for all samples in our experiments. Results on three datasets show our method outperforms all baselines in all metrics; we also provide in-depth analyses of our approach.",
        "abstract_host": "aclanthology.org",
@@ -213,7 +213,7 @@
        "venue": "Proceedings of the Conference on Machine Translation",
        "acronym": "WMT",
        "notes": [
-        "<svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5zM16 8 2 22M17.5 15H9\"/></svg> Independent research"
+        "<!--icon:dove--> Independent research"
        ],
        "abstract": "There is a tradeoff in machine translation meta-evaluation between prioritizing alignment with adequacy versus fluency. The balance depends on the combination of translation systems in the meta-evaluation dataset. This system set is a small, filtered sample whose characteristics change heavily across years and language pairs; it does not represent the true system distribution. Consequently, the adequacy-fluency balance is often unrepresentative and subject to change. For sensitive domains, controlling this balance is critical. We expose this balance as a tunable choice. To achieve a target balance, we reweight existing systems while minimizing distortion from uniform weighting, ensuring the evaluated systems remain real and representative. We provide an exact optimization algorithm with theoretical guarantees and pruning mechanisms to compute these weights. To validate meta-evaluation internal consistency, we design a scorer-augmentation framework that establishes a known relative identity for the scorers. Results demonstrate that our reweighting method effectively controls the adequacy-fluency balance and preserves the internal consistency, outperforming prior approaches. Finally, we analyze the performance of popular scorers across a sweep of this parameter.",
        "abstract_host": "aclanthology.org",
@@ -292,7 +292,7 @@
      "org": "University of Alberta",
      "lines": [
       "Major in computer science (<span class=\"gpa\">GPA <b>4.0</b>/<span>4.0</span></span>)",
-      "Thesis (2025). Ensemble methods for unsupervised syntactic parsing<span class=\"ref\" data-url=\"https://ualberta.scholaris.ca/items/ef4e1716-5ea5-4656-9559-9408bb4eb502\"></span>. <br><svg class=\"icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98 1.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg> Runner-up for the departmental best MSc thesis award."
+      "Thesis (2025). Ensemble methods for unsupervised syntactic parsing<span class=\"ref\" data-url=\"https://ualberta.scholaris.ca/items/ef4e1716-5ea5-4656-9559-9408bb4eb502\"></span>. <br><!--icon:trophy--> Runner-up for the departmental best MSc thesis award."
      ],
      "roles": [
       {
