@@ -69,7 +69,62 @@
   // print with everything open
   addEventListener("beforeprint", function () {
     document.querySelectorAll("details").forEach(function (d) { d.open = true; });
+    printing = true; clampSkills();
   });
+  addEventListener("afterprint", function () { printing = false; clampSkills(); });
+
+  // skills: each row shows the tags that fit on its first line, then a "+N" chip that unfolds the row
+  // (and a "less" chip folds it again). Without this script every tag is shown.
+  var printing = false;
+  function lineTop(el) { return el.getBoundingClientRect().top; }
+  function clampRow(dd) {
+    var old = dd.querySelector(".tag.skill-more");
+    if (old) old.remove();
+    var tags = Array.prototype.slice.call(dd.querySelectorAll(".tag"));
+    tags.forEach(function (t) { t.hidden = false; });
+    if (!tags.length || !dd.clientWidth) return;
+    var label = dd.previousElementSibling ? dd.previousElementSibling.textContent.trim() : "";
+    var first = lineTop(tags[0]);
+    var extra = tags.filter(function (t) { return lineTop(t) > first + 2; });
+    if (!extra.length || printing) return;  // fits on one line (or printing): nothing to fold
+    var chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "tag skill-more";
+    dd.appendChild(chip);
+    if (dd.dataset.open === "1") {
+      chip.textContent = "less";
+      chip.setAttribute("aria-expanded", "true");
+      chip.setAttribute("aria-label", "Show fewer " + label + " skills");
+      return;
+    }
+    extra.forEach(function (t) { t.hidden = true; });
+    var visible = tags.filter(function (t) { return !t.hidden; });
+    function setLabel() {
+      var n = tags.length - visible.length;
+      chip.textContent = "+" + n;
+      chip.setAttribute("aria-expanded", "false");
+      chip.setAttribute("aria-label", "Show " + n + " more " + label + " skills");
+    }
+    setLabel();
+    while (lineTop(chip) > first + 2 && visible.length > 1) {  // the chip itself must stay on the first line
+      visible.pop().hidden = true;
+      setLabel();
+    }
+  }
+  function clampSkills() { document.querySelectorAll(".skills dd").forEach(clampRow); }
+  document.addEventListener("click", function (e) {
+    var chip = e.target.closest && e.target.closest(".skills .tag.skill-more");
+    if (!chip) return;
+    var dd = chip.parentNode;
+    dd.dataset.open = dd.dataset.open === "1" ? "" : "1";
+    clampRow(dd);
+    var again = dd.querySelector(".tag.skill-more");
+    if (again) again.focus();
+  });
+  clampSkills();
+  var skillsTimer;
+  addEventListener("resize", function () { clearTimeout(skillsTimer); skillsTimer = setTimeout(clampSkills, 120); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(clampSkills);
 
   // live filter for lists (e.g. publications); with an empty box nothing changes. While it is in use the
   // publications are one flat list: no subsection titles, no collapsed groups, and the matches are counted

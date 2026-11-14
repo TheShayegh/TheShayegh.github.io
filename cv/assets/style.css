@@ -193,6 +193,10 @@ ul.bul li::before{content:"";position:absolute;left:3px;top:.72em;width:6px;heig
 .skills dt{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--sec);font-weight:700}
 .skills dd{margin:0;display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-size:.86rem;padding:1px 10px;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.tag[hidden]{display:none}
+/* "+N" / "less": unfolds or folds a skills row; a tag in the section colour, dashed so it reads as an action */
+.tag.skill-more{font:inherit;font-size:.86rem;font-weight:600;cursor:pointer;color:var(--sec);background:none;border:1px dashed color-mix(in srgb,var(--sec) 60%,var(--line))}
+.tag.skill-more:hover{background:color-mix(in srgb,var(--sec) 10%,transparent)}
 @media (max-width:640px){.skill-row{grid-template-columns:1fr}}
 
 /* teaching: one full-width column; itemize blocks: one box per item */
