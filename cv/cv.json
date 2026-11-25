@@ -27,7 +27,7 @@
    "blocks": [
     {
      "type": "paragraph",
-     "html": "Machine learning researcher and engineer with 7 years of R&amp;D experience across academia and industry. Specialized in foundation models, agentic workflows, and large-scale AI evaluation methodologies. Proven track record of taking ML systems from foundational algorithmic design to production deployment. Experienced in cross-boundary collaboration to integrate complex LLM architectures into user-facing products. Published first-authored research at top-tier venues (NeurIPS, ICLR, ACL, AAAI)."
+     "html": "Machine learning researcher and engineer with 7 years of experience across academia and industry, focused on the evaluation and reliability of AI systems: defining correct behaviour, measuring it, diagnosing failures, and turning evaluation into a signal for hill-climbing quality. At Google, uncovered an adequacy-over-fluency bias in translation metrics and their meta-evaluation, and built specialized MetricX variants to measure each side separately. At RBC Borealis, showed that LLMs barely respond to the stated certainty of retrieved information and reduced that error by 25% on average across eight models without retraining; and developed automatic style-guide generation and evaluation to control the style of LLM outputs. First-author publications at NeurIPS, ICLR, ACL (area chair award), AAAI, and WMT."
     }
    ],
    "subsections": []
@@ -49,7 +49,7 @@
        "title": "Research Engineer",
        "bullets": [
         "Designing and developing collaborative writing capabilities and evaluation for LLMs, composing long-form text by actively eliciting user preferences and domain knowledge efficiently.",
-        "Designing and developing auto style-guide evaluation and generation, controlling the style of LLM outputs by automatically writing style guides as skills.",
+        "Designed and developed style-guide evaluation and generation, controlling the style of LLM outputs across models and agents by automatically writing style guides as skills.",
         "Designed and developed deep market research and signal intelligence systems, providing critical strategic insights continuously utilized by RBC’s C-suite and senior management teams.",
         "<!--icon:trophy--> Recognized with two internal awards for cross-team enablement and knowledge sharing, including representing RBC at external quantum hackathons and driving GenAI education initiatives."
        ]
